@@ -21,18 +21,8 @@
     }
   }
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
-    color: $color-resolution-blue;
-  }
-
-  &:active {
-    color: $color-navy-blue;
-  }
-
-  &:disabled {
-    opacity: 0.1;
+  @include vp-767 {
+    padding: 20px 0 0;
   }
 }
 
@@ -51,6 +41,27 @@
   opacity: 1;
   margin: 38px 5px 0 0;
 
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+
+  @include vp-767 {
+    margin: 16px 5px 0 0;
+  }
+}
+
+
+.toggle__opened, .toggle__closed {
   &:hover,
   &:focus,
   &:focus-visible {
