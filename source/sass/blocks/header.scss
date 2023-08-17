@@ -1,0 +1,109 @@
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  background-image: url("../img/hero/caucasus-desktop@2x.webp");
+  background-color: $color-navy-blue;
+  background-size: cover;
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 205px auto 142px;
+  column-gap: 10%;
+
+  margin: 0;
+  padding: 40px 14px 40px 88px;
+
+  max-width: 1366px;
+  margin: 0 auto;
+
+  @media (min-width: 1366px) {
+    column-gap: 133px;
+  }
+}
+
+.header__logo {
+  width: 100%;
+  color: $color-default-white;
+  cursor: pointer;
+}
+
+.header__toggle {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header__nav-list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__nav-item {
+  padding: 0 5px;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px $color-default-white solid;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px $color-default-white solid;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  a {
+    font-family: $ff-montserrat;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+    color: $color-default-white;
+  }
+}
+
+.header__tel {
+  width: 100%;
+  height: 18px;
+  justify-self: end;
+  padding: 22px 0;
+  cursor: pointer;
+
+  a {
+    font-family: $ff-montserrat;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none;
+    color: $color-default-white;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-navy-blue;
+    }
+
+    &:default {
+      color: $color-navy-blue;
+      opacity: 0.1;
+    }
+  }
+}
