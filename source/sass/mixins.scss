@@ -56,6 +56,12 @@
   }
 }
 
+@mixin vp-1199 {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
 @mixin vp-1023 {
   @media (max-width: ($vp-1024 - 1px)) {
     @content;
