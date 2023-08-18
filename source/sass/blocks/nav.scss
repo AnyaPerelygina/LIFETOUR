@@ -11,7 +11,7 @@
     &.is-opened {
       top: 0;
 
-      li {
+      a {
         @include vp-1199 {
           &:hover {
             border-bottom: 1px $color-elephant solid;
@@ -19,7 +19,9 @@
 
           &:focus,
           &:focus-visible {
-            outline: 1px $color-elephant solid;
+            border: 1px $color-elephant solid;
+            outline: none;
+            padding: 0 5px;
           }
 
           &:disabled {
@@ -39,6 +41,7 @@
   margin: 20px 0;
   padding: 0;
   list-style: none;
+  gap: 18px;
 
   display: flex;
   flex-direction: row;

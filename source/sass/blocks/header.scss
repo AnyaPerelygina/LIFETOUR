@@ -11,7 +11,7 @@
 .header__wrapper {
   display: grid;
   grid-template-columns: 205px auto 142px;
-  column-gap: 10%;
+  column-gap: 5%;
 
   max-width: 1366px;
   margin: 0 auto;
@@ -136,12 +136,13 @@
 }
 
 .header__tel {
-  width: 100%;
+  width: 142px;
   height: 18px;
   z-index: 3;
   justify-self: end;
   padding: 22px 0;
   cursor: pointer;
+  display: block;
 
   a {
     font-family: $ff-montserrat;
@@ -181,10 +182,12 @@
   }
 
   @include vp-1199 {
+    width: 126px;
     order: 1;
   }
 
   @include vp-767 {
+    width: 110px;
     grid-area: 2/2/3/3;
     padding: 0
   }

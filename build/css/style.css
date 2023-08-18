@@ -2123,9 +2123,9 @@ supported by Chrome, Edge, Opera and Firefox */
             column-count: 2;
     padding: 31px 19px 30px;
     gap: 30px;
-    -webkit-column-gap: 65px;
-       -moz-column-gap: 65px;
-            column-gap: 65px;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
 }
 @media (max-width: 767px) {
@@ -2150,6 +2150,11 @@ supported by Chrome, Edge, Opera and Firefox */
   position: relative;
   top: 13px;
   outline: none;
+}
+@media (max-width: 1199px) {
+  .footer__logo {
+    justify-self: flex-start;
+  }
 }
 @media (max-width: 767px) {
   .footer__logo {
@@ -2312,9 +2317,9 @@ supported by Chrome, Edge, Opera and Firefox */
   display: grid;
   -ms-grid-columns: 205px auto 142px;
   grid-template-columns: 205px auto 142px;
-  -webkit-column-gap: 10%;
-     -moz-column-gap: 10%;
-          column-gap: 10%;
+  -webkit-column-gap: 5%;
+     -moz-column-gap: 5%;
+          column-gap: 5%;
   max-width: 1366px;
   margin: 0 auto;
   padding: 40px 14px 40px 88px;
@@ -2457,13 +2462,14 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .header__tel {
-  width: 100%;
+  width: 142px;
   height: 18px;
   z-index: 3;
   -ms-grid-column-align: end;
       justify-self: end;
   padding: 22px 0;
   cursor: pointer;
+  display: block;
 }
 .header__tel a {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2500,6 +2506,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .header__tel {
+    width: 126px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -2507,12 +2514,24 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .header__tel {
+    width: 110px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-area: 2/2/3/3;
     padding: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .menu {
+    margin-left: 47px;
+  }
+}
+@media (max-width: 767px) {
+  .menu {
+    margin-left: unset;
   }
 }
 
@@ -2538,8 +2557,11 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 1199px) {
   .menu__list {
     max-width: 100%;
-    gap: 9px;
+    gap: 11px;
     margin: 15px 0;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
 }
 @media (max-width: 767px) {
@@ -2559,6 +2581,9 @@ supported by Chrome, Edge, Opera and Firefox */
 .menu__item {
   padding: 0;
   cursor: pointer;
+}
+.menu__item:focus-visible {
+  outline: none;
 }
 @media (max-width: 767px) {
   .menu__item {
@@ -2608,13 +2633,15 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 @media (max-width: 1199px) and (max-width: 1199px) {
-  .nav.is-opened li:hover {
+  .nav.is-opened a:hover {
     border-bottom: 1px #2d383f solid;
   }
-  .nav.is-opened li:focus, .nav.is-opened li:focus-visible {
-    outline: 1px #2d383f solid;
+  .nav.is-opened a:focus, .nav.is-opened a:focus-visible {
+    border: 1px #2d383f solid;
+    outline: none;
+    padding: 0 5px;
   }
-  .nav.is-opened li:disabled {
+  .nav.is-opened a:disabled {
     opacity: 0.5;
   }
 }
@@ -2628,6 +2655,7 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 20px 0;
   padding: 0;
   list-style: none;
+  gap: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
