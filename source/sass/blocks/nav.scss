@@ -64,21 +64,7 @@
 }
 
 .nav__item {
-  padding: 0 5px;
   cursor: pointer;
-
-  &:hover {
-    border-bottom: 1px $color-default-white solid;
-  }
-
-  &:focus,
-  &:focus-visible {
-    outline: 1px $color-default-white solid;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-  }
 
   a {
     font-family: $ff-montserrat;
@@ -88,6 +74,20 @@
     line-height: 16px;
     text-decoration: none;
     color: $color-default-white;
+    padding: 5px;
+
+    &:hover {
+      border-bottom: 1px $color-default-white solid;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: 1px $color-default-white solid;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
 
     @include vp-1199 {
       font-weight: 700;
