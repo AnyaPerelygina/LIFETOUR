@@ -2894,6 +2894,43 @@ supported by Chrome, Edge, Opera and Firefox */
     display: none;
   }
 }
+.hero__audio button {
+  position: absolute;
+  padding: 0;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 70%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: none;
+  z-index: 3;
+  cursor: pointer;
+}
+.hero__audio button::before {
+  margin: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1c3374;
+}
+.hero__audio button svg {
+  margin: 0;
+}
+
+.hero__audioplayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-right: 11.9px;
