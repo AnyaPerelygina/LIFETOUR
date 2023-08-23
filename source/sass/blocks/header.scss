@@ -1,21 +1,17 @@
 .header {
   position: relative;
   width: 100%;
-  min-height: 800px;
-  background-image: url("../img/hero/caucasus-desktop@2x.webp");
-  background-color: $color-navy-blue;
-  background-size: cover;
-  z-index: 2;
+  background-color: transparent;
+  z-index: 3;
 }
 
 .header__wrapper {
   display: grid;
   grid-template-columns: 205px auto 142px;
-  column-gap: 5%;
-
-  max-width: 1366px;
+  column-gap: 11%;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 40px 14px 40px 88px;
+  padding: 40px 81px 40px 80px;
 
   &::before {
     content: "";
@@ -28,8 +24,8 @@
     transform: scale(0);
   }
 
-  @media (min-width: 1366px) {
-    column-gap: 133px;
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    column-gap: 2%;
   }
 
   @include vp-1199 {
@@ -37,10 +33,11 @@
     padding: 20px 21px;
     column-gap: 28%;
     justify-content: space-between;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 
     &.is-opened {
-      svg, .header__tel > a {
+      svg,
+      .header__tel > a {
         color: $color-elephant;
 
         &:hover,
@@ -69,7 +66,7 @@
 
   @include vp-767 {
     display: grid;
-    padding: 5px 0px;
+    padding: 5px 0;
     gap: 1px 0;
     grid-template-columns: min-content 1fr;
     justify-items: end;
@@ -189,6 +186,6 @@
   @include vp-767 {
     width: 110px;
     grid-area: 2/2/3/3;
-    padding: 0
+    padding: 0;
   }
 }

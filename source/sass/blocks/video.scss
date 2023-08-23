@@ -1,0 +1,40 @@
+.video {
+  iframe {
+    width: 482px;
+    height: 317px;
+  }
+}
+
+.video__button {
+  position: absolute;
+  padding: 0;
+  content: "";
+  width: 56px;
+  height: 56px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  z-index: 3;
+  cursor: pointer;
+
+  &::after {
+    margin: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid $color-default-white;
+  }
+
+  svg {
+    margin: 7px 0 0 5px;
+  }
+}
