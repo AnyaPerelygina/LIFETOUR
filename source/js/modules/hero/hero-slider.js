@@ -2,7 +2,7 @@ import Swiper from '../../vendor/swiper';
 
 const initSwiperHero = () => {
   // eslint-disable-next-line no-new
-  new Swiper('.swiper', {
+  new Swiper('.swiper-hero', {
     loop: true,
     allowTouchMove: true,
     pagination: {

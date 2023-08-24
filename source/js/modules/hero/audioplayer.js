@@ -6,7 +6,7 @@ const button = document.querySelector('.hero__audio').querySelector('.hero__audi
 const createVideo = () => {
   const audio = document.createElement('iframe');
 
-  audio.setAttribute('src', 'https://music.yandex.ru/iframe/#album/25474374');
+  audio.setAttribute('src', 'https://music.yandex.ru/iframe/#track/112912322/25474374');
   audio.setAttribute('title', 'Yandex audioplayer');
   audio.setAttribute('frameborder', '0');
   audio.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
