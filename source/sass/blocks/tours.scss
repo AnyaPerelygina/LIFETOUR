@@ -1,6 +1,14 @@
 .tours {
   margin-top: 700px;
   position: relative;
+
+  @include vp-1199 {
+    margin-top: 923px;
+  }
+
+  @include vp-767 {
+    margin-top: 493px;
+  }
 }
 
 .tours__container {
@@ -9,12 +17,20 @@
   @media (min-width: 1200px) and (max-width: 1439px) {
     padding: 46px 20px 0;
   }
+
+  @include vp-1199 {
+    padding: 60px 45px 0;
+  }
 }
 
 .tours__swiper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include vp-1199 {
+    padding: 0 5px;
+  }
 }
 
 .tours__title {
@@ -28,11 +44,23 @@
   flex-direction: column;
   margin: 29px 0 48px;
 
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 29px 0 40px;
+  }
+
   span {
     font-size: 55px;
     line-height: 55px;
     opacity: 3%;
     margin: -50px 0 0;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+      margin: -38px 0 0;
+    }
   }
 }
 
@@ -42,6 +70,10 @@
   padding: 0;
   max-width: 1200px;
   display: flex;
+
+  @include vp-1199 {
+    max-width: 678px;
+  }
 }
 
 .tours__item {
@@ -75,6 +107,10 @@
     padding: 0 70px 0 0;
     z-index: 2;
 
+    @include vp-1199 {
+      padding: 0 35px 0 0;
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -98,6 +134,12 @@
   background-color: $color-elephant;
   background-image: url("../img/tours/altai-desktop@2x.webp");
   background-size: cover;
+
+  .tours__location {
+    @include vp-1199 {
+      width: 92px;
+    }
+  }
 }
 
 .tours__item--adygea {
@@ -143,6 +185,11 @@
   span {
     display: block;
   }
+
+  @include vp-1199 {
+    width: 98px;
+    padding: 7px 10px 7px 16px;
+  }
 }
 
 .tours__days {
@@ -156,6 +203,11 @@
   gap: 10px;
   justify-content: start;
   align-items: center;
+
+  @include vp-1199 {
+    width: 91px;
+    padding: 5px 0 7px 12px;
+  }
 }
 
 .tours__nights {
@@ -169,6 +221,12 @@
   gap: 10px;
   justify-content: start;
   align-items: center;
+
+  @include vp-1199 {
+    width: 91px;
+    padding: 5px 0 7px 9px;
+    gap: 8px;
+  }
 }
 
 .tours__level {
@@ -220,6 +278,10 @@
     display: block;
     margin: 14px auto;
   }
+
+  @include vp-1199 {
+    top: 12%;
+  }
 }
 
 .tours__swiper-prev {
@@ -228,6 +290,10 @@
   @media (min-width: 1200px) and (max-width: 1439px) {
     left: 91.7%;
   }
+
+  @include vp-1199 {
+    left: 84%;
+  }
 }
 
 .tours__swiper-next {
@@ -235,6 +301,10 @@
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     right: 1.7%;
+  }
+
+  @include vp-1199 {
+    right: 5.9%;
   }
 }
 

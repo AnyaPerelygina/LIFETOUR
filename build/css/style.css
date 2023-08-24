@@ -3338,6 +3338,16 @@ supported by Chrome, Edge, Opera and Firefox */
   margin-top: 700px;
   position: relative;
 }
+@media (max-width: 1199px) {
+  .tours {
+    margin-top: 923px;
+  }
+}
+@media (max-width: 767px) {
+  .tours {
+    margin-top: 493px;
+  }
+}
 
 .tours__container {
   padding: 46px 120px 0;
@@ -3345,6 +3355,11 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (min-width: 1200px) and (max-width: 1439px) {
   .tours__container {
     padding: 46px 20px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .tours__container {
+    padding: 60px 45px 0;
   }
 }
 
@@ -3359,6 +3374,11 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 1199px) {
+  .tours__swiper {
+    padding: 0 5px;
+  }
 }
 
 .tours__title {
@@ -3377,11 +3397,25 @@ supported by Chrome, Edge, Opera and Firefox */
           flex-direction: column;
   margin: 29px 0 48px;
 }
+@media (max-width: 1199px) {
+  .tours__title {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 29px 0 40px;
+  }
+}
 .tours__title span {
   font-size: 55px;
   line-height: 55px;
   opacity: 3%;
   margin: -50px 0 0;
+}
+@media (max-width: 1199px) {
+  .tours__title span {
+    font-size: 40px;
+    line-height: 40px;
+    margin: -38px 0 0;
+  }
 }
 
 .tours__list {
@@ -3392,6 +3426,11 @@ supported by Chrome, Edge, Opera and Firefox */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 1199px) {
+  .tours__list {
+    max-width: 678px;
+  }
 }
 
 .tours__item {
@@ -3429,6 +3468,11 @@ supported by Chrome, Edge, Opera and Firefox */
   padding: 0 70px 0 0;
   z-index: 2;
 }
+@media (max-width: 1199px) {
+  .tours__item h3 {
+    padding: 0 35px 0 0;
+  }
+}
 .tours__item h3::after {
   position: absolute;
   content: "";
@@ -3450,6 +3494,11 @@ supported by Chrome, Edge, Opera and Firefox */
   background-color: #2d383f;
   background-image: url("../img/tours/altai-desktop@2x.webp");
   background-size: cover;
+}
+@media (max-width: 1199px) {
+  .tours__item--altai .tours__location {
+    width: 92px;
+  }
 }
 
 .tours__item--adygea {
@@ -3514,6 +3563,12 @@ supported by Chrome, Edge, Opera and Firefox */
 .tours__location span {
   display: block;
 }
+@media (max-width: 1199px) {
+  .tours__location {
+    width: 98px;
+    padding: 7px 10px 7px 16px;
+  }
+}
 
 .tours__days {
   width: 108px;
@@ -3538,6 +3593,12 @@ supported by Chrome, Edge, Opera and Firefox */
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1199px) {
+  .tours__days {
+    width: 91px;
+    padding: 5px 0 7px 12px;
+  }
+}
 
 .tours__nights {
   width: 108px;
@@ -3561,6 +3622,13 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 1199px) {
+  .tours__nights {
+    width: 91px;
+    padding: 5px 0 7px 9px;
+    gap: 8px;
+  }
 }
 
 .tours__level {
@@ -3626,6 +3694,12 @@ supported by Chrome, Edge, Opera and Firefox */
   display: block;
   margin: 14px auto;
 }
+@media (max-width: 1199px) {
+  .tours__swiper-prev,
+.tours__swiper-next {
+    top: 12%;
+  }
+}
 
 .tours__swiper-prev {
   left: 86.2%;
@@ -3635,6 +3709,11 @@ supported by Chrome, Edge, Opera and Firefox */
     left: 91.7%;
   }
 }
+@media (max-width: 1199px) {
+  .tours__swiper-prev {
+    left: 84%;
+  }
+}
 
 .tours__swiper-next {
   right: 8.3%;
@@ -3642,6 +3721,11 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (min-width: 1200px) and (max-width: 1439px) {
   .tours__swiper-next {
     right: 1.7%;
+  }
+}
+@media (max-width: 1199px) {
+  .tours__swiper-next {
+    right: 5.9%;
   }
 }
 
