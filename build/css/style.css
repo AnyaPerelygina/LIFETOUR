@@ -2124,7 +2124,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .education__container {
     width: 100%;
     min-width: 768px;
-    padding: 66.5px 30px 86px 30px;
+    padding: 5px 46px 86px;
   }
 }
 @media (max-width: 767px) {
@@ -2145,6 +2145,16 @@ supported by Chrome, Edge, Opera and Firefox */
   opacity: 0.2;
 }
 @media (max-width: 1199px) {
+  .education__container::before {
+    background: url(../../img/svg/line-tablet.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 179px;
+    display: block;
+    height: 68px;
+  }
   .education__container::after {
     display: none;
   }
@@ -2152,12 +2162,26 @@ supported by Chrome, Edge, Opera and Firefox */
 .education__container p {
   text-align: start;
   margin-bottom: 57px;
+  max-width: 800px;
+}
+@media (max-width: 1199px) {
+  .education__container p {
+    max-width: 524px;
+    margin-bottom: 67px;
+  }
 }
 .education__container h3 {
   font-size: 21px;
   line-height: 21px;
   text-align: start;
   margin-bottom: 12px;
+}
+@media (max-width: 1199px) {
+  .education__container h3 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 2px;
+  }
 }
 
 .education__title {
@@ -2180,7 +2204,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .education__title {
     font-size: 25px;
     line-height: 25px;
-    margin: 29px 0 40px;
+    margin: 29px 0 18px;
   }
 }
 @media (max-width: 767px) {
@@ -2228,7 +2252,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .education__swiper {
-    padding-bottom: 46px;
+    padding-bottom: 26px;
   }
 }
 @media (max-width: 767px) {
@@ -2255,12 +2279,15 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .education__process {
-    -webkit-column-gap: 102px;
-       -moz-column-gap: 102px;
-            column-gap: 102px;
-    row-gap: 90px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-column-gap: 84px;
+       -moz-column-gap: 84px;
+            column-gap: 84px;
+    row-gap: 17px;
     max-width: 678px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2327,6 +2354,13 @@ supported by Chrome, Edge, Opera and Firefox */
     max-width: 21%;
   }
 }
+@media (max-width: 1199px) {
+  .education__process li {
+    padding: 37px 0;
+    gap: 14px;
+    max-width: 268px;
+  }
+}
 .education__process li svg {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -2387,27 +2421,8 @@ supported by Chrome, Edge, Opera and Firefox */
   border-radius: 50%;
 }
 @media (max-width: 1199px) {
-  .education__process li:nth-child(1)::after {
-    position: absolute;
-    content: "";
-    min-width: 355px;
-    height: 56px;
-    top: calc(100% + 16px);
-    left: 6px;
-    border-bottom: 1px solid #0266c1;
-    border-right: 1px solid #0266c1;
-    border-top: 1px solid #0266c1;
-    opacity: 0.2;
-  }
   .education__process li:nth-child(1)::before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    top: calc(100% + 10px);
-    left: 0;
-    background-color: #0266c1;
-    border-radius: 50%;
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -2440,25 +2455,8 @@ supported by Chrome, Edge, Opera and Firefox */
   border-radius: 50%;
 }
 @media (max-width: 1199px) {
-  .education__process li:nth-child(2)::after {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    top: calc(100% + 10px);
-    left: 0;
-    background-color: #0266c1;
-    border-radius: 50%;
-  }
   .education__process li:nth-child(2)::before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    top: calc(100% + 63px);
-    left: 0;
-    background-color: #0266c1;
-    border-radius: 50%;
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -2492,9 +2490,9 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .education__process li:nth-child(3) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .education__process li:nth-child(3)::before {
     display: none;
@@ -2534,21 +2532,8 @@ supported by Chrome, Edge, Opera and Firefox */
   border-radius: 50%;
 }
 @media (max-width: 1199px) {
-  .education__process li:nth-child(4) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    width: 250.85px;
-  }
   .education__process li:nth-child(4)::before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    top: -26px;
-    left: 0;
-    background-color: #0266c1;
-    border-radius: 50%;
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -2590,7 +2575,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 1199px) {
   .education__swiper-next,
 .education__swiper-prev {
-    top: 263px;
+    top: 209px;
     right: 45.5px;
     width: 37.5px;
   }
@@ -4357,7 +4342,7 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.trainer-card {
+.coach-card {
   width: 23.16%;
   max-width: 278px;
   height: auto;
@@ -4366,13 +4351,13 @@ supported by Chrome, Edge, Opera and Firefox */
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
 @media (max-width: 1199px) {
-  .trainer-card {
+  .coach-card {
     min-width: 206px;
     max-width: none;
   }
 }
 @media (max-width: 767px) {
-  .trainer-card {
+  .coach-card {
     margin: 0 auto;
     min-width: 290px;
     width: 83%;
@@ -4380,27 +4365,27 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.trainer-card__photo {
+.coach-card__photo {
   padding: 20px 20px 15px 20px;
   width: 100%;
   height: auto;
 }
 @media (max-width: 1199px) {
-  .trainer-card__photo {
+  .coach-card__photo {
     padding: 0;
     overflow: hidden;
     margin: 15px 0 17px 0;
   }
 }
 @media (max-width: 767px) {
-  .trainer-card__photo {
+  .coach-card__photo {
     padding: 0 20px;
     margin: 20px auto 15px auto;
     height: auto;
   }
 }
 @media (max-width: 1199px) {
-  .trainer-card__photo img {
+  .coach-card__photo img {
     margin: auto;
     width: 85%;
     height: auto;
@@ -4411,13 +4396,13 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 @media (max-width: 767px) {
-  .trainer-card__photo img {
+  .coach-card__photo img {
     width: 100%;
     min-width: 250px;
   }
 }
 
-.trainer-card__information {
+.coach-card__information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4426,12 +4411,12 @@ supported by Chrome, Edge, Opera and Firefox */
   padding: 2px 20px;
 }
 @media (max-width: 1199px) {
-  .trainer-card__information {
+  .coach-card__information {
     padding: 0 15px;
   }
 }
 @media (max-width: 767px) {
-  .trainer-card__information {
+  .coach-card__information {
     width: 100%;
     min-width: 290px;
     -webkit-column-gap: 55.5%;
@@ -4440,7 +4425,7 @@ supported by Chrome, Edge, Opera and Firefox */
     padding: 0 20px;
   }
 }
-.trainer-card__information a {
+.coach-card__information a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4456,18 +4441,18 @@ supported by Chrome, Edge, Opera and Firefox */
   margin-top: 3px;
   border: 1px solid rgba(3, 10, 26, 0.1);
 }
-.trainer-card__information a:hover, .trainer-card__information a:focus {
+.coach-card__information a:hover, .coach-card__information a:focus {
   outline: none;
   border: 1px solid #2d383f;
 }
-.trainer-card__information a:active {
+.coach-card__information a:active {
   border: none;
   background-color: #0266c1;
 }
-.trainer-card__information a svg {
+.coach-card__information a svg {
   fill: #2d383f;
 }
-.trainer-card__information h3 {
+.coach-card__information h3 {
   width: 89.4%;
   margin-bottom: 14px;
   font-size: 14px;
@@ -4477,34 +4462,35 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 0;
 }
 @media (max-width: 1199px) {
-  .trainer-card__information h3 {
-    margin-bottom: 10px;
+  .coach-card__information h3 {
+    width: 85.4%;
+    margin-bottom: -1px;
   }
 }
 @media (max-width: 767px) {
-  .trainer-card__information h3 {
+  .coach-card__information h3 {
     width: 30%;
     margin-bottom: 13px;
   }
 }
-.trainer-card__information p {
+.coach-card__information p {
   margin-bottom: 15px;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 @media (max-width: 1199px) {
-  .trainer-card__information p {
+  .coach-card__information p {
     line-height: 18px;
   }
 }
 @media (max-width: 767px) {
-  .trainer-card__information p {
+  .coach-card__information p {
     width: 250px;
   }
 }
 
-.trainer-card__information a:active svg {
+.coach-card__information a:active svg {
   fill: #ffffff;
 }
 

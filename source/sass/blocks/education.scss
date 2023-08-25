@@ -18,7 +18,7 @@
   @include vp-1199 {
     width: 100%;
     min-width: 768px;
-    padding: 66.5px 30px 86px 30px;
+    padding: 5px 46px 86px;
   }
 
   @include vp-767 {
@@ -39,6 +39,17 @@
   }
 
   @include vp-1199 {
+    &::before {
+      background: url(../../img/svg/line-tablet.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      content: "";
+      width: 100%;
+      bottom: 179px;
+      display: block;
+      height: 68px;
+    }
+
     &::after {
       display: none;
     }
@@ -47,6 +58,12 @@
   p {
     text-align: start;
     margin-bottom: 57px;
+    max-width: 800px;
+
+    @include vp-1199 {
+      max-width: 524px;
+      margin-bottom: 67px;
+    }
   }
 
   h3 {
@@ -54,6 +71,12 @@
     line-height: 21px;
     text-align: start;
     margin-bottom: 12px;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 2px;
+    }
   }
 }
 
@@ -71,7 +94,7 @@
   @include vp-1199 {
     font-size: 25px;
     line-height: 25px;
-    margin: 29px 0 40px;
+    margin: 29px 0 18px;
   }
 
   @include vp-767 {
@@ -114,7 +137,7 @@
   padding: 30px 0;
 
   @include vp-1199 {
-    padding-bottom: 46px;
+    padding-bottom: 26px;
   }
 
   @include vp-767 {
@@ -134,10 +157,11 @@
   position: relative;
 
   @include vp-1199 {
-    column-gap: 102px;
-    row-gap: 90px;
+    justify-content: start;
+    column-gap: 84px;
+    row-gap: 17px;
     max-width: 678px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   @include vp-767 {
@@ -179,6 +203,12 @@
 
     @media (min-width: 1200px) and (max-width:1439px) {
       max-width: 21%;
+    }
+
+    @include vp-1199 {
+      padding: 37px 0;
+      gap: 14px;
+      max-width: 268px;
     }
 
     svg {
@@ -237,30 +267,36 @@
   }
 
   @include vp-1199 {
-    &::after {
-      position: absolute;
-      content: "";
-      min-width: 355px;
-      height: 56px;
-      top: calc(100% + 16px);
-      left: 6px;
-      border-bottom: 1px solid $color-navy-blue;
-      border-right: 1px solid $color-navy-blue;
-      border-top: 1px solid $color-navy-blue;
-      opacity: 0.2;
-    }
-
     &::before {
-      position: absolute;
-      content: "";
-      width: 14px;
-      height: 14px;
-      top: calc(100% + 10px);
-      left: 0;
-      background-color: $color-navy-blue;
-      border-radius: 50%;
+      display: none;
     }
   }
+
+  // @include vp-1199 {
+  //   &::after {
+  //     position: absolute;
+  //     content: "";
+  //     min-width: 355px;
+  //     height: 56px;
+  //     top: calc(100% + 16px);
+  //     left: 6px;
+  //     border-bottom: 1px solid $color-navy-blue;
+  //     border-right: 1px solid $color-navy-blue;
+  //     border-top: 1px solid $color-navy-blue;
+  //     opacity: 0.2;
+  //   }
+
+  //   &::before {
+  //     position: absolute;
+  //     content: "";
+  //     width: 14px;
+  //     height: 14px;
+  //     top: calc(100% + 10px);
+  //     left: 0;
+  //     background-color: $color-navy-blue;
+  //     border-radius: 50%;
+  //   }
+  // }
 
   @include vp-767 {
     &::after {
@@ -294,27 +330,33 @@
     border-radius: 50%;
   }
 
-  @include vp-1199 {
-    &::after {
-      position: absolute;
-      content: "";
-      width: 14px;
-      height: 14px;
-      top: calc(100% + 10px);
-      left: 0;
-      background-color: $color-navy-blue;
-      border-radius: 50%;
-    }
+  // @include vp-1199 {
+  //   &::after {
+  //     position: absolute;
+  //     content: "";
+  //     width: 14px;
+  //     height: 14px;
+  //     top: calc(100% + 10px);
+  //     left: 0;
+  //     background-color: $color-navy-blue;
+  //     border-radius: 50%;
+  //   }
 
+  //   &::before {
+  //     position: absolute;
+  //     content: "";
+  //     width: 14px;
+  //     height: 14px;
+  //     top: calc(100% + 63px);
+  //     left: 0;
+  //     background-color: $color-navy-blue;
+  //     border-radius: 50%;
+  //   }
+  // }
+
+  @include vp-1199 {
     &::before {
-      position: absolute;
-      content: "";
-      width: 14px;
-      height: 14px;
-      top: calc(100% + 63px);
-      left: 0;
-      background-color: $color-navy-blue;
-      border-radius: 50%;
+      display: none;
     }
   }
 
@@ -351,7 +393,7 @@
   }
 
   @include vp-1199 {
-    order: 4;
+    order: 3;
 
     &::before {
       display: none;
@@ -390,19 +432,25 @@
     border-radius: 50%;
   }
 
-  @include vp-1199 {
-    order: 3;
-    width: 250.85px;
+  // @include vp-1199 {
+  //   order: 3;
+  //   width: 250.85px;
 
+  //   &::before {
+  //     position: absolute;
+  //     content: "";
+  //     width: 14px;
+  //     height: 14px;
+  //     top: - 26px;
+  //     left: 0;
+  //     background-color: $color-navy-blue;
+  //     border-radius: 50%;
+  //   }
+  // }
+
+  @include vp-1199 {
     &::before {
-      position: absolute;
-      content: "";
-      width: 14px;
-      height: 14px;
-      top: - 26px;
-      left: 0;
-      background-color: $color-navy-blue;
-      border-radius: 50%;
+      display: none;
     }
   }
 
@@ -439,7 +487,7 @@
   }
 
   @include vp-1199 {
-    top: 263px;
+    top: 209px;
     right: 45.5px;
     width: 37.5px;
   }
