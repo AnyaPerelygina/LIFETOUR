@@ -21,6 +21,10 @@
   @include vp-1199 {
     padding: 60px 45px 0;
   }
+
+  @include vp-767 {
+    padding: 37px 15px 0;
+  }
 }
 
 .tours__swiper {
@@ -30,6 +34,10 @@
 
   @include vp-1199 {
     padding: 0 5px;
+  }
+
+  @include vp-767 {
+    padding: 0;
   }
 }
 
@@ -50,6 +58,13 @@
     margin: 29px 0 40px;
   }
 
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    max-width: 156px;
+    margin: 29px 0 14px;
+  }
+
   span {
     font-size: 55px;
     line-height: 55px;
@@ -59,6 +74,12 @@
     @include vp-1199 {
       font-size: 40px;
       line-height: 40px;
+      margin: -38px 0 0;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
       margin: -38px 0 0;
     }
   }
@@ -111,6 +132,12 @@
       padding: 0 35px 0 0;
     }
 
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 15px 0 28px;
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -120,6 +147,10 @@
       opacity: 0.3;
       left: 20px;
       bottom: 80px;
+
+      @include vp-767 {
+        bottom: 72px;
+      }
     }
   }
 }
@@ -160,12 +191,21 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 10px;
+
+  @include vp-767 {
+    max-width: 183px;
+    row-gap: 10px;
+  }
 }
 
 .tours__option--2 {
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;
+
+  @include vp-767 {
+    max-width: 250px;
+  }
 }
 
 .tours__location {
@@ -190,6 +230,10 @@
     width: 98px;
     padding: 7px 10px 7px 16px;
   }
+
+  @include vp-767 {
+    order: 3;
+  }
 }
 
 .tours__days {
@@ -207,6 +251,11 @@
   @include vp-1199 {
     width: 91px;
     padding: 5px 0 7px 12px;
+  }
+
+  @include vp-767 {
+    gap: 14px;
+    padding: 0;
   }
 }
 
@@ -227,6 +276,11 @@
     padding: 5px 0 7px 9px;
     gap: 8px;
   }
+
+  @include vp-767 {
+    gap: 14px;
+    padding: 0;
+  }
 }
 
 .tours__level {
@@ -235,6 +289,10 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+
+  @include vp-767 {
+    width: 85px;
+  }
 }
 
 .tours__data {
@@ -282,6 +340,12 @@
   @include vp-1199 {
     top: 12%;
   }
+
+  @include vp-767 {
+    top: 11.2%;
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .tours__swiper-prev {
@@ -293,6 +357,10 @@
 
   @include vp-1199 {
     left: 84%;
+  }
+
+  @include vp-767 {
+    left: 71%;
   }
 }
 
@@ -306,6 +374,10 @@
   @include vp-1199 {
     right: 5.9%;
   }
+
+  @include vp-767 {
+    right: 4.9%;
+  }
 }
 
 .tours__more {
@@ -318,4 +390,10 @@
   display: block;
   text-align: center;
   padding: 52px 0;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 27px 0;
+  }
 }
