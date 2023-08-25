@@ -2131,7 +2131,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .education__container {
     min-width: 290px;
     width: 100%;
-    padding: 46px 0 0 0;
+    padding: 10px 15px 0;
   }
 }
 .education__container::after {
@@ -2159,6 +2159,19 @@ supported by Chrome, Edge, Opera and Firefox */
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .education__container::before {
+    background: url(../../img/svg/line-mobile.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 35px;
+    left: 19px;
+    display: block;
+    height: 200px;
+  }
+}
 .education__container p {
   text-align: start;
   margin-bottom: 57px;
@@ -2168,6 +2181,13 @@ supported by Chrome, Edge, Opera and Firefox */
   .education__container p {
     max-width: 524px;
     margin-bottom: 67px;
+  }
+}
+@media (max-width: 767px) {
+  .education__container p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 49px;
   }
 }
 .education__container h3 {
@@ -2181,6 +2201,13 @@ supported by Chrome, Edge, Opera and Firefox */
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 2px;
+  }
+}
+@media (max-width: 767px) {
+  .education__container h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 0;
   }
 }
 
@@ -2212,7 +2239,7 @@ supported by Chrome, Edge, Opera and Firefox */
     font-size: 22px;
     line-height: 22px;
     max-width: 156px;
-    margin: 29px 0 14px;
+    margin: 29px 0 29px;
   }
 }
 .education__title span {
@@ -2232,7 +2259,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .education__title span {
     font-size: 26px;
     line-height: 26px;
-    margin: -38px 0 0;
+    margin: -23px 0 -14px;
   }
 }
 
@@ -2257,7 +2284,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .education__swiper {
-    padding: 35px 15px 39px 15px;
+    padding: 33px 0 21px;
   }
 }
 
@@ -2298,6 +2325,7 @@ supported by Chrome, Edge, Opera and Firefox */
             flex-direction: column;
     row-gap: 25px;
     margin: 0;
+    padding: 29px 35px;
   }
 }
 .education__process h3 {
@@ -2361,6 +2389,13 @@ supported by Chrome, Edge, Opera and Firefox */
     max-width: 268px;
   }
 }
+@media (max-width: 767px) {
+  .education__process li {
+    padding: 0;
+    gap: 8px;
+    max-width: 210px;
+  }
+}
 .education__process li svg {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -2404,6 +2439,12 @@ supported by Chrome, Edge, Opera and Firefox */
   .education__process li p {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .education__title--process {
+    margin-left: 2px;
   }
 }
 
@@ -2583,6 +2624,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .education__swiper-next,
 .education__swiper-prev {
+    top: 236px;
     right: 15px;
   }
 }
@@ -2600,6 +2642,12 @@ supported by Chrome, Edge, Opera and Firefox */
     right: 85.5px;
   }
 }
+@media (max-width: 767px) {
+  .education__swiper-prev {
+    right: 56.5px;
+  }
+}
+
 @media (max-width: 1199px) {
   br {
     display: none;
@@ -4360,6 +4408,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .coach-card {
     margin: 0 auto;
     min-width: 290px;
+    min-height: 385px;
     width: 83%;
     padding-bottom: 3px;
   }
@@ -4423,6 +4472,9 @@ supported by Chrome, Edge, Opera and Firefox */
        -moz-column-gap: 55.5%;
             column-gap: 55.5%;
     padding: 0 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .coach-card__information a {
@@ -4470,7 +4522,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .coach-card__information h3 {
     width: 30%;
-    margin-bottom: 13px;
+    margin-bottom: 1px;
   }
 }
 .coach-card__information p {

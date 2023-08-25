@@ -24,7 +24,7 @@
   @include vp-767 {
     min-width: 290px;
     width: 100%;
-    padding: 46px 0 0 0;
+    padding: 10px 15px 0;
   }
 
   &::after {
@@ -55,6 +55,20 @@
     }
   }
 
+  @include vp-767 {
+    &::before {
+      background: url(../../img/svg/line-mobile.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      content: "";
+      width: 100%;
+      bottom: 35px;
+      left: 19px;
+      display: block;
+      height: 200px;
+    }
+  }
+
   p {
     text-align: start;
     margin-bottom: 57px;
@@ -63,6 +77,12 @@
     @include vp-1199 {
       max-width: 524px;
       margin-bottom: 67px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 49px;
     }
   }
 
@@ -76,6 +96,12 @@
       font-size: 18px;
       line-height: 18px;
       margin-bottom: 2px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 0;
     }
   }
 }
@@ -101,7 +127,7 @@
     font-size: 22px;
     line-height: 22px;
     max-width: 156px;
-    margin: 29px 0 14px;
+    margin: 29px 0 29px;
   }
 
   span {
@@ -119,7 +145,7 @@
     @include vp-767 {
       font-size: 26px;
       line-height: 26px;
-      margin: -38px 0 0;
+      margin: -23px 0 -14px;
     }
   }
 }
@@ -141,7 +167,7 @@
   }
 
   @include vp-767 {
-    padding: 35px 15px 39px 15px;
+    padding: 33px 0 21px;
   }
 }
 
@@ -168,6 +194,7 @@
     flex-direction: column;
     row-gap: 25px;
     margin: 0;
+    padding: 29px 35px;
   }
 
   h3 {
@@ -211,6 +238,12 @@
       max-width: 268px;
     }
 
+    @include vp-767 {
+      padding: 0;
+      gap: 8px;
+      max-width: 210px;
+    }
+
     svg {
       align-self: center;
       min-width: 25px;
@@ -252,6 +285,12 @@
   }
 }
 
+.education__title--process {
+  @include vp-767 {
+    margin-left: 2px;
+  }
+}
+
 .education__process li:nth-child(1) {
   position: relative;
 
@@ -271,32 +310,6 @@
       display: none;
     }
   }
-
-  // @include vp-1199 {
-  //   &::after {
-  //     position: absolute;
-  //     content: "";
-  //     min-width: 355px;
-  //     height: 56px;
-  //     top: calc(100% + 16px);
-  //     left: 6px;
-  //     border-bottom: 1px solid $color-navy-blue;
-  //     border-right: 1px solid $color-navy-blue;
-  //     border-top: 1px solid $color-navy-blue;
-  //     opacity: 0.2;
-  //   }
-
-  //   &::before {
-  //     position: absolute;
-  //     content: "";
-  //     width: 14px;
-  //     height: 14px;
-  //     top: calc(100% + 10px);
-  //     left: 0;
-  //     background-color: $color-navy-blue;
-  //     border-radius: 50%;
-  //   }
-  // }
 
   @include vp-767 {
     &::after {
@@ -329,30 +342,6 @@
     background-color: $color-navy-blue;
     border-radius: 50%;
   }
-
-  // @include vp-1199 {
-  //   &::after {
-  //     position: absolute;
-  //     content: "";
-  //     width: 14px;
-  //     height: 14px;
-  //     top: calc(100% + 10px);
-  //     left: 0;
-  //     background-color: $color-navy-blue;
-  //     border-radius: 50%;
-  //   }
-
-  //   &::before {
-  //     position: absolute;
-  //     content: "";
-  //     width: 14px;
-  //     height: 14px;
-  //     top: calc(100% + 63px);
-  //     left: 0;
-  //     background-color: $color-navy-blue;
-  //     border-radius: 50%;
-  //   }
-  // }
 
   @include vp-1199 {
     &::before {
@@ -432,22 +421,6 @@
     border-radius: 50%;
   }
 
-  // @include vp-1199 {
-  //   order: 3;
-  //   width: 250.85px;
-
-  //   &::before {
-  //     position: absolute;
-  //     content: "";
-  //     width: 14px;
-  //     height: 14px;
-  //     top: - 26px;
-  //     left: 0;
-  //     background-color: $color-navy-blue;
-  //     border-radius: 50%;
-  //   }
-  // }
-
   @include vp-1199 {
     &::before {
       display: none;
@@ -493,6 +466,7 @@
   }
 
   @include vp-767 {
+    top: 236px;
     right: 15px;
   }
 
@@ -510,6 +484,7 @@
   }
 
   @include vp-767 {
+    right: 56.5px;
   }
 }
 
