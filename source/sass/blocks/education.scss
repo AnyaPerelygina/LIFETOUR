@@ -18,7 +18,7 @@
   @include vp-1199 {
     width: 100%;
     min-width: 768px;
-    padding: 5px 46px 86px;
+    padding: 5px 46px 0;
   }
 
   @include vp-767 {
@@ -45,7 +45,7 @@
       position: absolute;
       content: "";
       width: 100%;
-      bottom: 179px;
+      bottom: 93px;
       display: block;
       height: 68px;
     }
@@ -62,7 +62,7 @@
       position: absolute;
       content: "";
       width: 100%;
-      bottom: 35px;
+      bottom: 23px;
       left: 19px;
       display: block;
       height: 200px;
@@ -194,7 +194,7 @@
     flex-direction: column;
     row-gap: 25px;
     margin: 0;
-    padding: 29px 35px;
+    padding: 29px 35px 16px;
   }
 
   h3 {
