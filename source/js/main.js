@@ -6,6 +6,7 @@ import {initVideoPlayer} from './modules/hero/videoplayer';
 import {initAudioPlayer} from './modules/hero/audioplayer';
 import {initSwiperHero} from './modules/hero/hero-slider';
 import {createTourSlider} from './modules/tours/tours';
+import {createEducationSlider} from './modules/education/education';
 
 // ---------------------------------
 
@@ -31,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAudioPlayer();
     initSwiperHero();
     createTourSlider();
+    createEducationSlider();
   });
 });
 
