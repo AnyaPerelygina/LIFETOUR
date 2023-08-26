@@ -8,6 +8,7 @@ import {initSwiperHero} from './modules/hero/hero-slider';
 import {createTourSlider} from './modules/tours/tours';
 import {createEducationSlider} from './modules/education/education';
 import {createReviewsSlider} from './modules/reviews/reviews';
+import {createAdvantagesSlider, handleResize} from '.modules/advantages/advantages';
 
 // ---------------------------------
 
@@ -35,6 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
     createTourSlider();
     createEducationSlider();
     createReviewsSlider();
+    createAdvantagesSlider();
+    handleResize();
   });
 });
 

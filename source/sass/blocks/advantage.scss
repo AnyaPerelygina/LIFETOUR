@@ -1,0 +1,104 @@
+.advantage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 329px;
+  height: auto;
+  width: 31.67%;
+  margin: 0;
+  padding: 41px 20px 20px 20px;
+  border: 1px solid  rgba(2, 102, 193, 0.1);
+  z-index: 55;
+
+  @include vp-1199 {
+    width: 48%;
+    min-height: 272px;
+    padding: 30px 20px 10px 20px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: 242px;
+    padding: 19px 10px 0 10px;
+  }
+}
+
+.advantage:nth-child(5) {
+  @include vp-1199 {
+    order: -1;
+  }
+}
+
+.advantage svg {
+  width: 50px;
+  height: 52px;
+  margin-bottom: 14px;
+  padding: 14px;
+  outline: 1px solid $color-navy-blue;
+
+  @include vp-1199 {
+    width: 44px;
+    height: 47px;
+    margin-bottom: 10px;
+    padding: 11px;
+    outline: 1px solid $color-navy-blue;
+  }
+
+  @include vp-767 {
+    width: 41px;
+    height: 40px;
+    margin-bottom: 13px;
+    padding: 11px;
+    outline: 1px solid $color-navy-blue;
+  }
+}
+
+.advantage h3 {
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    font-size: calc(14px + (18 - 14) * ( (100vw - 1200px) / ( 1440 - 1200) ));
+  }
+
+  @include vp-1199 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 3px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    margin-bottom: 3px;
+  }
+}
+
+.advantage p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+
+  @include vp-1199 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 19px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
