@@ -2056,13 +2056,16 @@ supported by Chrome, Edge, Opera and Firefox */
   margin-top: 3px;
   border: 1px solid rgba(3, 10, 26, 0.1);
 }
-.coach-card__information a:hover, .coach-card__information a:focus {
+.coach-card__information a:hover, .coach-card__information a:focus, .coach-card__information a:focus-visible {
+  border-color: #2d383f;
   outline: none;
-  border: 1px solid #2d383f;
 }
 .coach-card__information a:active {
-  border: none;
+  color: #ffffff;
   background-color: #0266c1;
+}
+.coach-card__information a:disabled {
+  color: rgba(45, 56, 63, 0.3);
 }
 .coach-card__information a svg {
   fill: #2d383f;
@@ -3596,6 +3599,7 @@ supported by Chrome, Edge, Opera and Firefox */
   width: 100%;
   z-index: 0;
   background-color: #2d383f;
+  background-size: calc(100% - 1px);
 }
 
 .feedback__container {
@@ -5675,8 +5679,8 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .slider-states:hover svg,
 .slider-states:focus-visible svg {
-  stroke-width: 0.5px;
   stroke: #1c3374;
+  fill: #1c3374;
 }
 
 .slider-states:active {
@@ -5684,7 +5688,6 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .slider-states:active svg {
-  stroke-width: 0.5px;
   stroke: #ffffff;
 }
 

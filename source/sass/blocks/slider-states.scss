@@ -6,8 +6,8 @@
 
 .slider-states:hover svg,
 .slider-states:focus-visible svg {
-  stroke-width: 0.5px;
   stroke: $color-resolution-blue;
+  fill: $color-resolution-blue;
 }
 
 .slider-states:active {
@@ -15,7 +15,6 @@
 }
 
 .slider-states:active svg {
-  stroke-width: 0.5px;
   stroke: $color-default-white;
 }
 

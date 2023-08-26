@@ -22,6 +22,7 @@
     width: 100%;
     z-index: 0;
     background-color: $color-elephant;
+    background-size: calc(100% - 1px);
   }
 }
 
