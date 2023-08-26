@@ -83,6 +83,23 @@
   outline: 1px solid $color-elephant;
 }
 
+.form__name input:focus::placeholder,
+.form__phone input:focus::placeholder,
+.form__name input:active::placeholder,
+.form__phone input:active::placeholder {
+  color: $color-default-white;
+}
+
+.form__name input:disabled,
+.form__phone input:disabled {
+  outline: 1px solid $color-disabled-button;
+}
+
+.form__name input:disabled::placeholder,
+.form__phone input:disabled::placeholder {
+  color: $color-disabled-button;
+}
+
 .is-invalid {
   border: 1.5px solid #ff1553;
 }
@@ -124,7 +141,6 @@
   border: none;
   cursor: pointer;
 
-
   &:focus {
     outline: none;
   }
@@ -140,7 +156,6 @@
     background-color: $color-resolution-blue;
     color: $color-default-white;
   }
-
 
   @include vp-1199 {
     width: 266px;

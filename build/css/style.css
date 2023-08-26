@@ -4008,6 +4008,55 @@ supported by Chrome, Edge, Opera and Firefox */
   outline: 1px solid #2d383f;
 }
 
+.form__name input:focus::-webkit-input-placeholder, .form__phone input:focus::-webkit-input-placeholder, .form__name input:active::-webkit-input-placeholder, .form__phone input:active::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form__name input:focus::-moz-placeholder, .form__phone input:focus::-moz-placeholder, .form__name input:active::-moz-placeholder, .form__phone input:active::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form__name input:focus:-ms-input-placeholder, .form__phone input:focus:-ms-input-placeholder, .form__name input:active:-ms-input-placeholder, .form__phone input:active:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__name input:focus::-ms-input-placeholder, .form__phone input:focus::-ms-input-placeholder, .form__name input:active::-ms-input-placeholder, .form__phone input:active::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__name input:focus::placeholder,
+.form__phone input:focus::placeholder,
+.form__name input:active::placeholder,
+.form__phone input:active::placeholder {
+  color: #ffffff;
+}
+
+.form__name input:disabled,
+.form__phone input:disabled {
+  outline: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.form__name input:disabled::-webkit-input-placeholder, .form__phone input:disabled::-webkit-input-placeholder {
+  color: rgba(2, 102, 193, 0.1);
+}
+
+.form__name input:disabled::-moz-placeholder, .form__phone input:disabled::-moz-placeholder {
+  color: rgba(2, 102, 193, 0.1);
+}
+
+.form__name input:disabled:-ms-input-placeholder, .form__phone input:disabled:-ms-input-placeholder {
+  color: rgba(2, 102, 193, 0.1);
+}
+
+.form__name input:disabled::-ms-input-placeholder, .form__phone input:disabled::-ms-input-placeholder {
+  color: rgba(2, 102, 193, 0.1);
+}
+
+.form__name input:disabled::placeholder,
+.form__phone input:disabled::placeholder {
+  color: rgba(2, 102, 193, 0.1);
+}
+
 .is-invalid {
   border: 1.5px solid #ff1553;
 }
