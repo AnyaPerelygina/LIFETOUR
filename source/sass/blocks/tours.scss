@@ -204,10 +204,6 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;
-
-  @include vp-767 {
-    max-width: 250px;
-  }
 }
 
 .tours__location {

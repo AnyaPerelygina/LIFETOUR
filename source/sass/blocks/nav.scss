@@ -83,15 +83,18 @@
     padding: 5px;
 
     &:hover {
-      border-bottom: 1px $color-default-white solid;
+      border-bottom: 1px solid $color-default-white;
+      color: $color-default-white;
     }
 
     &:focus,
     &:focus-visible {
-      outline: 1px $color-default-white solid;
+      outline: 1px solid $color-default-white;
+      color: $color-default-white;
     }
 
     &:disabled {
+      color: $color-default-white;
       opacity: 0.5;
     }
 
