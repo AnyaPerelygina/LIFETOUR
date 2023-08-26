@@ -230,6 +230,22 @@
       display: block;
       line-height: 20px;
     }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-navy-blue;
+    }
+
+    &:default {
+      color: $color-navy-blue;
+      opacity: 0.1;
+    }
   }
 }
 
