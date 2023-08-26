@@ -69,7 +69,8 @@
     }
   }
 
-  p {
+
+  & > p {
     text-align: start;
     margin-bottom: 57px;
     max-width: 800px;
@@ -270,6 +271,7 @@
       width: 236px;
       display: block;
       margin: auto 0;
+      text-align: start;
 
       @include vp-1199 {
         font-size: 14px;

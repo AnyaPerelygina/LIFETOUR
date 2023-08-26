@@ -489,7 +489,7 @@
                   </picture>
                 </div>
                 <div class="coach-card__information">
-                  <h3>Александр<br> Прокофьев</h3>
+                  <h4 class="coach-card__name">Александр<br> Прокофьев</h4>
                   <a href="#">
                     <span class="visually-hidden">Перейти на страницу Александра Прокофьева в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
@@ -517,7 +517,7 @@
                   </picture>
                 </div>
                 <div class="coach-card__information">
-                  <h3>Светлана<br> Афиногенова</h3>
+                  <h4 class="coach-card__name">Светлана<br> Афиногенова</h4>
                   <a href="#">
                     <span class="visually-hidden">Перейти на страницу Светланы Афиногеновой в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
@@ -546,7 +546,7 @@
                   </picture>
                 </div>
                 <div class="coach-card__information">
-                  <h3>Надежда<br> Колесниченко</h3>
+                  <h4 class="coach-card__name">Надежда<br> Колесниченко</h4>
                   <a href="#">
                     <span class="visually-hidden">Перейти на страницу Надежды Колесниченко в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
@@ -575,7 +575,7 @@
                   </picture>
                 </div>
                 <div class="coach-card__information">
-                  <h3>Федор<br> Кайгородов</h3>
+                  <h4 class="coach-card__name">Федор<br> Кайгородов</h4>
                   <a href="#">
                     <span class="visually-hidden">Перейти на страницу Федора Кайгородова в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
@@ -604,7 +604,7 @@
                   </picture>
                 </div>
                 <div class="coach-card__information">
-                  <h3>Александр<br> Прокофьев</h3>
+                  <h4 class="coach-card__name">Александр<br> Прокофьев</h4>
                   <a href="#">
                     <span class="visually-hidden">Перейти на страницу Александра Прокофьева в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
@@ -632,7 +632,7 @@
                   </picture>
                 </div>
                 <div class="coach-card__information">
-                  <h3>Светлана<br> Афиногенова</h3>
+                  <h4 class="coach-card__name">Светлана<br> Афиногенова</h4>
                   <a href="#">
                     <span class="visually-hidden">Перейти на страницу Светланы Афиногеновой в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
@@ -661,7 +661,7 @@
                   </picture>
                 </div>
                 <div class="coach-card__information">
-                  <h3>Надежда<br> Колесниченко</h3>
+                  <h4 class="coach-card__name">Надежда<br> Колесниченко</h4>
                   <a href="#">
                     <span class="visually-hidden">Перейти на страницу Надежды Колесниченко в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
@@ -690,7 +690,7 @@
                   </picture>
                 </div>
                 <div class="coach-card__information">
-                  <h3>Федор<br> Кайгородов</h3>
+                  <h4 class="coach-card__name">Федор<br> Кайгородов</h4>
                   <a href="#">
                     <span class="visually-hidden">Перейти на страницу Федора Кайгородова в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
@@ -713,7 +713,7 @@
               <use href="img/sprite.svg#tours-arrow-right"></use>
             </svg>
           </div>
-          <h3 class="education__title--process">Процесс обучения</h3>
+          <h3>Процесс обучения</h3>
           <ul class="education__process">
             <li>
               <svg width="25" height="25" viewBox="0 0 25 25">
@@ -1052,6 +1052,93 @@
               <svg width="14" height="8" iewBox="0 0 14 8">
                 <use href="img/sprite.svg#tours-arrow-right"></use>
               </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/feedback/bg-desktop@1x.webp 1x, img/feedback/bg-desktop@2x.webp 2x">
+          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/feedback/bg-desktop@1x.jpg, img/feedback/bg-desktop@2x.jpg 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/feedback/bg-tablet@1x.webp 1x, img/feedback/bg-tablet@2x.webp 2x">
+          <source type="image/jpg" media="(min-width: 768px)" srcset="img/feedback/bg-tablet@1x.jpg, img/feedback/bg-tablet@2x.jpg 2x">
+          <source type="image/webp" media="(min-width: 320px)" srcset="img/feedback/bg-mobile@1x.webp, img/feedback/bg-mobile@2x.webp 2x">
+          <img src="img/feedback/bg-mobile@1x.jpg" srcset="img/feedback/bg-mobile@2x.jpg 2x" width="320" height="621" loading="lazy" alt="Фотография леса в тумане.">
+        </picture>
+        <div class="feedback__container container" data-form-validate data-callback="base">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+          <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
+            <div class="form__wrapper">
+              <div class="form__name" data-validate-type="text" data-limitation="name" data-required>
+                <label class="visually-hidden" for="user-name-1">Имя:</label>
+                <input placeholder="Как к вам обращаться?" id="user-name-1" type="text" name="user-name-1" required>
+              </div>
+              <div class="form__phone" data-validate-type="phone" data-on-input-validate data-required data-phone-length="11">
+                <label class="visually-hidden" for="phone">Телефон:</label>
+                <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
+              </div>
+              <button type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__container container">
+          <h2>Контакты
+            <span>Контакты</span>
+          </h2>
+          <div class="contacts__wrapper">
+            <div class="contacts__information">
+              <p>Свяжитесь с&nbsp;нами любым удобным для&nbsp;вас способом или&nbsp;приходите
+                к&nbsp;нам&nbsp;в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать
+                для вас тур.</p>
+              <ul>
+                <li class="contacts__item">
+                  <svg width="26" height="26" viewBox="0 0 26 26">
+                    <use href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <div class="contacts__text">
+                    <p>Телефон</p>
+                    <a href="tel:+79837454545">8 983 745 45 45</a>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <svg width="26" height="26" viewBox="0 0 26 26">
+                    <use href="img/sprite.svg#mail"></use>
+                  </svg>
+                  <div class="contacts__text">
+                    <p>E-mail</p>
+                    <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <svg width="26" height="26" viewBox="0 0 26 26">
+                    <use href="img/sprite.svg#stroke"></use>
+                  </svg>
+                  <div class="contacts__text">
+                    <p>Адрес</p>
+                    <a href="#">г. Москва, пр-т Мира, д. 14, офис 101</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__map">
+              <a class="contacts__map-link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/contacts/map-desktop@1x.webp 1x, img/contacts/map-desktop@2x.webp 2x">
+                  <source type="image/jpg" media="(min-width: 1200px)"
+                    srcset="img/contacts/map-desktop@1x.jpg 1x, img/contacts/map-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/contacts/map-tablet@1x.webp 1x, img/contacts/map-tablet@2x.webp 2x">
+                  <source type="image/jpg" media="(min-width: 768px)"
+                    srcset="img/contacts/map-tablet@1x.jpg 1x, img/contacts/map-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width:320px)"
+                    srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+                  <img src="img/contacts/map-mobile@1x.jpg" srcset="img/contacts/map-mobile@2x.jpg" width="290" height="320" loading="lazy" alt="LifeTour на карте города.">
+                </picture>
+              </a>
             </div>
           </div>
         </div>
