@@ -3584,6 +3584,7 @@ supported by Chrome, Edge, Opera and Firefox */
   height: 100%;
   width: 100%;
   z-index: 0;
+  background-color: #2d383f;
 }
 
 .feedback__container {
@@ -4774,6 +4775,7 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 0 auto;
   margin-right: 106px;
   cursor: pointer;
+  text-align: start;
 }
 @media (max-width: 1199px) {
   .swiper .hero__pagination {
@@ -6261,6 +6263,7 @@ supported by Chrome, Edge, Opera and Firefox */
   display: block;
   text-align: center;
   padding: 52px 0;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .tours__more {
@@ -6268,6 +6271,16 @@ supported by Chrome, Edge, Opera and Firefox */
     line-height: 14px;
     padding: 27px 0;
   }
+}
+.tours__more a:hover, .tours__more a:focus, .tours__more a:focus-visible {
+  color: #1c3374;
+  outline: none;
+}
+.tours__more a:active {
+  color: #0266c1;
+}
+.tours__more a:disabled {
+  color: rgba(2, 102, 193, 0.1019607843);
 }
 
 .video iframe {
