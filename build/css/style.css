@@ -5638,6 +5638,31 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 14px auto;
 }
 
+.slider-states:hover,
+.slider-states:focus-visible {
+  background-color: #ffffff;
+  border: 1px solid #1c3374;
+}
+
+.slider-states:hover svg,
+.slider-states:focus-visible svg {
+  stroke-width: 0.5px;
+  stroke: #1c3374;
+}
+
+.slider-states:active {
+  background-color: #1c3374;
+}
+
+.slider-states:active svg {
+  stroke-width: 0.5px;
+  stroke: #ffffff;
+}
+
+.slider-states:disabled {
+  background-color: rgba(2, 102, 193, 0.1);
+}
+
 .social__list {
   margin: 0;
   padding: 0;
@@ -6280,7 +6305,7 @@ supported by Chrome, Edge, Opera and Firefox */
   color: #0266c1;
 }
 .tours__more a:disabled {
-  color: rgba(2, 102, 193, 0.1019607843);
+  color: color-disabled-button;
 }
 
 .video iframe {
