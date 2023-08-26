@@ -16,22 +16,43 @@
   text-align: center;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: transparent;
   border: none;
   z-index: 3;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid $color-default-white;
 
-  &::after {
-    margin: 0;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid $color-default-white;
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    border-color: $color-elephant;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+  }
+
+  &:disabled {
+    border-color: $color-disabled-button;
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:focus-visible svg {
+    stroke: $color-default-black;
+    color: $color-default-white;
+    outline: none;
+  }
+
+  &:disabled svg {
+    stroke: $color-disabled-button;
+    color: $color-disabled-button;
+  }
+
+  @include vp-1199 {
+    left: 39%;
   }
 
   svg {
