@@ -4382,6 +4382,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .header__tel a {
     font-size: 16px;
     line-height: 16px;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
@@ -4389,6 +4390,7 @@ supported by Chrome, Edge, Opera and Firefox */
     font-size: 14px;
     line-height: 14px;
     padding: 0;
+    margin: 0;
   }
 }
 @media (max-width: 1199px) {
@@ -5217,6 +5219,7 @@ supported by Chrome, Edge, Opera and Firefox */
     color: #2d383f;
     text-transform: uppercase;
     letter-spacing: 0.64px;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
@@ -5224,6 +5227,7 @@ supported by Chrome, Edge, Opera and Firefox */
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
+    margin: 0;
   }
 }
 
@@ -5510,9 +5514,6 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.reviews__wrapper {
-  gap: 30px;
-}
 .reviews__wrapper blockquote {
   max-width: 790px;
   height: 293px;
@@ -5794,6 +5795,47 @@ supported by Chrome, Edge, Opera and Firefox */
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
+}
+
+.swiper-reviews {
+  overflow: visible;
+  width: 58.5%;
+  margin: 0 auto 0 0;
+}
+@media (max-width: 1199px) {
+  .swiper-reviews {
+    width: 74.35%;
+  }
+}
+@media (max-width: 767px) {
+  .swiper-reviews {
+    width: 100%;
+  }
+}
+
+.swiper--5 {
+  overflow: visible;
+  width: 100%;
+  margin: 0 auto 0 0;
+}
+@media (max-width: 1199px) {
+  .swiper--5 {
+    width: 74.35%;
+  }
+}
+@media (max-width: 767px) {
+  .swiper--5 {
+    width: 100%;
+  }
+}
+
+.swiper--5 .swiper-slide {
+  position: relative;
+  z-index: 555;
+}
+
+.swiper--6 .swiper-wrapper .photogallery-slider {
+  height: auto;
 }
 
 .toggle {
