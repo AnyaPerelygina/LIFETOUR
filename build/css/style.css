@@ -5813,28 +5813,28 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.swiper--5 {
+.swiper-advantages {
   overflow: visible;
   width: 100%;
   margin: 0 auto 0 0;
 }
 @media (max-width: 1199px) {
-  .swiper--5 {
+  .swiper-advantages {
     width: 74.35%;
   }
 }
 @media (max-width: 767px) {
-  .swiper--5 {
+  .swiper-advantages {
     width: 100%;
   }
 }
 
-.swiper--5 .swiper-slide {
+.swiper-advantages .swiper-slide {
   position: relative;
   z-index: 555;
 }
 
-.swiper--6 .swiper-wrapper .photogallery-slider {
+.swiper-photogallery .swiper-wrapper .photogallery-slider {
   height: auto;
 }
 
