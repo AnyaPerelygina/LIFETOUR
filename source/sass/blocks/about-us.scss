@@ -11,9 +11,9 @@
   }
 
   &::after {
-    // content: "";
+    content: "";
     position: absolute;
-    width: 840px;
+    width: 620px;
     height: 280px;
     background-image: url("../../img/about/about-clouds@2x.webp");
     background-repeat: no-repeat;
