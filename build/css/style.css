@@ -1446,6 +1446,7 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .about-us {
   padding: 64px 0 20px;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .about-us {
@@ -1455,6 +1456,23 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .about-us {
     padding: 0;
+  }
+}
+.about-us::after {
+  content: "";
+  position: absolute;
+  width: 840px;
+  height: 280px;
+  background-image: url("../../img/about/about-clouds@2x.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -18%;
+  left: 57%;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .about-us::after {
+    display: none;
   }
 }
 
@@ -5834,7 +5852,7 @@ supported by Chrome, Edge, Opera and Firefox */
   z-index: 555;
 }
 
-.swiper-photogallery .swiper-wrapper .photogallery-slider {
+.swiper-photogallery .swiper-wrapper .photogallery__slide {
   height: auto;
 }
 
