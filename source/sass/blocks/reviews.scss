@@ -14,6 +14,7 @@
   margin: 0 0 0 120px;
   padding: 0;
   width: 1319px;
+  overflow: hidden;
 
   @include vp-1199 {
     margin-left: 15px;

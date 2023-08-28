@@ -1459,7 +1459,6 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 .about-us::after {
-  content: "";
   position: absolute;
   width: 840px;
   height: 280px;
@@ -1789,7 +1788,7 @@ supported by Chrome, Edge, Opera and Firefox */
   position: absolute;
   content: "";
   top: 62px;
-  right: -6.5%;
+  right: 0;
   width: 788px;
   height: 263px;
   background-image: url("../../img/advantages/clouds-right.png");
@@ -1809,7 +1808,8 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .advantages__container {
   position: relative;
-  padding: 117px 0 216px;
+  padding: 117px 120px 216px;
+  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .advantages__container {
@@ -5250,7 +5250,6 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .photogallery__swiper {
-  overflow: visible;
   width: 100%;
   min-height: 449px;
 }
@@ -5398,7 +5397,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .photogallery__swiper-next {
   position: absolute;
   content: "";
-  top: -87px;
+  top: 0;
   right: 120.5px;
   width: 37px;
   height: 35px;
@@ -5425,7 +5424,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .photogallery__swiper-prev {
   position: absolute;
   content: "";
-  top: -87px;
+  top: 0;
   right: 161px;
   width: 37px;
   height: 35px;
@@ -5467,6 +5466,7 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 0 0 0 120px;
   padding: 0;
   width: 1319px;
+  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .reviews__container {

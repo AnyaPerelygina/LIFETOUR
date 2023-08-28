@@ -18,7 +18,7 @@
     position: absolute;
     content: "";
     top: 62px;
-    right: -6.5%;
+    right: 0;
     width: 788px;
     height: 263px;
     background-image: url("../../img/advantages/clouds-right.png");
@@ -41,7 +41,8 @@
 
 .advantages__container {
   position: relative;
-  padding: 117px 0 216px;
+  padding: 117px 120px 216px;
+  overflow: hidden;
 
   @include vp-1199 {
     padding: 48px 44px 87px;

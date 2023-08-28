@@ -1,5 +1,4 @@
 .photogallery__swiper {
-  overflow: visible;
   width: 100%;
   min-height: 449px;
 
@@ -135,7 +134,7 @@
 .photogallery__swiper-next {
   position: absolute;
   content: "";
-  top: -87px;
+  top: 0;
   right: 120.5px;
   width: 37px;
   height: 35px;
@@ -161,7 +160,7 @@
 .photogallery__swiper-prev {
   position: absolute;
   content: "";
-  top: -87px;
+  top: 0;
   right: 161px;
   width: 37px;
   height: 35px;
