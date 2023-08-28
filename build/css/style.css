@@ -5950,6 +5950,52 @@ supported by Chrome, Edge, Opera and Firefox */
     margin-top: 493px;
   }
 }
+.tours::before {
+  content: "";
+  position: absolute;
+  width: 839px;
+  height: 279px;
+  background-image: url("../../img/tours/tours-clouds@2x.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 65%;
+  left: 0;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .tours::before {
+    display: none;
+  }
+}
+.tours::after {
+  content: "";
+  position: absolute;
+  width: 602px;
+  height: 1364px;
+  background-image: url("../../img/tours/clouds-desktop@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -10%;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .tours::after {
+    background-image: url("../../img/tours/clouds-tablet@2x.webp");
+    background-size: contain;
+    top: -14%;
+    right: -40%;
+  }
+}
+@media (max-width: 767px) {
+  .tours::after {
+    width: 346px;
+    height: 595px;
+    background-image: url("../../img/tours/clouds-mobile@2x.webp");
+    top: 22%;
+    right: -54%;
+  }
+}
 
 .tours__container {
   position: relative;

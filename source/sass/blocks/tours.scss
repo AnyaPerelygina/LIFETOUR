@@ -9,6 +9,51 @@
   @include vp-767 {
     margin-top: 493px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 839px;
+    height: 279px;
+    background-image: url("../../img/tours/tours-clouds@2x.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 65%;
+    left: 0;
+    z-index: -1;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 602px;
+    height: 1364px;
+    background-image: url("../../img/tours/clouds-desktop@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -10%;
+    right: 0;
+    z-index: -1;
+
+    @include vp-1199 {
+      background-image: url("../../img/tours/clouds-tablet@2x.webp");
+      background-size: contain;
+      top: -14%;
+      right: -40%;
+    }
+
+    @include vp-767 {
+      width: 346px;
+      height: 595px;
+      background-image: url("../../img/tours/clouds-mobile@2x.webp");
+      top: 22%;
+      right: -54%;
+    }
+  }
 }
 
 .tours__container {
