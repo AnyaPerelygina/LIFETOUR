@@ -18,14 +18,14 @@
     position: absolute;
     content: "";
     top: 62px;
-    right: 0;
+    right: -6.5%;
     width: 788px;
     height: 263px;
     background-image: url("../../img/advantages/clouds-right.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    z-index: -99;
+    z-index: -33;
   }
 
   @include vp-1199 {

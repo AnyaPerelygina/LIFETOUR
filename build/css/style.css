@@ -1665,6 +1665,7 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 0;
   padding: 41px 20px 20px 20px;
   border: 1px solid rgba(2, 102, 193, 0.1);
+  background-color: #ffffff;
   z-index: 55;
 }
 @media (max-width: 1199px) {
@@ -1789,14 +1790,14 @@ supported by Chrome, Edge, Opera and Firefox */
   position: absolute;
   content: "";
   top: 62px;
-  right: 0;
+  right: -6.5%;
   width: 788px;
   height: 263px;
   background-image: url("../../img/advantages/clouds-right.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  z-index: -99;
+  z-index: -33;
 }
 @media (max-width: 1199px) {
   .advantages::after {
@@ -5276,23 +5277,35 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-column-gap: 6px;
-     -moz-column-gap: 6px;
-          column-gap: 6px;
+  -webkit-column-gap: 0;
+     -moz-column-gap: 0;
+          column-gap: 0;
 }
 @media (max-width: 767px) {
   .photogallery__wrapper {
     height: 259px;
-    -webkit-column-gap: 4px;
-       -moz-column-gap: 4px;
-            column-gap: 4px;
   }
 }
 
+.photogallery__container {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .photogallery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+}
 .photogallery__container h2 {
   position: relative;
   width: 546px;
-  margin: -2px 120px 23px 120px;
+  margin: -2px 120px 23px;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -5301,7 +5314,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 1199px) {
   .photogallery__container h2 {
     width: 394px;
-    margin: 2px 45px 23px 45px;
+    margin: 2px 45px 23px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -5310,12 +5323,11 @@ supported by Chrome, Edge, Opera and Firefox */
   .photogallery__container h2 {
     width: 185px;
     padding: 0;
-    margin: 2px 15px 14px 15px;
+    margin: 0 15px;
     font-size: 22px;
     line-height: 22px;
   }
 }
-
 .photogallery__container h2 span {
   position: absolute;
   bottom: 0;
@@ -5338,10 +5350,9 @@ supported by Chrome, Edge, Opera and Firefox */
     display: none;
   }
 }
-
 .photogallery__container p {
   width: 693px;
-  margin: 0 120px 45px 120px;
+  margin: 0 120px 45px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -5350,7 +5361,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 1199px) {
   .photogallery__container p {
     width: 395px;
-    margin: 0 45px 37px 45px;
+    margin: 0 45px 37px;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -5359,7 +5370,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .photogallery__container p {
     width: 100%;
-    margin: 0 0 65px 0;
+    margin: 0;
     padding: 0 15px;
     font-size: 12px;
     font-weight: 400;
@@ -5384,7 +5395,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .photogallery__slide {
-    row-gap: 3.6px;
+    row-gap: 3px;
   }
 }
 
@@ -5407,27 +5418,42 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.photogallery__swiper-next {
+.photogallery__button {
   position: absolute;
   content: "";
-  top: 0;
-  right: 120.5px;
-  width: 37px;
-  height: 35px;
-  background-color: #0266c1;
-  z-index: 22222222;
+  top: 10.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 4px;
+  right: 8.4%;
 }
 @media (max-width: 1199px) {
-  .photogallery__swiper-next {
-    top: -19.8%;
-    right: 45.5px;
+  .photogallery__button {
+    top: 10.2%;
+    right: 6%;
   }
 }
 @media (max-width: 767px) {
-  .photogallery__swiper-next {
-    top: -19%;
-    right: 15px;
+  .photogallery__button {
+    position: unset;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-right: 15px;
   }
+}
+
+.photogallery__swiper-next {
+  width: 37px;
+  height: 37px;
+  background-color: #0266c1;
 }
 .photogallery__swiper-next svg {
   display: block;
@@ -5435,26 +5461,9 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .photogallery__swiper-prev {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 161px;
   width: 37px;
-  height: 35px;
+  height: 37px;
   background-color: #0266c1;
-  z-index: 22222222;
-}
-@media (max-width: 1199px) {
-  .photogallery__swiper-prev {
-    top: -19.8%;
-    right: 85.5px;
-  }
-}
-@media (max-width: 767px) {
-  .photogallery__swiper-prev {
-    top: -19%;
-    right: 56px;
-  }
 }
 .photogallery__swiper-prev svg {
   display: block;
