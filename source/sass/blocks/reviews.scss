@@ -11,21 +11,25 @@
 }
 
 .reviews__container {
-  margin: 0 0 0 120px;
+  margin: 0 0 0 auto;
   padding: 0;
-  width: 1319px;
+  max-width: 1319px;
   overflow: hidden;
+  position: relative;
+
+  @media (min-width: 1200px) and (max-width: 1380px) {
+    margin: 0 0 0 40px;
+  }
 
   @include vp-1199 {
-    margin-left: 15px;
-    margin: 0;
-    width: 723px;
+    margin: 0 0 0 auto;
+    max-width: 723px;
   }
 
   @include vp-767 {
     padding: 0;
-    margin: 0;
-    width: 290px;
+    margin: 0 auto;
+    max-width: 290px;
   }
 }
 
@@ -210,11 +214,15 @@
   position: absolute;
   content: "";
   top: 0;
-  right: 12%;
+  right: 12.1%;
   width: 37px;
   height: 37px;
   background-color: $color-navy-blue;
   z-index: 55;
+
+  @media (min-width: 1200px) and (max-width: 1380px) {
+    right: 17.5%;
+  }
 
   @include vp-1199 {
     top: 0;
@@ -244,6 +252,10 @@
   height: 37px;
   background-color: $color-navy-blue;
   z-index: 55;
+
+  @media (min-width: 1200px) and (max-width: 1380px) {
+    right: 14.1%;
+  }
 
   @include vp-1199 {
     top: 0;

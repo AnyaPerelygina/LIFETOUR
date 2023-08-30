@@ -5464,23 +5464,28 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .reviews__container {
-  margin: 0 0 0 120px;
+  margin: 0 0 0 auto;
   padding: 0;
-  width: 1319px;
+  max-width: 1319px;
   overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1200px) and (max-width: 1380px) {
+  .reviews__container {
+    margin: 0 0 0 40px;
+  }
 }
 @media (max-width: 1199px) {
   .reviews__container {
-    margin-left: 15px;
-    margin: 0;
-    width: 723px;
+    margin: 0 0 0 auto;
+    max-width: 723px;
   }
 }
 @media (max-width: 767px) {
   .reviews__container {
     padding: 0;
-    margin: 0;
-    width: 290px;
+    margin: 0 auto;
+    max-width: 290px;
   }
 }
 
@@ -5686,11 +5691,16 @@ supported by Chrome, Edge, Opera and Firefox */
   position: absolute;
   content: "";
   top: 0;
-  right: 12%;
+  right: 12.1%;
   width: 37px;
   height: 37px;
   background-color: #0266c1;
   z-index: 55;
+}
+@media (min-width: 1200px) and (max-width: 1380px) {
+  .reviews__swiper-prev {
+    right: 17.5%;
+  }
 }
 @media (max-width: 1199px) {
   .reviews__swiper-prev {
@@ -5721,6 +5731,11 @@ supported by Chrome, Edge, Opera and Firefox */
   height: 37px;
   background-color: #0266c1;
   z-index: 55;
+}
+@media (min-width: 1200px) and (max-width: 1380px) {
+  .reviews__swiper-next {
+    right: 14.1%;
+  }
 }
 @media (max-width: 1199px) {
   .reviews__swiper-next {
@@ -5765,6 +5780,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .slider-states:disabled {
   background-color: rgba(2, 102, 193, 0.1);
   stroke: #ffffff;
+  opacity: 10%;
 }
 
 .social__list {
@@ -5818,7 +5834,7 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .swiper-reviews {
   overflow: visible;
-  width: 58.5%;
+  width: 60%;
   margin: 0 auto 0 0;
 }
 @media (max-width: 1199px) {
