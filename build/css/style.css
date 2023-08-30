@@ -5481,21 +5481,13 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.photogallery__swiper-next {
-  width: 37px;
-  height: 37px;
-  background-color: #0266c1;
-}
-.photogallery__swiper-next svg {
-  display: block;
-  margin: 14px auto;
-}
-
+.photogallery__swiper-next,
 .photogallery__swiper-prev {
   width: 37px;
   height: 37px;
   background-color: #0266c1;
 }
+.photogallery__swiper-next svg,
 .photogallery__swiper-prev svg {
   display: block;
   margin: 14px auto;
@@ -5882,6 +5874,10 @@ supported by Chrome, Edge, Opera and Firefox */
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
+}
+
+.swiper-button-disabled {
+  opacity: 10%;
 }
 
 .swiper-reviews {

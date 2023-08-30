@@ -162,17 +162,7 @@
   }
 }
 
-.photogallery__swiper-next {
-  width: 37px;
-  height: 37px;
-  background-color: $color-navy-blue;
-
-  svg {
-    display: block;
-    margin: 14px auto;
-  }
-}
-
+.photogallery__swiper-next,
 .photogallery__swiper-prev {
   width: 37px;
   height: 37px;
