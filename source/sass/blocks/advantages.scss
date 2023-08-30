@@ -123,15 +123,25 @@
   }
 }
 
-.advantages__swiper-next {
+.advantages__button {
   position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
+  top: 114%;
+  left: 46.8%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.advantages__swiper-next {
   width: 37px;
   height: 37px;
   background-color: $color-navy-blue;
   z-index: 5;
+  margin-left: 4px;
 
   @include vp-1199 {
     display: none;
@@ -144,14 +154,9 @@
 }
 
 .advantages__swiper-prev {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 3%;
   width: 37px;
   height: 37px;
   background-color: $color-navy-blue;
-  z-index: 5;
 
   @include vp-1199 {
     display: none;
