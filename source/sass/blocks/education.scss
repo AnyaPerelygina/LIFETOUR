@@ -25,6 +25,9 @@
     min-width: 290px;
     width: 100%;
     padding: 10px 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   &::after {
@@ -69,7 +72,6 @@
     }
   }
 
-
   & > p {
     text-align: start;
     margin-bottom: 57px;
@@ -83,7 +85,7 @@
     @include vp-767 {
       font-size: 14px;
       line-height: 20px;
-      margin-bottom: 49px;
+      margin-bottom: 17px;
     }
   }
 
@@ -128,7 +130,7 @@
     font-size: 22px;
     line-height: 22px;
     max-width: 156px;
-    margin: 29px 0 29px;
+    margin: 29px 0 0;
   }
 
   span {
@@ -168,7 +170,8 @@
   }
 
   @include vp-767 {
-    padding: 33px 0 21px;
+    padding: 8px 0 21px;
+    margin: 0;
   }
 }
 
@@ -446,14 +449,26 @@
   }
 }
 
+.education__button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  justify-content: end;
+
+  @include vp-767 {
+    margin-top: -42px;
+  }
+}
+
 .education__swiper-next,
 .education__swiper-prev {
   position: absolute;
   content: "";
   top: 26.2%;
   right: 122.5px;
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   background-color: $color-navy-blue;
   z-index: 55;
 
@@ -468,8 +483,9 @@
   }
 
   @include vp-767 {
-    top: 236px;
-    right: 15px;
+    position: unset;
+    top: unset;
+    right: unset
   }
 
   svg {
@@ -486,9 +502,10 @@
   }
 
   @include vp-767 {
-    right: 56.5px;
+    right: unset;
   }
 }
+
 
 br {
   @include vp-1199 {
