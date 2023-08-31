@@ -50,7 +50,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     top: -18%;
-    left: 57%;
+    right: 0;
     z-index: -1;
 
     @include vp-1199 {
@@ -115,7 +115,7 @@
     @include vp-767 {
       font-size: 26px;
       line-height: 26px;
-      margin: -23px 0 -14px;
+      margin: 0 0 0 -74px;
     }
   }
 }

@@ -65,7 +65,7 @@
   @include vp-767 {
     width: 100%;
     min-width: 290px;
-    column-gap: 55.5%;
+    column-gap: 55%;
     padding: 0 20px;
     justify-content: space-between;
   }
@@ -94,6 +94,10 @@
 
     &:disabled {
       color: rgba($color-elephant, 0.3);
+    }
+
+    @include vp-767 {
+      margin-right: 12px;
     }
 
     svg {

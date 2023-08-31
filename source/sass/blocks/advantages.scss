@@ -18,7 +18,7 @@
     position: absolute;
     content: "";
     top: 62px;
-    right: -6.5%;
+    right: 0;
     width: 788px;
     height: 263px;
     background-image: url("../../img/advantages/clouds-right.png");
@@ -41,7 +41,7 @@
 
 .advantages__container {
   position: relative;
-  padding: 117px 120px 216px;
+  padding: 114px 120px 216px;
   overflow: hidden;
 
   @include vp-1199 {
@@ -51,6 +51,55 @@
   @include vp-767 {
     padding: 11px 15px 66.5px 15px;
     margin: 0;
+  }
+
+  h2 {
+    position: relative;
+    width: 294px;
+    margin: 0 auto 45px auto;
+    padding-left: 2px;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 35px;
+
+    @include vp-1199 {
+      margin: 0 auto 46px auto;
+      text-align: center;
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    @include vp-767 {
+      width: 185px;
+      padding: 0;
+      margin: 0 auto 30px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    span {
+      position: absolute;
+      content: "";
+      bottom: 0%;
+      left: -27%;
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 55px;
+      opacity: 0.03;
+
+      @include vp-1199 {
+        left: -6%;
+        bottom: -7%;
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      @include vp-767 {
+        font-size: 26px;
+        line-height: 26px;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -73,53 +122,6 @@
 
   @include vp-767 {
     row-gap: 14.5px;
-  }
-}
-
-.advantages__container h2 {
-  position: relative;
-  width: 294px;
-  margin: 0 auto 45px auto;
-  padding-left: 2px;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
-
-  @include vp-1199 {
-    margin: 0 auto 46px auto;
-    text-align: center;
-    font-size: 25px;
-    line-height: 25px;
-  }
-
-  @include vp-767 {
-    width: 185px;
-    padding: 0;
-    margin: 0 auto 30px;
-    font-size: 22px;
-    line-height: 22px;
-  }
-}
-
-.advantages__container h2 span {
-  position: absolute;
-  content: "";
-  bottom: 0%;
-  left: -27%;
-  font-size: 55px;
-  font-weight: 800;
-  line-height: 55px;
-  opacity: 0.03;
-
-  @include vp-1199 {
-    left: -6%;
-    bottom: -7%;
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  @include vp-767 {
-    display: none;
   }
 }
 

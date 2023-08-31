@@ -1500,7 +1500,7 @@ supported by Chrome, Edge, Opera and Firefox */
   background-repeat: no-repeat;
   background-size: contain;
   top: -18%;
-  left: 57%;
+  right: 0;
   z-index: -1;
 }
 @media (max-width: 1199px) {
@@ -1571,7 +1571,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .about-us__title span {
     font-size: 26px;
     line-height: 26px;
-    margin: -23px 0 -14px;
+    margin: 0 0 0 -74px;
   }
 }
 
@@ -1761,7 +1761,7 @@ supported by Chrome, Edge, Opera and Firefox */
   position: absolute;
   content: "";
   top: 62px;
-  right: -6.5%;
+  right: 0;
   width: 788px;
   height: 263px;
   background-image: url("../../img/advantages/clouds-right.png");
@@ -1781,7 +1781,7 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .advantages__container {
   position: relative;
-  padding: 117px 120px 216px;
+  padding: 114px 120px 216px;
   overflow: hidden;
 }
 @media (max-width: 1199px) {
@@ -1792,6 +1792,57 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .advantages__container {
     padding: 11px 15px 66.5px 15px;
+    margin: 0;
+  }
+}
+.advantages__container h2 {
+  position: relative;
+  width: 294px;
+  margin: 0 auto 45px auto;
+  padding-left: 2px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+}
+@media (max-width: 1199px) {
+  .advantages__container h2 {
+    margin: 0 auto 46px auto;
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__container h2 {
+    width: 185px;
+    padding: 0;
+    margin: 0 auto 30px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+.advantages__container h2 span {
+  position: absolute;
+  content: "";
+  bottom: 0%;
+  left: -27%;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+}
+@media (max-width: 1199px) {
+  .advantages__container h2 span {
+    left: -6%;
+    bottom: -7%;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__container h2 span {
+    font-size: 26px;
+    line-height: 26px;
     margin: 0;
   }
 }
@@ -1822,57 +1873,6 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .advantages__wrapper {
     row-gap: 14.5px;
-  }
-}
-
-.advantages__container h2 {
-  position: relative;
-  width: 294px;
-  margin: 0 auto 45px auto;
-  padding-left: 2px;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
-}
-@media (max-width: 1199px) {
-  .advantages__container h2 {
-    margin: 0 auto 46px auto;
-    text-align: center;
-    font-size: 25px;
-    line-height: 25px;
-  }
-}
-@media (max-width: 767px) {
-  .advantages__container h2 {
-    width: 185px;
-    padding: 0;
-    margin: 0 auto 30px;
-    font-size: 22px;
-    line-height: 22px;
-  }
-}
-
-.advantages__container h2 span {
-  position: absolute;
-  content: "";
-  bottom: 0%;
-  left: -27%;
-  font-size: 55px;
-  font-weight: 800;
-  line-height: 55px;
-  opacity: 0.03;
-}
-@media (max-width: 1199px) {
-  .advantages__container h2 span {
-    left: -6%;
-    bottom: -7%;
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .advantages__container h2 span {
-    display: none;
   }
 }
 
@@ -2034,9 +2034,9 @@ supported by Chrome, Edge, Opera and Firefox */
   .coach-card__information {
     width: 100%;
     min-width: 290px;
-    -webkit-column-gap: 55.5%;
-       -moz-column-gap: 55.5%;
-            column-gap: 55.5%;
+    -webkit-column-gap: 55%;
+       -moz-column-gap: 55%;
+            column-gap: 55%;
     padding: 0 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2069,6 +2069,11 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 .coach-card__information a:disabled {
   color: rgba(45, 56, 63, 0.3);
+}
+@media (max-width: 767px) {
+  .coach-card__information a {
+    margin-right: 12px;
+  }
 }
 .coach-card__information a svg {
   fill: #2d383f;
@@ -2191,7 +2196,9 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .contacts__container span {
-    display: none;
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0;
   }
 }
 
@@ -2243,7 +2250,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .contacts__information p {
     width: 290px;
-    margin-bottom: 31px;
+    margin-bottom: 29px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -3137,7 +3144,7 @@ supported by Chrome, Edge, Opera and Firefox */
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 0;
-    margin-left: 4px;
+    margin-left: 0;
   }
 }
 
@@ -3189,7 +3196,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .education__title span {
     font-size: 26px;
     line-height: 26px;
-    margin: -23px 0 -14px;
+    margin: -25px 0 -14px;
   }
 }
 
@@ -3214,7 +3221,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .education__swiper {
-    padding: 8px 0 6px;
+    padding: 10px 0 6px;
     margin: 0;
   }
 }
@@ -3257,44 +3264,6 @@ supported by Chrome, Edge, Opera and Firefox */
     row-gap: 25px;
     margin: 0;
     padding: 14px 35px 16px;
-  }
-}
-.education__process h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
-  width: 25.6%;
-  margin-bottom: 65px;
-  text-align: start;
-}
-@media (max-width: 1199px) {
-  .education__process h3 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 25px 1fr;
-    grid-template-columns: 25px 1fr;
-    -webkit-column-gap: 15px;
-       -moz-column-gap: 15px;
-            column-gap: 15px;
-    width: 250.85px;
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 767px) {
-  .education__process h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
-    min-width: 216px;
-    width: 220px;
-    margin: 0 0 0 49.5px;
   }
 }
 .education__process li {
@@ -4952,9 +4921,9 @@ supported by Chrome, Edge, Opera and Firefox */
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   gap: 22px;
   max-width: 590px;
 }
@@ -5350,7 +5319,9 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .photogallery__container h2 span {
-    display: none;
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0;
   }
 }
 .photogallery__container p {
@@ -5475,7 +5446,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .reviews {
-    padding: 4px 15px 56px;
+    padding: 4px 15px 48px;
   }
 }
 
@@ -5489,6 +5460,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (min-width: 1200px) and (max-width: 1380px) {
   .reviews__container {
     margin: 0 0 0 40px;
+    max-width: 1160px;
   }
 }
 @media (max-width: 1199px) {
@@ -5583,6 +5555,7 @@ supported by Chrome, Edge, Opera and Firefox */
             flex-direction: column;
     gap: 16px;
     min-height: 466px;
+    height: 100%;
     margin: 0;
     padding: 20px 20px 10px 20px;
   }
@@ -5662,6 +5635,7 @@ supported by Chrome, Edge, Opera and Firefox */
     margin: 0;
     width: 100%;
     height: 55%;
+    gap: 11px;
   }
 }
 
@@ -6062,17 +6036,19 @@ supported by Chrome, Edge, Opera and Firefox */
   .tours::after {
     background-image: url("../../img/tours/clouds-tablet@2x.webp");
     background-size: contain;
+    width: 294px;
+    height: 1373px;
     top: -14%;
-    right: -40%;
+    right: 0;
   }
 }
 @media (max-width: 767px) {
   .tours::after {
-    width: 346px;
-    height: 595px;
     background-image: url("../../img/tours/clouds-mobile@2x.webp");
+    width: 176px;
+    height: 595px;
     top: 22%;
-    right: -54%;
+    right: 0;
   }
 }
 
@@ -6148,7 +6124,7 @@ supported by Chrome, Edge, Opera and Firefox */
     font-size: 22px;
     line-height: 22px;
     max-width: 156px;
-    margin: 29px 0 14px;
+    margin: 29px 0;
   }
 }
 .tours__title span {
@@ -6167,8 +6143,8 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .tours__title span {
     font-size: 26px;
-    line-height: 26px;
-    margin: -38px 0 0;
+    line-height: 23px;
+    margin: -47px 0 0;
   }
 }
 
@@ -6485,7 +6461,6 @@ supported by Chrome, Edge, Opera and Firefox */
   width: 37px;
   height: 36px;
   background-color: #0266c1;
-  z-index: 55;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .tours__swiper-next,
