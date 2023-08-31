@@ -1,8 +1,8 @@
 .reviews {
-  padding: 19px 0;
+  padding: 19px 0 0;
 
   @include vp-1199 {
-    padding: 22px 0 24px 45px;
+    padding: 22px 0 40px 45px;
   }
 
   @include vp-767 {
@@ -85,7 +85,7 @@
 .reviews__wrapper {
   blockquote {
     max-width: 790px;
-    height: 293px;
+    min-height: 293px;
     margin: 0;
     padding: 20px 40px 20px 20px;
     display: flex;
@@ -93,14 +93,15 @@
     box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
     @include vp-1199 {
-      max-width: 560px;
+      width: 560px;
       min-height: 277px;
-      padding-right: 30px;
+      height: unset;
+      padding: 18px 10px 10px 19px;
     }
 
     @include vp-767 {
       flex-direction: column;
-      gap: 18px;
+      gap: 16px;
       min-height: 466px;
       margin: 0;
       padding: 20px 20px 10px 20px;
@@ -112,8 +113,13 @@
   width: auto;
   height: auto;
 
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    height: 297px;
+  }
+
   @include vp-1199 {
-    height: 94%;
+    height: 169px;
+    width: 35%;
   }
 
   @include vp-767 {
@@ -123,8 +129,12 @@
 
   img {
     width: 100%;
-    height: 100%;
+    height: 253px;
     object-fit: cover;
+
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      height: 100%;
+    }
 
     @include vp-1199 {
       height: auto;
@@ -149,30 +159,58 @@
 
   @include vp-1199 {
     width: 57.35%;
+    height: 95%;
     margin-left: 6%;
-    padding: 2px 0 19px 0;
+    padding: 2px 0 0;
   }
 
   @include vp-767 {
     margin: 0;
     width: 100%;
+    height: 55%;
   }
+}
 
+.reviews__review {
   p {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     text-align: start;
     margin: 0;
+    margin-bottom: 10px;
 
     @include vp-1199 {
       font-size: 12px;
       line-height: 18px;
+      margin-bottom: 10px;
     }
 
     @include vp-767 {
       margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
+  }
+}
+
+.reviews__autor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 14px;
+  gap: 10px;
+
+  @include vp-1199 {
+    gap: 7px;
+    padding-top:6px;
+  }
+
+  @include vp-767 {
+    padding-top: 10px;
+    gap: 0;
   }
 
   cite {

@@ -3166,6 +3166,7 @@ supported by Chrome, Edge, Opera and Firefox */
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 0;
+    margin-left: 4px;
   }
 }
 
@@ -3242,7 +3243,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .education__swiper {
-    padding: 8px 0 21px;
+    padding: 8px 0 6px;
     margin: 0;
   }
 }
@@ -3284,7 +3285,7 @@ supported by Chrome, Edge, Opera and Firefox */
             flex-direction: column;
     row-gap: 25px;
     margin: 0;
-    padding: 29px 35px 16px;
+    padding: 14px 35px 16px;
   }
 }
 .education__process h3 {
@@ -5494,11 +5495,11 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .reviews {
-  padding: 19px 0;
+  padding: 19px 0 0;
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding: 22px 0 24px 45px;
+    padding: 22px 0 40px 45px;
   }
 }
 @media (max-width: 767px) {
@@ -5584,7 +5585,7 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .reviews__wrapper blockquote {
   max-width: 790px;
-  height: 293px;
+  min-height: 293px;
   margin: 0;
   padding: 20px 40px 20px 20px;
   display: -webkit-box;
@@ -5597,9 +5598,10 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .reviews__wrapper blockquote {
-    max-width: 560px;
+    width: 560px;
     min-height: 277px;
-    padding-right: 30px;
+    height: unset;
+    padding: 18px 10px 10px 19px;
   }
 }
 @media (max-width: 767px) {
@@ -5608,7 +5610,7 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 18px;
+    gap: 16px;
     min-height: 466px;
     margin: 0;
     padding: 20px 20px 10px 20px;
@@ -5619,9 +5621,15 @@ supported by Chrome, Edge, Opera and Firefox */
   width: auto;
   height: auto;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .reviews__avatar {
+    height: 297px;
+  }
+}
 @media (max-width: 1199px) {
   .reviews__avatar {
-    height: 94%;
+    height: 169px;
+    width: 35%;
   }
 }
 @media (max-width: 767px) {
@@ -5632,9 +5640,14 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 .reviews__avatar img {
   width: 100%;
-  height: 100%;
+  height: 253px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .reviews__avatar img {
+    height: 100%;
+  }
 }
 @media (max-width: 1199px) {
   .reviews__avatar img {
@@ -5668,35 +5681,69 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 1199px) {
   .reviews__text {
     width: 57.35%;
+    height: 95%;
     margin-left: 6%;
-    padding: 2px 0 19px 0;
+    padding: 2px 0 0;
   }
 }
 @media (max-width: 767px) {
   .reviews__text {
     margin: 0;
     width: 100%;
+    height: 55%;
   }
 }
-.reviews__text p {
+
+.reviews__review p {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   text-align: start;
   margin: 0;
+  margin-bottom: 10px;
 }
 @media (max-width: 1199px) {
-  .reviews__text p {
+  .reviews__review p {
     font-size: 12px;
     line-height: 18px;
-  }
-}
-@media (max-width: 767px) {
-  .reviews__text p {
     margin-bottom: 10px;
   }
 }
-.reviews__text cite {
+@media (max-width: 767px) {
+  .reviews__review p {
+    margin-bottom: 10px;
+  }
+  .reviews__review p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__autor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-top: 14px;
+  gap: 10px;
+}
+@media (max-width: 1199px) {
+  .reviews__autor {
+    gap: 7px;
+    padding-top: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__autor {
+    padding-top: 10px;
+    gap: 0;
+  }
+}
+.reviews__autor cite {
   display: block;
   font-weight: 700;
   font-size: 13px;
@@ -5706,14 +5753,14 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 0;
 }
 @media (max-width: 1199px) {
-  .reviews__text cite {
+  .reviews__autor cite {
     line-height: 1;
     letter-spacing: -0.66px;
     padding-top: 12px;
   }
 }
 @media (max-width: 767px) {
-  .reviews__text cite {
+  .reviews__autor cite {
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0;
@@ -5722,7 +5769,7 @@ supported by Chrome, Edge, Opera and Firefox */
     margin-bottom: 8px;
   }
 }
-.reviews__text span {
+.reviews__autor span {
   font-size: 12px;
   line-height: 12px;
   font-weight: 300;
