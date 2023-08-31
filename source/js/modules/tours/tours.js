@@ -10,16 +10,13 @@ const createTourSlider = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        // slidesPerColumn: 1,
       },
       768: {
         slidesPerView: 2,
-        // slidesPerColumn: 1,
         spaceBetween: 18,
       },
       1200: {
         slidesPerView: 3,
-        // slidesPerColumn: 1,
         spaceBetween: 30,
       },
     },

@@ -1,6 +1,6 @@
 const container = document.querySelector('.hero__audio');
 const cover = document.querySelector('.hero__audio').querySelector('picture');
-const button = document.querySelector('.hero__audio').querySelector('.hero__audio--button');
+const button = document.querySelector('.hero__audio').querySelector('.hero__audio-button');
 
 
 const createVideo = () => {

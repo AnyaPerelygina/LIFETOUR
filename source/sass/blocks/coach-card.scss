@@ -124,12 +124,11 @@
 
 .coach-card__name {
   width: 89.4%;
-  margin-bottom: 14px;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   text-align: start;
-  margin: 0;
+  margin: 0 0 14px;
 
   @include vp-1199 {
     width: 85.4%;

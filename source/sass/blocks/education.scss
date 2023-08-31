@@ -43,7 +43,7 @@
 
   @include vp-1199 {
     &::before {
-      background: url(../../img/svg/line-tablet.svg);
+      background: url("../../img/svg/line-tablet.svg");
       background-repeat: no-repeat;
       position: absolute;
       content: "";
@@ -60,7 +60,7 @@
 
   @include vp-767 {
     &::before {
-      background: url(../../img/svg/line-mobile.svg);
+      background: url("../../img/svg/line-mobile.svg");
       background-repeat: no-repeat;
       position: absolute;
       content: "";
@@ -109,12 +109,6 @@
     }
   }
 }
-
-// .education__container:last-child h3 {
-//   @include vp-767 {
-//     margin-left: 4px;
-//   }
-// }
 
 .education__title {
   font-family: $ff-montserrat;
@@ -208,38 +202,13 @@
     padding: 14px 35px 16px;
   }
 
-  // h3 {
-  //   display: flex;
-  //   flex-wrap: no-wrap;
-  //   width: 25.6%;
-  //   margin-bottom: 65px;
-  //   text-align: start;
-
-  //   @include vp-1199 {
-  //     display: grid;
-  //     grid-template-columns: 25px 1fr;
-  //     column-gap: 15px;
-  //     width: 250.85px;
-  //     margin-bottom: 0;
-  //   }
-
-  //   @include vp-767 {
-  //     display: flex;
-  //     flex-wrap: nowrap;
-  //     column-gap: 10px;
-  //     min-width: 216px;
-  //     width: 220px;
-  //     margin: 0 0 0 49.5px;
-  //   }
-  // }
-
   li {
     display: flex;
     flex-direction: row;
     max-width: 278px;
     padding: 28px 0;
 
-    @media (min-width: 1200px) and (max-width:1439px) {
+    @media (min-width: 1200px) and (max-width: 1439px) {
       max-width: 21%;
     }
 
@@ -492,7 +461,7 @@
   @include vp-767 {
     position: unset;
     top: unset;
-    right: unset
+    right: unset;
   }
 
   svg {
@@ -512,7 +481,6 @@
     right: unset;
   }
 }
-
 
 br {
   @include vp-1199 {

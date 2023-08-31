@@ -1409,18 +1409,21 @@ button,
 }
 
 .no-transition {
-  /* stylelint-disable-next-line */
+  /* stylelint-disable */
   -webkit-transition: none !important;
   transition: none !important;
+  /* stylelint-enable */
 }
 
 .noselect {
+  /* stylelint-disable */
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
 supported by Chrome, Edge, Opera and Firefox */
+  /* stylelint-enable */
 }
 
 .container {
@@ -2098,12 +2101,11 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .coach-card__name {
   width: 89.4%;
-  margin-bottom: 14px;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   text-align: start;
-  margin: 0;
+  margin: 0 0 14px;
 }
 @media (max-width: 1199px) {
   .coach-card__name {
@@ -3082,7 +3084,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .education__container::before {
-    background: url(../../img/svg/line-tablet.svg);
+    background: url("../../img/svg/line-tablet.svg");
     background-repeat: no-repeat;
     position: absolute;
     content: "";
@@ -3097,7 +3099,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .education__container::before {
-    background: url(../../img/svg/line-mobile.svg);
+    background: url("../../img/svg/line-mobile.svg");
     background-repeat: no-repeat;
     position: absolute;
     content: "";
@@ -5362,7 +5364,7 @@ supported by Chrome, Edge, Opera and Firefox */
           flex-direction: column;
   row-gap: 5.19px;
   height: auto;
-  width: auto !important;
+  width: auto;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -5374,20 +5376,20 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media (max-width: 767px) {
-  .photogallery__slide--wrapper {
+  .photogallery__slide-wrapper {
     height: 259px;
   }
 }
 
 @media (max-width: 767px) {
-  .photogallery__slide:nth-child(odd) .photogallery__slide--wrapper img {
+  .photogallery__slide:nth-child(odd) .photogallery__slide-wrapper img {
     height: 259px;
   }
 }
 
 @media (max-width: 767px) {
-  .photogallery__slide:nth-child(even) .photogallery__slide--wrapper1 img,
-.photogallery__slide:nth-child(even) .photogallery__slide--wrapper2 img {
+  .photogallery__slide:nth-child(even) .photogallery__slide-wrapper1 img,
+.photogallery__slide:nth-child(even) .photogallery__slide-wrapper2 img {
     width: 172px;
   }
 }
@@ -6556,7 +6558,6 @@ supported by Chrome, Edge, Opera and Firefox */
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: none;
   z-index: 3;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.2);
