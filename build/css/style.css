@@ -3896,8 +3896,55 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .education__swiper {
-    padding: 10px 0 6px;
+    padding: 0;
     margin: 0;
+  }
+}
+
+.education__slider {
+  position: relative;
+  background-color: transparent;
+}
+.education__slider::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 0;
+  z-index: -1;
+  width: 100px;
+  -webkit-box-shadow: -15px -7px 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: -15px -7px 30px 0 rgba(28, 51, 116, 0.1);
+}
+@media (max-width: 767px) {
+  .education__slider::before {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.education__slider::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 30px;
+  left: auto;
+  z-index: -1;
+  width: 100px;
+  -webkit-box-shadow: 15px 7px 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 15px 7px 30px 0 rgba(28, 51, 116, 0.1);
+}
+@media (max-width: 767px) {
+  .education__slider::after {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .education__slider {
+    margin: 10px 0 6px;
   }
 }
 
@@ -5039,7 +5086,8 @@ supported by Chrome, Edge, Opera and Firefox */
   z-index: 3;
   -ms-grid-column-align: end;
       justify-self: end;
-  padding: 22px 0 20px;
+  margin: 0 80px 0 0;
+  padding: 62px 0 0;
   position: absolute;
   z-index: 55;
   cursor: pointer;
@@ -5085,6 +5133,8 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin: 0 20px;
+    padding: 41px 0 0;
   }
 }
 @media (max-width: 767px) {
@@ -6741,7 +6791,7 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .tours__container {
   position: relative;
-  padding: 46px 120px 0;
+  padding: 96px 120px 0;
   max-width: 1440px;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
@@ -7143,7 +7193,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .tours__swiper-prev {
   position: absolute;
   content: "";
-  top: 10.7%;
+  top: 16.7%;
   right: 8.3%;
   width: 37px;
   height: 36px;
