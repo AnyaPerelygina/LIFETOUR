@@ -4871,7 +4871,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .header {
-  position: relative;
+  position: absolute;
   width: 100%;
   background-color: transparent;
   z-index: 3;
@@ -4888,6 +4888,7 @@ supported by Chrome, Edge, Opera and Firefox */
   max-width: 1440px;
   margin: 0 auto;
   padding: 40px 81px 40px 80px;
+  position: relative;
 }
 .header__wrapper::before {
   content: "";
@@ -5032,14 +5033,16 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .header__tel {
+  display: block;
   width: 142px;
-  height: 18px;
+  height: auto;
   z-index: 3;
   -ms-grid-column-align: end;
       justify-self: end;
-  padding: 22px 0;
+  padding: 22px 0 20px;
+  position: absolute;
+  z-index: 55;
   cursor: pointer;
-  display: block;
 }
 .header__tel a {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -5098,8 +5101,6 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .hero {
   width: 100%;
-  position: absolute;
-  top: 0;
 }
 .hero .container {
   padding: 0;
@@ -6687,18 +6688,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .tours {
-  margin-top: 700px;
   position: relative;
-}
-@media (max-width: 1199px) {
-  .tours {
-    margin-top: 923px;
-  }
-}
-@media (max-width: 767px) {
-  .tours {
-    margin-top: 493px;
-  }
 }
 .tours::before {
   content: "";

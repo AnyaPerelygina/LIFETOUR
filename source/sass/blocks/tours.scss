@@ -1,14 +1,5 @@
 .tours {
-  margin-top: 700px;
   position: relative;
-
-  @include vp-1199 {
-    margin-top: 923px;
-  }
-
-  @include vp-767 {
-    margin-top: 493px;
-  }
 
   &::before {
     content: "";
