@@ -2,35 +2,31 @@
   padding: 19px 0 0;
 
   @include vp-1199 {
-    padding: 22px 0 40px 45px;
+    padding: 22px 0 20px;
   }
 
   @include vp-767 {
-    padding: 4px 15px 48px;
+    padding: 4px 0 22px;
   }
 }
 
 .reviews__container {
-  margin: 0 0 0 auto;
-  padding: 0;
+  margin: 0 0 0 100px;
+  padding: 0 0 0 20px;
   max-width: 1319px;
   overflow: hidden;
   position: relative;
 
-  @media (min-width: 1200px) and (max-width: 1380px) {
-    margin: 0 0 0 40px;
-    max-width: 1160px;
-  }
-
   @include vp-1199 {
-    margin: 0 0 0 auto;
-    max-width: 723px;
+    margin: 0;
+    padding: 0 45px 40px;
   }
 
   @include vp-767 {
-    padding: 0;
-    margin: 0 auto;
-    max-width: 290px;
+    padding: 0 15px 15px;
+    margin: 0;
+    min-width: 290px;
+    max-width: 100%;
   }
 }
 
@@ -92,6 +88,7 @@
     display: flex;
     flex-wrap: no-wrap;
     box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+    background-color: $color-default-white;
 
     @include vp-1199 {
       width: 560px;
@@ -101,12 +98,14 @@
     }
 
     @include vp-767 {
-      flex-direction: column;
-      gap: 16px;
+      max-width: 100%;
+      min-width: 290px;
       min-height: 466px;
       height: 100%;
+      flex-direction: column;
+      gap: 16px;
       margin: 0;
-      padding: 20px 20px 10px 20px;
+      padding: 20px 19px;
     }
   }
 }
@@ -126,7 +125,7 @@
 
   @include vp-767 {
     width: 100%;
-    min-height: 38.7%;
+    height: 100%;
   }
 
   img {
@@ -254,27 +253,26 @@
 .reviews__swiper-prev {
   position: absolute;
   content: "";
-  top: 0;
-  right: 12.1%;
+  top: -2px;
+  right: 141px;
   width: 37px;
   height: 37px;
   background-color: $color-navy-blue;
   z-index: 55;
 
   @media (min-width: 1200px) and (max-width: 1380px) {
-    right: 17.5%;
+    right: 17.8%;
   }
 
   @include vp-1199 {
-    top: 0;
-    right: 12%;
     width: 36px;
     height: 36px;
+    right: 88px;
   }
 
   @include vp-767 {
     top: 2.4%;
-    right: 41px;
+    right: 56px;
     height: 35px;
   }
 
@@ -287,8 +285,8 @@
 .reviews__swiper-next {
   position: absolute;
   content: "";
-  top: 0;
-  right: 9%;
+  top: -2px;
+  right: 98px;
   width: 37px;
   height: 37px;
   background-color: $color-navy-blue;
@@ -299,15 +297,14 @@
   }
 
   @include vp-1199 {
-    top: 0;
-    right: 6.2%;
     width: 36px;
     height: 36px;
+    right: 45px;
   }
 
   @include vp-767 {
     top: 2.4%;
-    right: 0;
+    right: 15px;
     height: 35px;
   }
 
