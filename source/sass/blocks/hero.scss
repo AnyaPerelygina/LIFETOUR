@@ -191,11 +191,13 @@
 
 .hero__info {
   list-style: none;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   column-count: 2;
   gap: 11px;
+  max-width: 377px;
 
   li {
     display: flex;
@@ -203,15 +205,10 @@
     gap: 9px;
     padding: 14px 16px 13px 20px;
     border: 1px solid $color-default-white;
+    align-items: center;
 
     @include vp-1199 {
       display: none;
-    }
-
-    svg {
-      position: relative;
-      top: 2px;
-      color: $color-default-white;
     }
 
     span {
@@ -220,7 +217,18 @@
       font-size: 12px;
       line-height: 16px;
       color: $color-default-white;
+      text-align: start;
     }
+  }
+}
+
+.hero__icon {
+  svg {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 2px;
+    color: $color-default-white;
   }
 }
 

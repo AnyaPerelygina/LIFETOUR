@@ -3757,7 +3757,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .education__container::before {
-    background: url("../../img/svg/line-tablet.svg");
+    background: url("../img/svg/line-tablet.svg");
     background-repeat: no-repeat;
     position: absolute;
     content: "";
@@ -3772,7 +3772,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .education__container::before {
-    background: url("../../img/svg/line-mobile.svg");
+    background: url("../img/svg/line-mobile.svg");
     background-repeat: no-repeat;
     position: absolute;
     content: "";
@@ -4132,6 +4132,11 @@ supported by Chrome, Edge, Opera and Firefox */
     left: -30px;
     background-color: #0266c1;
     border-radius: 50%;
+  }
+}
+@media (max-width: 1199px) {
+  .education__process li:nth-child(3)::before {
+    display: none;
   }
 }
 
@@ -5314,15 +5319,18 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .hero__info {
   list-style: none;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
   gap: 11px;
+  max-width: 377px;
 }
 .hero__info li {
   display: -webkit-box;
@@ -5335,22 +5343,29 @@ supported by Chrome, Edge, Opera and Firefox */
   gap: 9px;
   padding: 14px 16px 13px 20px;
   border: 1px solid #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1199px) {
   .hero__info li {
     display: none;
   }
 }
-.hero__info li svg {
-  position: relative;
-  top: 2px;
-  color: #ffffff;
-}
 .hero__info li span {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 16px;
+  color: #ffffff;
+  text-align: start;
+}
+
+.hero__icon svg {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 2px;
   color: #ffffff;
 }
 

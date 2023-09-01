@@ -10,7 +10,7 @@ const createVideo = () => {
   video.setAttribute('frameborder', '0');
   video.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
   video.setAttribute('allowfullscreen', '');
-  video.classList.add('.hero__videoplayer');
+  video.classList.add('about__videoplayer');
   container.append(video);
 };
 
