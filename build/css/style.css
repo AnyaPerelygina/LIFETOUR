@@ -4276,7 +4276,6 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 .feedback img {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
   height: 100%;
