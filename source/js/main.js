@@ -10,6 +10,7 @@ import {createEducationSlider} from './modules/education/education';
 import {createReviewsSlider} from './modules/reviews/reviews';
 import {createAdvantagesSlider} from './modules/advantages/advantages';
 import {createPhotogallerySlider} from './modules/photogallery/photogallery';
+import {initLeaflet} from './modules/leaflet/leaflet';
 
 // ---------------------------------
 
@@ -39,6 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     createReviewsSlider();
     createAdvantagesSlider();
     createPhotogallerySlider();
+    initLeaflet();
   });
 });
 
