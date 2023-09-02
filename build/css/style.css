@@ -4923,6 +4923,11 @@ supported by Chrome, Edge, Opera and Firefox */
   background-color: transparent;
   z-index: 3;
 }
+@media (max-width: 1199px) {
+  .header .container {
+    padding: 0;
+  }
+}
 
 .header__wrapper {
   display: -ms-grid;
@@ -5002,7 +5007,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .header__wrapper {
     display: -ms-grid;
     display: grid;
-    padding: 5px 0;
+    padding: 5px 16px;
     gap: 1px 0;
     -ms-grid-columns: -webkit-min-content 1fr;
     -ms-grid-columns: min-content 1fr;
@@ -5146,6 +5151,7 @@ supported by Chrome, Edge, Opera and Firefox */
     -ms-grid-column-span: 1;
     grid-area: 2/2/3/3;
     padding: 0;
+    margin: 0;
   }
 }
 

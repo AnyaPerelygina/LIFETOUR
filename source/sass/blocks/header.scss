@@ -3,6 +3,12 @@
   width: 100%;
   background-color: transparent;
   z-index: 3;
+
+  .container {
+    @include vp-1199 {
+      padding: 0;
+    }
+  }
 }
 
 .header__wrapper {
@@ -67,7 +73,7 @@
 
   @include vp-767 {
     display: grid;
-    padding: 5px 0;
+    padding: 5px 16px;
     gap: 1px 0;
     grid-template-columns: min-content 1fr;
     justify-items: end;
@@ -195,5 +201,6 @@
     width: 110px;
     grid-area: 2/2/3/3;
     padding: 0;
+    margin: 0;
   }
 }
