@@ -37,7 +37,7 @@
 
   @include vp-1199 {
     grid-template-columns: auto 144px 126px;
-    padding: 20px 21px;
+    padding: 20px 45px;
     column-gap: 28%;
     justify-content: space-between;
     transition: color 0.3s ease;
@@ -193,7 +193,7 @@
   @include vp-1199 {
     width: 126px;
     order: 1;
-    margin: 0 20px;
+    margin: 0 45px;
     padding: 41px 0 0;
   }
 

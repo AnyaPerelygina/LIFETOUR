@@ -4966,7 +4966,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .header__wrapper {
     -ms-grid-columns: auto 144px 126px;
     grid-template-columns: auto 144px 126px;
-    padding: 20px 21px;
+    padding: 20px 45px;
     -webkit-column-gap: 28%;
        -moz-column-gap: 28%;
             column-gap: 28%;
@@ -5138,7 +5138,7 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin: 0 20px;
+    margin: 0 45px;
     padding: 41px 0 0;
   }
 }
