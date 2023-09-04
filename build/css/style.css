@@ -4438,7 +4438,7 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
-    padding: 31px 19px 30px;
+    padding: 31px 20px 30px;
     gap: 30px;
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
@@ -4499,8 +4499,8 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .footer__logo svg {
-    width: 118px;
-    height: 34px;
+    width: 120px;
+    height: 36px;
   }
 }
 @media (max-width: 767px) {
