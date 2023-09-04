@@ -4,6 +4,10 @@
 
   @include vp-1199 {
     padding: 41px 0 20px;
+
+    br {
+      display: none;
+    }
   }
 
   @include vp-767 {

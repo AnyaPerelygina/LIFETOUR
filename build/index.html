@@ -1102,19 +1102,21 @@
           <div class="feedback__container container" data-form-validate data-callback="base">
             <h2>Остались вопросы?</h2>
             <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
-            <form class="feedback__form form noselect" action="https://echo.htmlacademy.ru/" method="post" novalidate>
-              <div class="form__wrapper">
-                <div class="form__name" data-validate-type="text" data-limitation="name" data-required>
-                  <label class="visually-hidden" for="user-name-1">Имя:</label>
-                  <input placeholder="Как к вам обращаться?" id="user-name-1" type="text" name="user-name-1" required>
+            <div class="feedback__form form">
+              <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
+                <div class="form__wrapper">
+                  <div class="form__name noselect" data-validate-type="text" data-limitation="name" data-required>
+                    <label class="visually-hidden" for="user-name-1">Имя:</label>
+                    <input placeholder="Как к вам обращаться?" id="user-name-1" type="text" name="user-name-1" required>
+                  </div>
+                  <div class="form__phone noselect" data-validate-type="phone" data-on-input-validate data-required data-phone-length="11">
+                    <label class="visually-hidden" for="phone">Телефон:</label>
+                    <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
+                  </div>
+                  <button class="noselect" type="submit">Отправить</button>
                 </div>
-                <div class="form__phone" data-validate-type="phone" data-on-input-validate data-required data-phone-length="11">
-                  <label class="visually-hidden" for="phone">Телефон:</label>
-                  <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
-                </div>
-                <button type="submit">Отправить</button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </section>
         <section class="contacts">

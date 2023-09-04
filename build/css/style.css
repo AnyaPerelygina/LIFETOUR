@@ -2185,6 +2185,9 @@ supported by Chrome, Edge, Opera and Firefox */
   .about-us {
     padding: 41px 0 20px;
   }
+  .about-us br {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .about-us {
@@ -2384,6 +2387,11 @@ supported by Chrome, Edge, Opera and Firefox */
     width: 100%;
     min-height: 242px;
     padding: 19px 10px 0 10px;
+  }
+}
+@media (max-width: 767px) {
+  .advantage br {
+    display: none;
   }
 }
 
