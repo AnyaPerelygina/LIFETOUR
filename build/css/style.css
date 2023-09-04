@@ -3709,6 +3709,11 @@ supported by Chrome, Edge, Opera and Firefox */
     padding-top: 0;
   }
 }
+@media (max-width: 1199px) {
+  .education br {
+    display: none;
+  }
+}
 
 .education__container {
   position: relative;
@@ -4290,12 +4295,6 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .education__swiper-prev {
     right: unset;
-  }
-}
-
-@media (max-width: 1199px) {
-  br {
-    display: none;
   }
 }
 
