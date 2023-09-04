@@ -2166,11 +2166,6 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 0 auto;
   padding: 0 40px;
 }
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-}
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -4308,6 +4303,8 @@ supported by Chrome, Edge, Opera and Firefox */
   position: relative;
   min-height: 800px;
   margin-bottom: 85px;
+  background-color: #2d383f;
+  background-size: calc(100% - 1px);
 }
 @media (max-width: 1199px) {
   .feedback {
@@ -4328,8 +4325,6 @@ supported by Chrome, Edge, Opera and Firefox */
   height: 100%;
   width: 100%;
   z-index: 0;
-  background-color: #2d383f;
-  background-size: calc(100% - 1px);
 }
 
 .feedback__container {
