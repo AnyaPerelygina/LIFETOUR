@@ -86,11 +86,10 @@
   }
 }
 
-
 .reviews__swiper-prev {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   right: 161px;
   width: 37px;
   height: 37px;
@@ -122,7 +121,7 @@
 .reviews__swiper-next {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   right: 119px;
   width: 37px;
   height: 37px;

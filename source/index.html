@@ -76,13 +76,13 @@
                     </div>
                     <a class="hero__button btn noselect" href="#">Смотреть тур</a>
                     <ul class="hero__info">
-                      <li>
+                      <li class="hero__info-item">
                         <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false">
                           <use href="./img/sprite.svg#moon"></use>
                         </svg>
                         <span>6&nbsp;дней/5 ночей</span>
                       </li>
-                      <li>
+                      <li class="hero__info-item">
                         <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false">
                           <use href="./img/sprite.svg#level"></use>
                         </svg>
@@ -121,7 +121,7 @@
                     </div>
                     <a class="hero__button" href="#">Смотреть тур</a>
                     <ul class="hero__info">
-                      <li>
+                      <li class="hero__info-item">
                         <div class="hero__icon">
                           <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false">
                             <use href="./img/sprite.svg#moon"></use>
@@ -129,7 +129,7 @@
                         </div>
                         <span>9&nbsp;дней/10 ночей</span>
                       </li>
-                      <li>
+                      <li class="hero__info-item">
                         <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false">
                           <use href="./img/sprite.svg#level"></use>
                         </svg>
@@ -163,13 +163,13 @@
                     </div>
                     <a class="hero__button btn" href="#">Смотреть тур</a>
                     <ul class="hero__info">
-                      <li>
+                      <li class="hero__info-item">
                         <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false">
                           <use href="./img/sprite.svg#moon"></use>
                         </svg>
                         <span>8&nbsp;дней/7 ночей</span>
                       </li>
-                      <li>
+                      <li class="hero__info-item">
                         <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false">
                           <use href="./img/sprite.svg#level"></use>
                         </svg>
@@ -738,25 +738,25 @@
           </div>
           <h3>Процесс обучения</h3>
           <ul class="education__process">
-            <li>
+            <li class="education__process-item">
               <svg width="25" height="25" viewBox="0 0 25 25">
                 <use href="img/sprite.svg#map"></use>
               </svg>
               <p>Изучение спортивного<br> туристского движения</p>
             </li>
-            <li>
+            <li class="education__process-item">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <use href="img/sprite.svg#boot-bw"></use>
               </svg>
               <p>Подготовка и&nbsp;техническое<br> снаряжение в&nbsp;походах</p>
             </li>
-            <li>
+            <li class="education__process-item">
               <svg width="23" height="23" viewBox="0 0 23 23">
                 <use href="img/sprite.svg#trees"></use>
               </svg>
               <p>Лекции по&nbsp;окружающей<br> среде, экологии и&nbsp;гигиене</p>
             </li>
-            <li>
+            <li class="education__process-item">
               <svg width="25" height="25" viewBox="0 0 25 25">
                 <use href="img/sprite.svg#mountain"></use>
               </svg>
@@ -1126,7 +1126,7 @@
             <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
             <div class="feedback__form form">
               <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
-                <div class="form__wrapper">
+                <!-- <div class="form__wrapper"> -->
                   <div class="form__name noselect" data-validate-type="text" data-limitation="name" data-required>
                     <label class="visually-hidden" for="user-name-1">Имя:</label>
                     <input placeholder="Как к вам обращаться?" id="user-name-1" type="text" name="user-name-1" required>
@@ -1135,8 +1135,8 @@
                     <label class="visually-hidden" for="phone">Телефон:</label>
                     <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
                   </div>
-                  <button class="noselect" type="submit">Отправить</button>
-                </div>
+                  <button class="form__button noselect" type="submit">Отправить</button>
+                <!-- </div> -->
               </form>
             </div>
           </div>

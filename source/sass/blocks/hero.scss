@@ -197,27 +197,27 @@
   column-count: 2;
   gap: 11px;
   max-width: 377px;
+}
 
-  li {
-    display: flex;
-    flex-direction: row;
-    gap: 9px;
-    padding: 14px 16px 13px 20px;
-    border: 1px solid $color-default-white;
-    align-items: center;
+.hero__info-item {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  padding: 14px 16px 13px 20px;
+  border: 1px solid $color-default-white;
+  align-items: center;
 
-    @include vp-1199 {
-      display: none;
-    }
+  @include vp-1199 {
+    display: none;
+  }
 
-    span {
-      font-family: $ff-montserrat;
-      font-style: normal;
-      font-size: 12px;
-      line-height: 16px;
-      color: $color-default-white;
-      text-align: start;
-    }
+  span {
+    font-family: $ff-montserrat;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-default-white;
+    text-align: start;
   }
 }
 

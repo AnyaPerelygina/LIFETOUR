@@ -4028,7 +4028,8 @@ supported by Chrome, Edge, Opera and Firefox */
     padding: 14px 35px 16px;
   }
 }
-.education__process li {
+
+.education__process-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4040,25 +4041,25 @@ supported by Chrome, Edge, Opera and Firefox */
   padding: 28px 0;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
-  .education__process li {
+  .education__process-item {
     max-width: 21%;
   }
 }
 @media (max-width: 1199px) {
-  .education__process li {
+  .education__process-item {
     padding: 37px 0;
     gap: 14px;
     max-width: 268px;
   }
 }
 @media (max-width: 767px) {
-  .education__process li {
+  .education__process-item {
     padding: 0;
     gap: 8px;
     max-width: 210px;
   }
 }
-.education__process li svg {
+.education__process-item svg {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -4068,14 +4069,14 @@ supported by Chrome, Edge, Opera and Firefox */
   margin-right: 4.9%;
 }
 @media (max-width: 1199px) {
-  .education__process li svg {
+  .education__process-item svg {
     width: 25px;
     height: 25px;
     margin-right: 0;
   }
 }
 @media (max-width: 767px) {
-  .education__process li svg {
+  .education__process-item svg {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
@@ -4084,7 +4085,7 @@ supported by Chrome, Edge, Opera and Firefox */
     margin-top: 6px;
   }
 }
-.education__process li p {
+.education__process-item p {
   font-size: 16px;
   width: 236px;
   display: block;
@@ -4092,14 +4093,14 @@ supported by Chrome, Edge, Opera and Firefox */
   text-align: start;
 }
 @media (max-width: 1199px) {
-  .education__process li p {
+  .education__process-item p {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
   }
 }
 @media (max-width: 767px) {
-  .education__process li p {
+  .education__process-item p {
     font-size: 12px;
     line-height: 18px;
   }
@@ -4675,31 +4676,23 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.form {
+.form form {
   position: relative;
   margin-bottom: 20px;
-}
-@media (max-width: 767px) {
-  .form {
-    width: 100%;
-  }
-}
-
-.form__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  margin: 0 auto;
 }
-@media (max-width: 1199px) {
-  .form__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media (max-width: 767px) {
+  .form form {
+    width: 100%;
   }
 }
 
@@ -4921,7 +4914,7 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.form__wrapper button {
+.form__button {
   display: inline;
   width: 238px;
   min-height: 64px;
@@ -4934,26 +4927,26 @@ supported by Chrome, Edge, Opera and Firefox */
   border: none;
   cursor: pointer;
 }
-.form__wrapper button:focus {
+.form__button:focus {
   outline: none;
 }
-.form__wrapper button:hover, .form__wrapper button:focus-visible {
+.form__button:hover, .form__button:focus-visible {
   background-color: #ffffff;
   outline: 1px solid #1c3374;
   color: #1c3374;
 }
-.form__wrapper button:active {
+.form__button:active {
   background-color: #1c3374;
   color: #ffffff;
 }
 @media (max-width: 1199px) {
-  .form__wrapper button {
+  .form__button {
     width: 266px;
     min-height: 58px;
   }
 }
 @media (max-width: 767px) {
-  .form__wrapper button {
+  .form__button {
     width: 100%;
     min-height: 52px;
     padding: 18px;
@@ -5450,7 +5443,8 @@ supported by Chrome, Edge, Opera and Firefox */
   gap: 11px;
   max-width: 377px;
 }
-.hero__info li {
+
+.hero__info-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5466,11 +5460,11 @@ supported by Chrome, Edge, Opera and Firefox */
           align-items: center;
 }
 @media (max-width: 1199px) {
-  .hero__info li {
+  .hero__info-item {
     display: none;
   }
 }
-.hero__info li span {
+.hero__info-item span {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 12px;
@@ -6240,7 +6234,7 @@ supported by Chrome, Edge, Opera and Firefox */
           flex-direction: column;
   row-gap: 5.19px;
   height: auto;
-  width: auto !important;
+  width: auto;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -6376,7 +6370,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .reviews__swiper-prev {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   right: 161px;
   width: 37px;
   height: 37px;
@@ -6410,7 +6404,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .reviews__swiper-next {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   right: 119px;
   width: 37px;
   height: 37px;
