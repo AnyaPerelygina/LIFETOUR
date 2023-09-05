@@ -2262,7 +2262,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .about-us__text {
   text-align: start;
   margin: 0 81px 69px 735px;
-  padding: 18px 20px 0 0;
+  padding: 35px 20px 0 0;
   max-width: 950px;
 }
 @media (max-width: 1199px) {
@@ -2278,80 +2278,75 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.about-us__title {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
+.about-us__text [data-content]::before {
+  position: absolute;
+  content: attr(data-content);
+  font-size: 55px;
   font-weight: 800;
-  font-size: 35px;
-  line-height: 35px;
-  margin: 0 0 53px;
+  line-height: 55px;
+  opacity: 0.03;
+  top: 85px;
+  left: 734px;
+}
+@media (max-width: 1199px) {
+  .about-us__text [data-content]::before {
+    font-size: 40px;
+    line-height: 40px;
+    top: 28px;
+    left: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .about-us__text [data-content]::before {
+    top: 444px;
+    left: 15px;
+    width: 100%;
+    max-width: 190px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.about-us__title {
+  margin: 0 0 57px;
 }
 @media (max-width: 1199px) {
   .about-us__title {
-    font-size: 25px;
-    line-height: 25px;
     margin: 0 0 32px;
   }
 }
 @media (max-width: 767px) {
   .about-us__title {
-    font-size: 22px;
-    line-height: 22px;
     margin: 43px 0 32px;
   }
 }
-.about-us__title span {
-  font-size: 55px;
-  line-height: 55px;
-  opacity: 3%;
-  margin: -50px -119px 0;
-}
-@media (max-width: 1199px) {
-  .about-us__title span {
-    font-size: 40px;
-    line-height: 40px;
-    margin: -38px -84px 0;
-  }
-}
-@media (max-width: 767px) {
-  .about-us__title span {
-    font-size: 26px;
-    line-height: 26px;
-    margin: 0 0 0 -74px;
-  }
-}
 
-.about-us__history h3,
-.about-us__goal h3 {
+.about-us__info h3 {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   margin: 0 0 15px;
 }
 @media (max-width: 1199px) {
-  .about-us__history h3,
-.about-us__goal h3 {
+  .about-us__info h3 {
     font-size: 18px;
     line-height: 18px;
   }
 }
 @media (max-width: 767px) {
-  .about-us__history h3,
-.about-us__goal h3 {
+  .about-us__info h3 {
     font-size: 16px;
     line-height: 16px;
   }
 }
-.about-us__history p,
-.about-us__goal p {
+.about-us__info p {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   margin: 0 0 31px;
 }
 @media (max-width: 767px) {
-  .about-us__history p,
-.about-us__goal p {
+  .about-us__info p {
     min-width: 290px;
     line-height: 20px;
     margin: 0 0 46px;
@@ -2359,7 +2354,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media (max-width: 767px) {
-  .about-us__goal p {
+  .about-us__info:last-child p {
     margin: 0 0 25px;
   }
 }
@@ -2554,16 +2549,11 @@ supported by Chrome, Edge, Opera and Firefox */
   width: 294px;
   margin: 0 auto 45px auto;
   padding-left: 2px;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
 }
 @media (max-width: 1199px) {
   .advantages__container h2 {
     margin: 0 auto 46px auto;
     text-align: center;
-    font-size: 25px;
-    line-height: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -2571,33 +2561,35 @@ supported by Chrome, Edge, Opera and Firefox */
     width: 185px;
     padding: 0;
     margin: 0 auto 30px;
-    font-size: 22px;
-    line-height: 22px;
   }
 }
-.advantages__container h2 span {
+
+.advantages__container [data-content]::before {
   position: absolute;
-  content: "";
-  bottom: 0%;
-  left: -27%;
+  content: attr(data-content);
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
   opacity: 0.03;
+  top: -12px;
+  left: -85px;
 }
 @media (max-width: 1199px) {
-  .advantages__container h2 span {
-    left: -6%;
-    bottom: -7%;
+  .advantages__container [data-content]::before {
     font-size: 40px;
     line-height: 40px;
+    top: -12px;
+    left: 0;
   }
 }
 @media (max-width: 767px) {
-  .advantages__container h2 span {
+  .advantages__container [data-content]::before {
+    top: -3px;
+    left: -15px;
+    width: 100%;
+    max-width: 190px;
     font-size: 26px;
     line-height: 26px;
-    margin: 0;
   }
 }
 
@@ -2934,16 +2926,11 @@ supported by Chrome, Edge, Opera and Firefox */
   position: relative;
   width: 542px;
   margin: 0 0 5px;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
 }
 @media (max-width: 1199px) {
   .contacts__container h2 {
     width: 394px;
     margin: 0;
-    font-size: 25px;
-    line-height: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -2951,31 +2938,33 @@ supported by Chrome, Edge, Opera and Firefox */
     width: 100%;
     padding: 0;
     margin: 0 0 -2px;
-    font-size: 22px;
-    line-height: 22px;
   }
 }
-.contacts__container span {
+
+.contacts__container [data-content]::before {
   position: absolute;
-  content: "";
-  bottom: -15%;
-  left: 0;
+  content: attr(data-content);
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
   opacity: 0.03;
+  top: -14px;
+  left: 0;
 }
 @media (max-width: 1199px) {
-  .contacts__container span {
+  .contacts__container [data-content]::before {
     font-size: 40px;
     line-height: 40px;
+    top: -10px;
   }
 }
 @media (max-width: 767px) {
-  .contacts__container span {
+  .contacts__container [data-content]::before {
+    top: -2px;
+    width: 100%;
+    max-width: 190px;
     font-size: 26px;
     line-height: 26px;
-    margin: 0;
   }
 }
 
@@ -3863,12 +3852,36 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
-.education__title {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
+.education__container [data-content]::before {
+  position: absolute;
+  content: attr(data-content);
+  font-size: 55px;
   font-weight: 800;
-  font-size: 35px;
-  line-height: 35px;
+  line-height: 55px;
+  opacity: 0.03;
+  top: 56px;
+  left: 120px;
+}
+@media (max-width: 1199px) {
+  .education__container [data-content]::before {
+    font-size: 40px;
+    line-height: 40px;
+    top: 23px;
+    left: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .education__container [data-content]::before {
+    top: 37px;
+    left: 15px;
+    width: 100%;
+    max-width: 190px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.education__title {
   text-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3877,41 +3890,17 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 29px 0 27px;
+  margin: 29px 0 31px;
 }
 @media (max-width: 1199px) {
   .education__title {
-    font-size: 25px;
-    line-height: 25px;
     margin: 29px 0 18px;
   }
 }
 @media (max-width: 767px) {
   .education__title {
-    font-size: 22px;
-    line-height: 22px;
     max-width: 156px;
     margin: 29px 0 0;
-  }
-}
-.education__title span {
-  font-size: 55px;
-  line-height: 55px;
-  opacity: 3%;
-  margin: -50px 0 0;
-}
-@media (max-width: 1199px) {
-  .education__title span {
-    font-size: 40px;
-    line-height: 40px;
-    margin: -38px 0 0;
-  }
-}
-@media (max-width: 767px) {
-  .education__title span {
-    font-size: 26px;
-    line-height: 26px;
-    margin: -25px 0 -14px;
   }
 }
 
@@ -4401,27 +4390,18 @@ supported by Chrome, Edge, Opera and Firefox */
   padding-right: 17px;
   margin-bottom: 4px;
   text-align: center;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
 }
 @media (max-width: 1199px) {
   .feedback__container h2 {
     padding-right: 0;
     margin-bottom: 3px;
     width: 292px;
-    font-size: 25px;
-    font-weight: 800;
-    line-height: 25px;
   }
 }
 @media (max-width: 767px) {
   .feedback__container h2 {
     width: 242px;
     margin-bottom: 3px;
-    font-size: 22px;
-    font-weight: 800;
-    line-height: 22px;
   }
 }
 .feedback__container p {
@@ -4600,7 +4580,6 @@ supported by Chrome, Edge, Opera and Firefox */
   cursor: pointer;
 }
 .footer__tel a {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 600;
@@ -4639,7 +4618,6 @@ supported by Chrome, Edge, Opera and Firefox */
   grid-column: span 3;
   -ms-grid-column-align: center;
       justify-self: center;
-  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 .footer__privacyPolicy {
@@ -4647,7 +4625,6 @@ supported by Chrome, Edge, Opera and Firefox */
   grid-column: span 3;
   -ms-grid-column-align: center;
       justify-self: center;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 12px;
   font-weight: 300;
@@ -4676,6 +4653,9 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
+.form {
+  width: 100%;
+}
 .form form {
   position: relative;
   margin-bottom: 20px;
@@ -4690,9 +4670,21 @@ supported by Chrome, Edge, Opera and Firefox */
      -moz-column-gap: 30px;
           column-gap: 30px;
 }
+@media (max-width: 1199px) {
+  .form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 266px;
+  }
+}
 @media (max-width: 767px) {
   .form form {
-    width: 100%;
+    min-width: 290px;
   }
 }
 
@@ -5148,11 +5140,9 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 0 80px 0 0;
   padding: 62px 0 0;
   position: absolute;
-  z-index: 55;
   cursor: pointer;
 }
 .header__tel a {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 600;
@@ -5327,7 +5317,6 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 .hero__text h2 {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 77px;
   font-weight: 800;
@@ -5357,7 +5346,6 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 .hero__text p {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 17px;
   line-height: 24px;
@@ -5385,7 +5373,6 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .hero__button {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -5465,7 +5452,6 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 .hero__info-item span {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 16px;
@@ -5774,7 +5760,6 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 .menu__item a {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -6006,7 +5991,6 @@ supported by Chrome, Edge, Opera and Firefox */
   cursor: pointer;
 }
 .nav__item a {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -6082,49 +6066,18 @@ supported by Chrome, Edge, Opera and Firefox */
   position: relative;
   width: 546px;
   margin: -2px 0 23px;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
   text-align: start;
 }
 @media (max-width: 1199px) {
   .photogallery__cover h2 {
     width: 394px;
     margin: 2px 0 23px;
-    font-size: 25px;
-    line-height: 25px;
   }
 }
 @media (max-width: 767px) {
   .photogallery__cover h2 {
     width: 185px;
     padding: 0 0 15px;
-    margin: 0;
-    font-size: 22px;
-    line-height: 22px;
-  }
-}
-.photogallery__cover h2 span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 55px;
-  font-weight: 800;
-  line-height: 55px;
-  opacity: 0.03;
-}
-@media (max-width: 1199px) {
-  .photogallery__cover h2 span {
-    left: 0;
-    bottom: -7%;
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .photogallery__cover h2 span {
-    font-size: 26px;
-    line-height: 26px;
     margin: 0;
   }
 }
@@ -6153,6 +6106,33 @@ supported by Chrome, Edge, Opera and Firefox */
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
+  }
+}
+
+.photogallery__container [data-content]::before {
+  position: absolute;
+  content: attr(data-content);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+  top: -14px;
+  left: 0;
+}
+@media (max-width: 1199px) {
+  .photogallery__container [data-content]::before {
+    font-size: 40px;
+    line-height: 40px;
+    top: -10px;
+  }
+}
+@media (max-width: 767px) {
+  .photogallery__container [data-content]::before {
+    top: -2px;
+    width: 100%;
+    max-width: 190px;
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
@@ -6321,49 +6301,47 @@ supported by Chrome, Edge, Opera and Firefox */
 .reviews__cover h2 {
   position: relative;
   width: 542px;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
   text-align: start;
   margin: 14px 0 25px 9px;
 }
 @media (max-width: 1199px) {
   .reviews__cover h2 {
-    font-size: 25px;
-    line-height: 25px;
     width: 394px;
     margin: 16px 0 27px;
   }
 }
 @media (max-width: 767px) {
   .reviews__cover h2 {
-    font-size: 22px;
-    line-height: 22px;
     width: 156px;
     padding: 0;
     margin: 20px 0 35px;
   }
 }
-.reviews__cover h2 span {
+
+.reviews__cover [data-content]::before {
   position: absolute;
-  bottom: -15%;
-  left: 0;
+  content: attr(data-content);
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
   opacity: 0.03;
+  top: -17px;
 }
 @media (max-width: 1199px) {
-  .reviews__cover h2 span {
+  .reviews__cover [data-content]::before {
     font-size: 40px;
     line-height: 40px;
+    top: -12px;
   }
 }
 @media (max-width: 767px) {
-  .reviews__cover h2 span {
+  .reviews__cover [data-content]::before {
+    top: -3px;
+    left: 0;
+    width: 100%;
+    max-width: 190px;
     font-size: 26px;
     line-height: 26px;
-    bottom: -4%;
   }
 }
 
@@ -6751,6 +6729,25 @@ supported by Chrome, Edge, Opera and Firefox */
   height: auto;
 }
 
+.title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 35px;
+}
+@media (max-width: 1199px) {
+  .title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
 .toggle {
   display: none;
 }
@@ -6904,6 +6901,41 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
+.tours__container [data-content]::before {
+  position: absolute;
+  content: attr(data-content);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+  top: 104px;
+  left: 120px;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .tours__container [data-content]::before {
+    top: 58px;
+    left: 15px;
+  }
+}
+@media (max-width: 1199px) {
+  .tours__container [data-content]::before {
+    font-size: 40px;
+    line-height: 40px;
+    top: 77px;
+    left: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__container [data-content]::before {
+    top: 64px;
+    left: 15px;
+    width: 100%;
+    max-width: 190px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
 .tours__swiper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6928,11 +6960,6 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .tours__title {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 35px;
   text-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6941,41 +6968,17 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 29px 0 48px;
+  margin: 27px 0 54px;
 }
 @media (max-width: 1199px) {
   .tours__title {
-    font-size: 25px;
-    line-height: 25px;
     margin: 29px 0 40px;
   }
 }
 @media (max-width: 767px) {
   .tours__title {
-    font-size: 22px;
-    line-height: 22px;
     max-width: 156px;
     margin: 29px 0;
-  }
-}
-.tours__title span {
-  font-size: 55px;
-  line-height: 55px;
-  opacity: 3%;
-  margin: -50px 0 0;
-}
-@media (max-width: 1199px) {
-  .tours__title span {
-    font-size: 40px;
-    line-height: 40px;
-    margin: -38px 0 0;
-  }
-}
-@media (max-width: 767px) {
-  .tours__title span {
-    font-size: 26px;
-    line-height: 23px;
-    margin: -47px 0 0;
   }
 }
 

@@ -7,7 +7,6 @@
 .footer__wrapper {
   display: grid;
   grid-template-columns: 285px auto 142px;
-  // column-count: 3;
   justify-content: space-between;
   max-width: 1366px;
   margin: 0 auto;
@@ -115,7 +114,6 @@
   cursor: pointer;
 
   a {
-    font-family: $ff-montserrat;
     font-style: normal;
     font-size: 18px;
     font-weight: 600;
@@ -156,14 +154,11 @@
 .footer__social {
   grid-column: span 3;
   justify-self: center;
-  font-family: $ff-montserrat;
 }
 
 .footer__privacyPolicy {
   grid-column: span 3;
   justify-self: center;
-
-  font-family: $ff-montserrat;
   font-style: normal;
   font-size: 12px;
   font-weight: 300;

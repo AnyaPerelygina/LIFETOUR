@@ -110,47 +110,46 @@
   }
 }
 
-.education__title {
-  font-family: $ff-montserrat;
-  font-style: normal;
+.education__container [data-content]::before {
+  position: absolute;
+  content: attr(data-content);
+  font-size: 55px;
   font-weight: 800;
-  font-size: 35px;
-  line-height: 35px;
+  line-height: 55px;
+  opacity: 0.03;
+  top: 56px;
+  left: 120px;
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 40px;
+    top: 23px;
+    left: 45px;
+  }
+
+  @include vp-767 {
+    top: 37px;
+    left: 15px;
+    width: 100%;
+    max-width: 190px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.education__title {
   text-align: start;
   display: flex;
   flex-direction: column;
-  margin: 29px 0 27px;
+  margin: 29px 0 31px;
 
   @include vp-1199 {
-    font-size: 25px;
-    line-height: 25px;
     margin: 29px 0 18px;
   }
 
   @include vp-767 {
-    font-size: 22px;
-    line-height: 22px;
     max-width: 156px;
     margin: 29px 0 0;
-  }
-
-  span {
-    font-size: 55px;
-    line-height: 55px;
-    opacity: 3%;
-    margin: -50px 0 0;
-
-    @include vp-1199 {
-      font-size: 40px;
-      line-height: 40px;
-      margin: -38px 0 0;
-    }
-
-    @include vp-767 {
-      font-size: 26px;
-      line-height: 26px;
-      margin: -25px 0 -14px;
-    }
   }
 }
 

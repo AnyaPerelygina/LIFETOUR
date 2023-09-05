@@ -67,6 +67,38 @@
   }
 }
 
+.tours__container [data-content]::before {
+  position: absolute;
+  content: attr(data-content);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+  top: 104px;
+  left: 120px;
+
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    top: 58px;
+    left: 15px;
+  }
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 40px;
+    top: 77px;
+    left: 45px;
+  }
+
+  @include vp-767 {
+    top: 64px;
+    left: 15px;
+    width: 100%;
+    max-width: 190px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
 .tours__swiper {
   display: flex;
   flex-direction: column;
@@ -82,46 +114,18 @@
 }
 
 .tours__title {
-  font-family: $ff-montserrat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 35px;
   text-align: start;
   display: flex;
   flex-direction: column;
-  margin: 29px 0 48px;
+  margin: 27px 0 54px;
 
   @include vp-1199 {
-    font-size: 25px;
-    line-height: 25px;
     margin: 29px 0 40px;
   }
 
   @include vp-767 {
-    font-size: 22px;
-    line-height: 22px;
     max-width: 156px;
     margin: 29px 0;
-  }
-
-  span {
-    font-size: 55px;
-    line-height: 55px;
-    opacity: 3%;
-    margin: -50px 0 0;
-
-    @include vp-1199 {
-      font-size: 40px;
-      line-height: 40px;
-      margin: -38px 0 0;
-    }
-
-    @include vp-767 {
-      font-size: 26px;
-      line-height: 23px;
-      margin: -47px 0 0;
-    }
   }
 }
 
