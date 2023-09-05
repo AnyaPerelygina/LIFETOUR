@@ -26,12 +26,18 @@
     left: 0;
     z-index: -1;
 
+    @media (min-width: 1500px) {
+      height: 100%;
+      top: 0;
+    }
+
     @media (min-width: 1200px) and (max-width: 1439px) {
       height: 75%;
     }
 
     @include vp-1199 {
       background-image: url("../img/about/background-tablet@2x.png");
+      background-repeat: no-repeat;
       background-size: contain;
       height: 74%;
       top: 11%;
@@ -39,9 +45,10 @@
 
     @include vp-767 {
       background-image: url("../img/about/background-mobile@2x.png");
+      background-repeat: no-repeat;
+      background-size: contain;
       height: 100%;
       top: 0;
-      background-size: contain;
     }
   }
 
@@ -65,6 +72,8 @@
 
 .about-us__container {
   padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .about-us__text {

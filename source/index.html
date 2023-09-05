@@ -102,6 +102,7 @@
                         </svg>
                       </button>
                     </div>
+                    <div class="hero__pagination"></div>
                   </div>
                   <picture class="hero__background">
                     <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/caucasus-mobile@1x.webp, ./img/hero/caucasus-mobile@2x.webp 2x">
@@ -143,6 +144,7 @@
                         <img src="./img/hero/cards-desktop@1x.png" srcset="./img/hero/cards-desktop@2x.png 2x" width="410" height="459" alt="Полароидные снимки гор." loading="lazy">
                       </picture>
                     </div>
+                    <div class="hero__pagination"></div>
                   </div>
                   <picture class="hero__background">
                     <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/kamchatka-mobile@1x.webp, ./img/hero/kamchatka-mobile@2x.webp 2x">
@@ -185,6 +187,7 @@
                         </svg>
                       </button>
                     </div>
+                    <div class="hero__pagination"></div>
                   </div>
                   <picture class="hero__background">
                     <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/altai-mobile@1x.webp, ./img/hero/altai-mobile@2x.webp 2x">
@@ -196,7 +199,6 @@
                   </picture>
                 </li>
               </ul>
-              <div class="hero__pagination"></div>
             </div>
           </div>
         </section>
@@ -766,10 +768,22 @@
         </section>
         <section class="reviews">
           <div class="reviews__container container">
-            <div class="reviews__swiper swiper swiper-reviews">
+            <div class="reviews__cover">
               <h2>Отзывы
                 <span>Отзывы</span>
               </h2>
+              <div class="reviews__swiper-prev slider-states">
+                <svg width="14" height="8" viewBox="0 0 14 8">
+                  <use href="img/sprite.svg#slider-arrow-left"></use>
+                </svg>
+              </div>
+              <div class="reviews__swiper-next slider-states">
+                <svg width="14" height="8" viewBox="0 0 14 8">
+                  <use href="img/sprite.svg#slider-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="reviews__swiper swiper swiper-reviews">
               <div class="reviews__wrapper swiper-wrapper">
                 <blockquote class="swiper-slide">
                   <div class="reviews__avatar">
@@ -876,16 +890,6 @@
                 </blockquote>
               </div>
             </div>
-            <div class="reviews__swiper-prev slider-states">
-              <svg width="14" height="9" viewBox="0 0 14 9">
-                <use href="img/sprite.svg#slider-arrow-left"></use>
-              </svg>
-            </div>
-            <div class="reviews__swiper-next slider-states">
-              <svg width="14" height="9" viewBox="0 0 14 9">
-                <use href="img/sprite.svg#slider-arrow-right"></use>
-              </svg>
-            </div>
           </div>
         </section>
         <section class="advantages">
@@ -893,6 +897,18 @@
             <h2>Преимущества
               <span>Преимущества</span>
             </h2>
+            <div class="advantages__button">
+              <div class="advantages__swiper-prev slider-states">
+                <svg width="14" height="9" viewBox="0 0 14 8">
+                  <use href="img/sprite.svg#slider-arrow-left"></use>
+                </svg>
+              </div>
+              <div class="advantages__swiper-next slider-states">
+                <svg width="14" height="9" viewBox="0 0 14 8">
+                  <use href="img/sprite.svg#slider-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
             <div class="advantages__swiper swiper swiper-advantages">
               <div class="advantages__wrapper swiper-wrapper">
                 <div class="advantage swiper-slide">
@@ -941,38 +957,28 @@
                     безопасности во&nbsp;время всего тура.</p>
                 </div>
               </div>
-              <div class="advantages__button">
-                <div class="advantages__swiper-prev slider-states">
-                  <svg width="14" height="9" viewBox="0 0 14 8">
-                    <use href="img/sprite.svg#slider-arrow-left"></use>
-                  </svg>
-                </div>
-                <div class="advantages__swiper-next slider-states">
-                  <svg width="14" height="9" viewBox="0 0 14 8">
-                    <use href="img/sprite.svg#slider-arrow-right"></use>
-                  </svg>
-                </div>
-              </div>
             </div>
           </div>
         </section>
         <section class="photogallery">
           <div class="photogallery__container">
-            <h2>Фотогалерея
-              <span>Фотогалерея</span>
-            </h2>
-            <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото.
-              Лучшие фотографии украсят этот раздел нашего сайта.</p>
-            <div class="photogallery__button">
-              <div class="photogallery__swiper-prev slider-states">
-                <svg width="14" height="8" viewBox="0 0 14 8">
-                  <use href="img/sprite.svg#slider-arrow-left"></use>
-                </svg>
-              </div>
-              <div class="photogallery__swiper-next slider-states">
-                <svg width="14" height="8" viewBox="0 0 14 8">
-                  <use href="img/sprite.svg#slider-arrow-right"></use>
-                </svg>
+            <div class="photogallery__cover">
+              <h2>Фотогалерея
+                <span>Фотогалерея</span>
+              </h2>
+              <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото.
+                Лучшие фотографии украсят этот раздел нашего сайта.</p>
+              <div class="photogallery__button">
+                <div class="photogallery__swiper-prev slider-states">
+                  <svg width="14" height="8" viewBox="0 0 14 8">
+                    <use href="img/sprite.svg#slider-arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="photogallery__swiper-next slider-states">
+                  <svg width="14" height="8" viewBox="0 0 14 8">
+                    <use href="img/sprite.svg#slider-arrow-right"></use>
+                  </svg>
+                </div>
               </div>
             </div>
             <div class="photogallery__swiper swiper swiper-photogallery">

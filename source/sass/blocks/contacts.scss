@@ -2,6 +2,8 @@
   position: relative;
   padding: 0 80px 88px;
   text-align: start;
+  max-width: 1440px;
+  margin: 0 auto;
 
   &::before {
     position: absolute;

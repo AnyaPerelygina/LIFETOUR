@@ -1,3 +1,9 @@
+.footer__container {
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 0 32px;
+  }
+}
+
 .footer__wrapper {
   display: grid;
   column-count: 3;
