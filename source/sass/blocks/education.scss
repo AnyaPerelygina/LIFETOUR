@@ -6,11 +6,11 @@
     padding-top: 0;
   }
 
-  br {
-    @include vp-1199 {
-      display: none;
-    }
-  }
+  // br {
+  //   @include vp-1199 {
+  //     display: none;
+  //   }
+  // }
 }
 
 .education__container {

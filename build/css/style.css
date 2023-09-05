@@ -2778,6 +2778,9 @@ supported by Chrome, Edge, Opera and Firefox */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 2px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 1199px) {
   .coach-card__information {
@@ -2788,49 +2791,14 @@ supported by Chrome, Edge, Opera and Firefox */
   .coach-card__information {
     width: 100%;
     min-width: 290px;
-    -webkit-column-gap: 55%;
-       -moz-column-gap: 55%;
-            column-gap: 55%;
+    -webkit-column-gap: 15%;
+       -moz-column-gap: 15%;
+            column-gap: 15%;
     padding: 0 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-.coach-card__information a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25px;
-  height: 25px;
-  padding: 12px 4px;
-  margin-top: 3px;
-  border: 1px solid rgba(3, 10, 26, 0.1);
-}
-.coach-card__information a:hover, .coach-card__information a:focus, .coach-card__information a:focus-visible {
-  border-color: #2d383f;
-  outline: none;
-}
-.coach-card__information a:active {
-  color: #ffffff;
-  background-color: #0266c1;
-}
-.coach-card__information a:disabled {
-  color: rgba(45, 56, 63, 0.3);
-}
-@media (max-width: 767px) {
-  .coach-card__information a {
-    margin-right: 12px;
-  }
-}
-.coach-card__information a svg {
-  fill: #2d383f;
 }
 .coach-card__information p {
   font-size: 12px;
@@ -2851,7 +2819,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 .coach-card__name {
-  width: 89.4%;
+  width: 60%;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -2860,7 +2828,6 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .coach-card__name {
-    width: 85.4%;
     margin-bottom: -1px;
   }
 }
@@ -2869,6 +2836,61 @@ supported by Chrome, Edge, Opera and Firefox */
     width: 30%;
     margin-bottom: 1px;
   }
+}
+
+.coach-card__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 53px;
+  gap: 3px;
+}
+@media (max-width: 767px) {
+  .coach-card__social {
+    max-width: 111px;
+    gap: unset;
+  }
+}
+.coach-card__social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  padding: 12px 4px;
+  margin-top: 3px;
+  border: 1px solid rgba(3, 10, 26, 0.1);
+}
+.coach-card__social a:hover, .coach-card__social a:focus, .coach-card__social a:focus-visible {
+  border-color: #2d383f;
+  outline: none;
+}
+.coach-card__social a:active {
+  color: #ffffff;
+  background-color: #0266c1;
+}
+.coach-card__social a:disabled {
+  color: rgba(45, 56, 63, 0.3);
+}
+@media (max-width: 767px) {
+  .coach-card__social a {
+    margin-right: 12px;
+  }
+}
+.coach-card__social a svg {
+  fill: #2d383f;
 }
 
 .coach-card__information a:active svg {
@@ -3732,11 +3754,6 @@ supported by Chrome, Edge, Opera and Firefox */
     padding-top: 0;
   }
 }
-@media (max-width: 1199px) {
-  .education br {
-    display: none;
-  }
-}
 
 .education__container {
   position: relative;
@@ -4445,9 +4462,8 @@ supported by Chrome, Edge, Opera and Firefox */
 .footer__wrapper {
   display: -ms-grid;
   display: grid;
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
+  -ms-grid-columns: 285px auto 142px;
+  grid-template-columns: 285px auto 142px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -4456,11 +4472,19 @@ supported by Chrome, Edge, Opera and Firefox */
   padding: 19px 81px 29px 80px;
   gap: 20px;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .footer__wrapper {
+    -ms-grid-columns: 205px auto 141px;
+    grid-template-columns: 205px auto 141px;
+  }
+}
 @media (max-width: 1199px) {
   .footer__wrapper {
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
+    -ms-grid-columns: 120px auto;
+    grid-template-columns: 120px auto;
     padding: 31px 20px 30px;
     gap: 30px;
     -webkit-box-pack: stretch;
@@ -4490,15 +4514,18 @@ supported by Chrome, Edge, Opera and Firefox */
   position: relative;
   top: 13px;
   outline: none;
+  width: 205px;
 }
 @media (max-width: 1199px) {
   .footer__logo {
     justify-self: flex-start;
+    width: unset;
   }
 }
 @media (max-width: 767px) {
   .footer__logo {
     position: unset;
+    width: unset;
     top: 0;
     height: 34px;
   }
@@ -4533,9 +4560,13 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
+.footer__menu {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
 @media (min-width: 1366px) {
   .footer__menu {
-    margin-right: 64px;
+    margin-right: 141px;
   }
 }
 @media (max-width: 1199px) {
@@ -4544,6 +4575,8 @@ supported by Chrome, Edge, Opera and Firefox */
         grid-column-start: 2;
     -ms-grid-column-span: 2;
     grid-column-end: 4;
+    -ms-grid-column-align: unset;
+        justify-self: unset;
   }
 }
 @media (max-width: 767px) {
@@ -4560,7 +4593,7 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 142px;
   height: 18px;
   padding: 33px 0;
   cursor: pointer;
@@ -6982,12 +7015,12 @@ supported by Chrome, Edge, Opera and Firefox */
   width: 380px;
   min-height: 412px;
   position: relative;
-  padding: 0 21px 28px;
+  padding: 28px 21px 28px;
   text-align: start;
 }
 @media (max-width: 767px) {
   .tours__item {
-    padding: 0 17px 26px 20px;
+    padding: 26px 17px 26px 20px;
   }
 }
 .tours__item::before {

@@ -6,15 +6,21 @@
 
 .footer__wrapper {
   display: grid;
-  column-count: 3;
+  grid-template-columns: 285px auto 142px;
+  // column-count: 3;
   justify-content: space-between;
   max-width: 1366px;
   margin: 0 auto;
   padding: 19px 81px 29px 80px;
   gap: 20px;
 
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    grid-template-columns: 205px auto 141px;
+  }
+
   @include vp-1199 {
     column-count: 2;
+    grid-template-columns: 120px auto;
     padding: 31px 20px 30px;
     gap: 30px;
     justify-content: stretch;
@@ -34,13 +40,16 @@
   position: relative;
   top: 13px;
   outline: none;
+  width: 205px;
 
   @include vp-1199 {
     justify-self: flex-start;
+    width: unset;
   }
 
   @include vp-767 {
     position: unset;
+    width: unset;
     top: 0;
     height: 34px;
   }
@@ -80,13 +89,16 @@
 }
 
 .footer__menu {
+  justify-self: center;
+
   @media (min-width: 1366px) {
-    margin-right: 64px;
+    margin-right: 141px;
   }
 
   @include vp-1199 {
     grid-column-start: 2;
     grid-column-end: 4;
+    justify-self: unset;
   }
 
   @include vp-767 {
@@ -97,7 +109,7 @@
 .footer__tel {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 142px;
   height: 18px;
   padding: 33px 0;
   cursor: pointer;
