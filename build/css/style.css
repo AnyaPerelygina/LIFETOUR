@@ -4780,7 +4780,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .form__phone input:focus,
 .form__name input:active,
 .form__phone input:active {
-  outline: 1px solid #2d383f;
+  outline: 1px solid #1c3374;
 }
 
 .form__name input:focus::-webkit-input-placeholder, .form__phone input:focus::-webkit-input-placeholder, .form__name input:active::-webkit-input-placeholder, .form__phone input:active::-webkit-input-placeholder {

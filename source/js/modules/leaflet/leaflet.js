@@ -6,7 +6,6 @@ let initLeaflet = () => {
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
   }).addTo(map);
 
-
   let myIcon = L.icon({
     iconUrl: 'img/svg/pin.svg',
     iconAnchor: [19, 50],
