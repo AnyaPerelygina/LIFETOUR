@@ -3,11 +3,21 @@ import Swiper from '../../vendor/swiper';
 const initSwiperHero = () => {
   let swiper = new Swiper('.swiper-hero', {
     loop: true,
-    allowTouchMove: true,
     pagination: {
       el: '.hero__pagination',
       type: 'bullets',
       clickable: true,
+    },
+    breakpoints: {
+      320: {
+        allowTouchMove: true,
+      },
+      768: {
+        allowTouchMove: true,
+      },
+      1200: {
+        allowTouchMove: false,
+      },
     },
   });
 

@@ -9,19 +9,22 @@ const createReviewsSlider = () => {
       prevEl: '.reviews__swiper-prev',
     },
     breakpoints: {
-      1200: {
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        spaceBetween: 30,
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        allowTouchMove: true,
       },
       768: {
         slidesPerView: 'auto',
         spaceBetween: 30,
         initialSlide: 0,
+        allowTouchMove: true,
       },
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+      1200: {
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        allowTouchMove: false,
       },
     },
   });

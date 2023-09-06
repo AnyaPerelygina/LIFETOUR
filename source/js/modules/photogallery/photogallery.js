@@ -11,14 +11,17 @@ const createPhotogallerySlider = () => {
       320: {
         slidesPerView: 'auto',
         spaceBetween: 5.19,
+        allowTouchMove: true,
       },
       768: {
         slidesPerView: 'auto',
         spaceBetween: 5.19,
+        allowTouchMove: true,
       },
       1200: {
         slidesPerView: 'auto',
         spaceBetween: 5.19,
+        allowTouchMove: false,
       },
     },
   });

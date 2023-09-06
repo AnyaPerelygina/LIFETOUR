@@ -17,6 +17,17 @@ const createAdvantagesSlider = () => {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
+      breakpoints: {
+        320: {
+          allowTouchMove: true,
+        },
+        768: {
+          allowTouchMove: true,
+        },
+        1200: {
+          allowTouchMove: false,
+        },
+      },
     });
   }
 };
