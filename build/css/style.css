@@ -4673,6 +4673,9 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1199px) {
   .form form {
@@ -4703,7 +4706,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 1199px) {
   .form__name,
 .form__phone {
-    width: 266px;
+    width: 87%;
     min-height: 50px;
   }
 }
@@ -4937,7 +4940,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .form__button {
-    width: 266px;
+    width: 87%;
     min-height: 58px;
   }
 }
