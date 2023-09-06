@@ -5923,7 +5923,7 @@ supported by Chrome, Edge, Opera and Firefox */
     top: -200vh;
     right: 0;
     left: 0;
-    padding: 120px 40px 54px;
+    padding: 110px 38px 54px;
     background-color: #ffffff;
     -webkit-transition: top 0.3s ease;
     transition: top 0.3s ease;
@@ -5934,20 +5934,26 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) and (max-width: 1199px) {
   .nav.is-opened a:hover {
-    border-bottom: 1px #2d383f solid;
+    color: #2d383f;
+    border-bottom: 1px solid #2d383f;
   }
+}
+@media (max-width: 1199px) and (max-width: 1199px) {
   .nav.is-opened a:focus, .nav.is-opened a:focus-visible {
-    border: 1px #2d383f solid;
-    outline: none;
+    color: #2d383f;
+    outline: 1px solid #2d383f;
     padding: 0 5px;
   }
+}
+@media (max-width: 1199px) and (max-width: 1199px) {
   .nav.is-opened a:disabled {
+    color: #2d383f;
     opacity: 0.5;
   }
 }
 @media (max-width: 767px) {
   .nav {
-    padding: 94px 10px 35px;
+    padding: 84px 8px 35px;
   }
 }
 
@@ -5991,7 +5997,7 @@ supported by Chrome, Edge, Opera and Firefox */
     max-width: 100%;
     max-height: 100%;
     margin: 0;
-    padding-bottom: 12px;
+    padding: 10px 0 12px 2px;
     overflow-y: auto;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
@@ -6024,6 +6030,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .nav__item a:focus, .nav__item a:focus-visible {
   outline: 1px solid #ffffff;
   color: #ffffff;
+  border-bottom: none;
 }
 .nav__item a:disabled {
   color: #ffffff;
