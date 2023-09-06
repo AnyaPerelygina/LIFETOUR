@@ -5230,6 +5230,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .hero__item {
   position: relative;
   background-size: cover;
+  background-color: #2d383f;
   list-style-type: none;
   top: 0;
   left: 0;
