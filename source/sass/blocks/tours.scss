@@ -54,10 +54,6 @@
   padding: 96px 120px 0;
   max-width: 1440px;
 
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    padding: 46px 20px 0;
-  }
-
   @include vp-1199 {
     padding: 60px 45px 0;
   }
@@ -120,7 +116,7 @@
   margin: 27px 0 54px;
 
   @include vp-1199 {
-    margin: 29px 0 42px;
+    margin: 29px 0 40px;
   }
 
   @include vp-767 {
@@ -135,6 +131,8 @@
   padding: 0;
   max-width: 1200px;
   display: flex;
+  box-sizing: content-box;
+  height: 100%;
 
   @include vp-1199 {
     max-width: 678px;
@@ -148,12 +146,25 @@
   color: $color-default-white;
   width: 380px;
   min-height: 412px;
+  height: auto;
   position: relative;
   padding: 28px 21px 28px;
   text-align: start;
+  object-fit: cover;
+  background-size: cover;
+  aspect-ratio: 380/412;
+
+  @include vp-1199 {
+    object-fit: contain;
+    background-position: center 0;
+    aspect-ratio: 324/412;
+  }
 
   @include vp-767 {
     padding: 26px 17px 26px 20px;
+    background-position: 0 center;
+    background-size: 100% 100%;
+    aspect-ratio: 290/370;
   }
 
   &::before {
@@ -270,6 +281,11 @@
     display: block;
   }
 
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    height: 29px;
+    width: fit-content;
+  }
+
   @include vp-1199 {
     width: 98px;
     padding: 7px 10px 7px 16px;
@@ -291,6 +307,11 @@
   gap: 10px;
   justify-content: start;
   align-items: center;
+
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 0;
+    width: auto;
+  }
 
   @include vp-1199 {
     width: 91px;
@@ -314,6 +335,11 @@
   gap: 10px;
   justify-content: start;
   align-items: center;
+
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 0;
+    width: auto;
+  }
 
   @include vp-1199 {
     width: 91px;
@@ -393,51 +419,38 @@
   }
 }
 
+.tours__button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  justify-content: end;
+  position: absolute;
+  top: 122px;
+  right: 120px;
+
+  @include vp-1199 {
+    top: 82px;
+    right: 45px;
+  }
+
+  @include vp-767 {
+    margin: -31px 0 30px;
+    top: 100px;
+    right: 15px;
+  }
+}
+
 .tours__swiper-next,
 .tours__swiper-prev {
-  position: absolute;
-  content: "";
-  top: 16.7%;
-  right: 8.3%;
   width: 37px;
   height: 36px;
   background-color: $color-navy-blue;
   cursor: pointer;
 
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    top: 11%;
-    right: 2%;
-  }
-
-  @include vp-1199 {
-    top: 12%;
-    right: 6%;
-  }
-
-  @include vp-767 {
-    top: 11.2%;
-    right: 15px;
-  }
-
   svg {
     display: block;
     margin: 14px auto;
-  }
-}
-
-.tours__swiper-prev {
-  right: 11.3%;
-
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    right: 5.3%;
-  }
-
-  @include vp-1199 {
-    right: 11%;
-  }
-
-  @include vp-767 {
-    right: 56.5px;
   }
 }
 

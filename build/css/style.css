@@ -6904,11 +6904,6 @@ supported by Chrome, Edge, Opera and Firefox */
   padding: 96px 120px 0;
   max-width: 1440px;
 }
-@media (min-width: 1200px) and (max-width: 1439px) {
-  .tours__container {
-    padding: 46px 20px 0;
-  }
-}
 @media (max-width: 1199px) {
   .tours__container {
     padding: 60px 45px 0;
@@ -6991,7 +6986,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .tours__title {
-    margin: 29px 0 42px;
+    margin: 29px 0 40px;
   }
 }
 @media (max-width: 767px) {
@@ -7009,6 +7004,9 @@ supported by Chrome, Edge, Opera and Firefox */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 100%;
 }
 @media (max-width: 1199px) {
   .tours__list {
@@ -7030,13 +7028,29 @@ supported by Chrome, Edge, Opera and Firefox */
   color: #ffffff;
   width: 380px;
   min-height: 412px;
+  height: auto;
   position: relative;
   padding: 28px 21px 28px;
   text-align: start;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  aspect-ratio: 380/412;
+}
+@media (max-width: 1199px) {
+  .tours__item {
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-position: center 0;
+    aspect-ratio: 324/412;
+  }
 }
 @media (max-width: 767px) {
   .tours__item {
     padding: 26px 17px 26px 20px;
+    background-position: 0 center;
+    background-size: 100% 100%;
+    aspect-ratio: 290/370;
   }
 }
 .tours__item::before {
@@ -7169,6 +7183,14 @@ supported by Chrome, Edge, Opera and Firefox */
 .tours__location span {
   display: block;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .tours__location {
+    height: 29px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 @media (max-width: 1199px) {
   .tours__location {
     width: 98px;
@@ -7206,6 +7228,12 @@ supported by Chrome, Edge, Opera and Firefox */
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .tours__days {
+    padding: 0;
+    width: auto;
+  }
+}
 @media (max-width: 1199px) {
   .tours__days {
     width: 91px;
@@ -7241,6 +7269,12 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .tours__nights {
+    padding: 0;
+    width: auto;
+  }
 }
 @media (max-width: 1199px) {
   .tours__nights {
@@ -7340,61 +7374,49 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 
+.tours__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 4px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: absolute;
+  top: 122px;
+  right: 120px;
+}
+@media (max-width: 1199px) {
+  .tours__button {
+    top: 82px;
+    right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__button {
+    margin: -31px 0 30px;
+    top: 100px;
+    right: 15px;
+  }
+}
+
 .tours__swiper-next,
 .tours__swiper-prev {
-  position: absolute;
-  content: "";
-  top: 16.7%;
-  right: 8.3%;
   width: 37px;
   height: 36px;
   background-color: #0266c1;
   cursor: pointer;
 }
-@media (min-width: 1200px) and (max-width: 1439px) {
-  .tours__swiper-next,
-.tours__swiper-prev {
-    top: 11%;
-    right: 2%;
-  }
-}
-@media (max-width: 1199px) {
-  .tours__swiper-next,
-.tours__swiper-prev {
-    top: 12%;
-    right: 6%;
-  }
-}
-@media (max-width: 767px) {
-  .tours__swiper-next,
-.tours__swiper-prev {
-    top: 11.2%;
-    right: 15px;
-  }
-}
 .tours__swiper-next svg,
 .tours__swiper-prev svg {
   display: block;
   margin: 14px auto;
-}
-
-.tours__swiper-prev {
-  right: 11.3%;
-}
-@media (min-width: 1200px) and (max-width: 1439px) {
-  .tours__swiper-prev {
-    right: 5.3%;
-  }
-}
-@media (max-width: 1199px) {
-  .tours__swiper-prev {
-    right: 11%;
-  }
-}
-@media (max-width: 767px) {
-  .tours__swiper-prev {
-    right: 56.5px;
-  }
 }
 
 .tours__more {
