@@ -6235,6 +6235,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .photogallery__slide {
     row-gap: 3px;
+    width: 172px;
   }
 }
 
@@ -6253,14 +6254,14 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media (max-width: 767px) {
-  .photogallery__slide:nth-child(odd) .photogallery__slide-wrapper img {
+  .photogallery__slide:nth-child(odd) {
     height: 259px;
+    width: 159px;
   }
 }
 
 @media (max-width: 767px) {
-  .photogallery__slide:nth-child(even) .photogallery__slide-wrapper1 img,
-.photogallery__slide:nth-child(even) .photogallery__slide-wrapper2 img {
+  .photogallery__slide:nth-child(even) {
     width: 172px;
   }
 }

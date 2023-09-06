@@ -158,6 +158,7 @@
 
   @include vp-767 {
     row-gap: 3px;
+    width: 172px;
   }
 }
 
@@ -176,22 +177,32 @@
 }
 
 .photogallery__slide:nth-child(odd) {
-  .photogallery__slide-wrapper {
-    img {
-      @include vp-767 {
-        height: 259px;
-      }
-    }
+  @include vp-767 {
+    height: 259px;
+    width: 159px;
   }
+
+  // .photogallery__slide-wrapper {
+  //   img {
+  //     @include vp-767 {
+  //       height: 259px;
+  //       width: 159px;
+  //     }
+  //   }
+  // }
 }
 
 .photogallery__slide:nth-child(even) {
-  .photogallery__slide-wrapper1,
-  .photogallery__slide-wrapper2 {
-    img {
-      @include vp-767 {
-        width: 172px;
-      }
-    }
+  @include vp-767 {
+    width: 172px;
   }
+
+  // .photogallery__slide-wrapper1,
+  // .photogallery__slide-wrapper2 {
+  //   img {
+  //     @include vp-767 {
+  //       width: 172px;
+  //     }
+  //   }
+  // }
 }
