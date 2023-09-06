@@ -253,6 +253,7 @@
   width: 585px;
   height: 324px;
   margin-top: 31px;
+  background-color: $color-disabled;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     width: 48%;

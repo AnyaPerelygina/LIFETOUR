@@ -34,7 +34,7 @@
   }
 }
 
-.advantage:nth-child(5) {
+.advantage:nth-child(5n) {
   @include vp-1199 {
     order: -1;
   }

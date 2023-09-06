@@ -2404,7 +2404,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media (max-width: 1199px) {
-  .advantage:nth-child(5) {
+  .advantage:nth-child(5n) {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -3193,6 +3193,7 @@ supported by Chrome, Edge, Opera and Firefox */
   width: 585px;
   height: 324px;
   margin-top: 31px;
+  background-color: rgba(2, 102, 193, 0.1);
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .contacts__map {
