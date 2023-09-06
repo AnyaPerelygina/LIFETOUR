@@ -47,7 +47,7 @@
     transition: color 0.3s ease;
 
     &.is-opened {
-      img,
+      svg,
       .header__tel > a {
         color: $color-elephant;
 
@@ -103,10 +103,9 @@
     width: unset;
   }
 
-  img {
+  svg {
     width: 205px;
     height: 62px;
-    color: $color-default-white;
     cursor: pointer;
 
     &:hover,
