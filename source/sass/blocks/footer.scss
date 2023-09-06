@@ -40,6 +40,24 @@
   top: 13px;
   outline: none;
   width: 205px;
+  color: $color-elephant;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:default {
+    color: $color-navy-blue;
+    opacity: 0.1;
+  }
 
   @include vp-1199 {
     justify-self: flex-start;
@@ -53,27 +71,9 @@
     height: 34px;
   }
 
-  svg {
+  img {
     width: 205px;
     height: 62px;
-    color: $color-elephant;
-    cursor: pointer;
-
-    &:hover,
-    &:focus,
-    &:focus-visible {
-      color: $color-resolution-blue;
-      outline: none;
-    }
-
-    &:active {
-      color: $color-navy-blue;
-    }
-
-    &:default {
-      color: $color-navy-blue;
-      opacity: 0.1;
-    }
 
     @include vp-1199 {
       width: 120px;

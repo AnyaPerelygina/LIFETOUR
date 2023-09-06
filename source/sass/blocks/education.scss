@@ -496,6 +496,7 @@
   height: 37px;
   background-color: $color-navy-blue;
   z-index: 55;
+  cursor: pointer;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     top: 23.2%;

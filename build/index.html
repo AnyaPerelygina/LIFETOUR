@@ -21,10 +21,11 @@
       <header class="header">
         <div class="container">
           <div class="header__wrapper">
-            <a href="index.html">
-              <svg width="205" height="62" viewBox="0 0 205 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use href="img/sprite.svg#logo"></use>
-              </svg>
+            <a class="header__logo noselect" href="index.html">
+              <picture>
+                <source media="(min-width: 320px)" srcset="./img/logo.svg">
+                <img src="./img/logo.svg" width="205" height="62" alt="Логотип сайта LifeTour">
+              </picture>
             </a>
             <button class="header__toggle toggle" type="button" aria-label="Отображение меню.">
               <svg class="toggle__opened" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true" focusable="false">
@@ -107,9 +108,9 @@
                   <picture class="hero__background">
                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero/caucasus-desktop@1x.webp, img/hero/caucasus-desktop@2x.webp 2x">
                     <source type="image/jpg" media="(min-width: 1200px)" srcset="img/caucasus-desktop@1x.jpg, img/hero/caucasus-desktop@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/caucasus-tablet@1x.webp, img/hero/caucasus-tablet@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width: 1199px)" srcset="img/hero/caucasus-tablet1x.jpg, img/hero/caucasus-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero/caucasus-mobile@1x.webp, img/hero/caucasus-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/caucasus-tablet@1x.webp, img/hero/caucasus-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/hero/caucasus-tablet1x.jpg, img/hero/caucasus-tablet@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/caucasus-mobile@1x.webp, img/hero/caucasus-mobile@2x.webp 2x">
                     <img src="img/hero/caucasus-mobile@1x.jpg" srcset="img/hero/caucasus-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: гора с облаками в небе.">
                   </picture>
                 </li>
@@ -149,9 +150,9 @@
                   <picture class="hero__background">
                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero/kamchatka-desktop@1x.webp, img/hero/kamchatka-desktop@2x.webp 2x">
                     <source type="image/jpg" media="(min-width: 1200px)" srcset="img/kamchatka-desktop@1x.jpg, img/hero/kamchatka-desktop@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/kamchatka-tablet@1x.webp, img/hero/kamchatka-tablet@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width: 1199px)" srcset="img/hero/kamchatka-tablet1x.jpg, img/hero/kamchatka-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero/kamchatka-mobile@1x.webp, img/hero/kamchatka-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/kamchatka-tablet@1x.webp, img/hero/kamchatka-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/hero/kamchatka-tablet1x.jpg, img/hero/kamchatka-tablet@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/kamchatka-mobile@1x.webp, img/hero/kamchatka-mobile@2x.webp 2x">
                     <img src="img/hero/kamchatka-mobile@1x.jpg" srcset="img/hero/kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: гора с облаками в небе.">
                   </picture>
                 </li>
@@ -192,9 +193,9 @@
                   <picture class="hero__background">
                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero/altai-desktop@1x.webp, img/hero/altai-desktop@2x.webp 2x">
                     <source type="image/jpg" media="(min-width: 1200px)" srcset="img/altai-desktop@1x.jpg, img/hero/altai-desktop@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/altai-tablet@1x.webp, img/hero/altai-tablet@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width: 1199px)" srcset="img/hero/altai-tablet1x.jpg, img/hero/altai-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero/altai-mobile@1x.webp, img/hero/altai-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/altai-tablet@1x.webp, img/hero/altai-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/hero/altai-tablet1x.jpg, img/hero/altai-tablet@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/altai-mobile@1x.webp, img/hero/altai-mobile@2x.webp 2x">
                     <img src="img/hero/altai-mobile@1x.jpg" srcset="img/hero/altai-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: гора с облаками в небе.">
                   </picture>
                 </li>
@@ -1114,7 +1115,6 @@
             <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
             <div class="feedback__form form">
               <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
-                <!-- <div class="form__wrapper"> -->
                   <div class="form__name noselect" data-validate-type="text" data-limitation="name" data-required>
                     <label class="visually-hidden" for="user-name-1">Имя:</label>
                     <input placeholder="Как к вам обращаться?" id="user-name-1" type="text" name="user-name-1" required>
@@ -1124,7 +1124,6 @@
                     <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
                   </div>
                   <button class="form__button noselect" type="submit">Отправить</button>
-                <!-- </div> -->
               </form>
             </div>
           </div>
@@ -1192,9 +1191,10 @@
         <div class="footer__container container">
           <div class="footer__wrapper">
             <a class="footer__logo noselect" href="index.html">
-              <svg width="112" height="34" viewBox="0 0 112 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="img/sprite.svg#logo-footer"></use>
-              </svg>
+              <picture>
+                <source media="(min-width: 320px)" srcset="./img/logo-footer.svg">
+                <img src="./img/logo-footer.svg" width="112" height="34" alt="Логотип сайта LifeTour">
+              </picture>
             </a>
             <nav class="footer__menu menu">
               <ul class="menu__list">

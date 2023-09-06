@@ -92,6 +92,7 @@
   height: 37px;
   background-color: $color-navy-blue;
   z-index: 55;
+  cursor: pointer;
 
   @media (min-width: 1200px) and (max-width: 1380px) {
     right: 17.8%;
@@ -124,6 +125,7 @@
   height: 37px;
   background-color: $color-navy-blue;
   z-index: 55;
+  cursor: pointer;
 
   @media (min-width: 1200px) and (max-width: 1380px) {
     right: 14.1%;

@@ -5,6 +5,7 @@
 
 .swiper-button-disabled {
   opacity: 10%;
+  pointer-events: none;
 }
 
 .swiper-reviews {

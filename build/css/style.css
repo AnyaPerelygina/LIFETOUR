@@ -2648,6 +2648,7 @@ supported by Chrome, Edge, Opera and Firefox */
   background-color: #0266c1;
   z-index: 5;
   margin-left: 4px;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .advantages__swiper-next {
@@ -2663,6 +2664,7 @@ supported by Chrome, Edge, Opera and Firefox */
   width: 37px;
   height: 37px;
   background-color: #0266c1;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .advantages__swiper-prev {
@@ -4286,6 +4288,7 @@ supported by Chrome, Edge, Opera and Firefox */
   height: 37px;
   background-color: #0266c1;
   z-index: 55;
+  cursor: pointer;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .education__swiper-next,
@@ -4497,6 +4500,19 @@ supported by Chrome, Edge, Opera and Firefox */
   top: 13px;
   outline: none;
   width: 205px;
+  color: #2d383f;
+  cursor: pointer;
+}
+.footer__logo:hover, .footer__logo:focus, .footer__logo:focus-visible {
+  color: #1c3374;
+  outline: none;
+}
+.footer__logo:active {
+  color: #0266c1;
+}
+.footer__logo:default {
+  color: #0266c1;
+  opacity: 0.1;
 }
 @media (max-width: 1199px) {
   .footer__logo {
@@ -4512,31 +4528,18 @@ supported by Chrome, Edge, Opera and Firefox */
     height: 34px;
   }
 }
-.footer__logo svg {
+.footer__logo img {
   width: 205px;
   height: 62px;
-  color: #2d383f;
-  cursor: pointer;
-}
-.footer__logo svg:hover, .footer__logo svg:focus, .footer__logo svg:focus-visible {
-  color: #1c3374;
-  outline: none;
-}
-.footer__logo svg:active {
-  color: #0266c1;
-}
-.footer__logo svg:default {
-  color: #0266c1;
-  opacity: 0.1;
 }
 @media (max-width: 1199px) {
-  .footer__logo svg {
+  .footer__logo img {
     width: 120px;
     height: 36px;
   }
 }
 @media (max-width: 767px) {
-  .footer__logo svg {
+  .footer__logo img {
     width: 112px;
     height: 34px;
   }
@@ -5023,22 +5026,22 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
   }
-  .header__wrapper.is-opened svg,
+  .header__wrapper.is-opened img,
 .header__wrapper.is-opened .header__tel > a {
     color: #2d383f;
   }
-  .header__wrapper.is-opened svg:hover, .header__wrapper.is-opened svg:focus, .header__wrapper.is-opened svg:focus-visible,
+  .header__wrapper.is-opened img:hover, .header__wrapper.is-opened img:focus, .header__wrapper.is-opened img:focus-visible,
 .header__wrapper.is-opened .header__tel > a:hover,
 .header__wrapper.is-opened .header__tel > a:focus,
 .header__wrapper.is-opened .header__tel > a:focus-visible {
     color: #1c3374;
     outline: none;
   }
-  .header__wrapper.is-opened svg:active,
+  .header__wrapper.is-opened img:active,
 .header__wrapper.is-opened .header__tel > a:active {
     color: #0266c1;
   }
-  .header__wrapper.is-opened svg:default,
+  .header__wrapper.is-opened img:default,
 .header__wrapper.is-opened .header__tel > a:default {
     color: #0266c1;
     opacity: 0.1;
@@ -5063,54 +5066,59 @@ supported by Chrome, Edge, Opera and Firefox */
     justify-items: end;
   }
 }
-.header__wrapper a {
+
+.header__logo {
   z-index: 3;
   outline: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
-  .header__wrapper a {
+  .header__logo {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     padding-top: 10px;
     margin-left: 35%;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .header__wrapper a {
+  .header__logo {
     height: 46px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-area: 1/2/2/3;
+    width: unset;
   }
 }
-.header__wrapper a svg {
+.header__logo img {
   width: 205px;
   height: 62px;
   color: #ffffff;
   cursor: pointer;
 }
-.header__wrapper a svg:hover, .header__wrapper a svg:focus, .header__wrapper a svg:focus-visible {
+.header__logo img:hover, .header__logo img:focus, .header__logo img:focus-visible {
   color: #1c3374;
   outline: none;
 }
-.header__wrapper a svg:active {
+.header__logo img:active {
   color: #0266c1;
 }
-.header__wrapper a svg:default {
+.header__logo img:default {
   color: #0266c1;
   opacity: 0.1;
 }
 @media (max-width: 1199px) {
-  .header__wrapper a svg {
+  .header__logo img {
     width: 144px;
     height: 44px;
   }
 }
 @media (max-width: 767px) {
-  .header__wrapper a svg {
+  .header__logo img {
     width: 112px;
     height: 34px;
   }
@@ -5909,7 +5917,7 @@ supported by Chrome, Edge, Opera and Firefox */
     top: -200vh;
     right: 0;
     left: 0;
-    padding: 120px 40px 64px;
+    padding: 120px 40px 54px;
     background-color: #ffffff;
     -webkit-transition: top 0.3s ease;
     transition: top 0.3s ease;
@@ -5933,7 +5941,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .nav {
-    padding: 94px 10px 45px;
+    padding: 94px 10px 35px;
   }
 }
 
@@ -5977,6 +5985,7 @@ supported by Chrome, Edge, Opera and Firefox */
     max-width: 100%;
     max-height: 100%;
     margin: 0;
+    padding-bottom: 12px;
     overflow-y: auto;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
@@ -5986,6 +5995,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .nav__list {
     gap: 12px 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -6175,6 +6185,7 @@ supported by Chrome, Edge, Opera and Firefox */
   width: 37px;
   height: 37px;
   background-color: #0266c1;
+  cursor: pointer;
 }
 .photogallery__swiper-next svg,
 .photogallery__swiper-prev svg {
@@ -6356,6 +6367,7 @@ supported by Chrome, Edge, Opera and Firefox */
   height: 37px;
   background-color: #0266c1;
   z-index: 55;
+  cursor: pointer;
 }
 @media (min-width: 1200px) and (max-width: 1380px) {
   .reviews__swiper-prev {
@@ -6390,6 +6402,7 @@ supported by Chrome, Edge, Opera and Firefox */
   height: 37px;
   background-color: #0266c1;
   z-index: 55;
+  cursor: pointer;
 }
 @media (min-width: 1200px) and (max-width: 1380px) {
   .reviews__swiper-next {
@@ -6638,7 +6651,6 @@ supported by Chrome, Edge, Opera and Firefox */
 .slider-states:disabled {
   background-color: rgba(2, 102, 193, 0.1);
   stroke: #ffffff;
-  opacity: 10%;
 }
 
 .social__list {
@@ -6692,6 +6704,7 @@ supported by Chrome, Edge, Opera and Firefox */
 
 .swiper-button-disabled {
   opacity: 10%;
+  pointer-events: none;
 }
 
 .swiper-reviews {
@@ -7332,6 +7345,7 @@ supported by Chrome, Edge, Opera and Firefox */
   width: 37px;
   height: 36px;
   background-color: #0266c1;
+  cursor: pointer;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .tours__swiper-next,

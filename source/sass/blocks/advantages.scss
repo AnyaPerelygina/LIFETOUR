@@ -140,6 +140,7 @@
   background-color: $color-navy-blue;
   z-index: 5;
   margin-left: 4px;
+  cursor: pointer;
 
   @include vp-1199 {
     display: none;
@@ -155,6 +156,7 @@
   width: 37px;
   height: 37px;
   background-color: $color-navy-blue;
+  cursor: pointer;
 
   @include vp-1199 {
     display: none;

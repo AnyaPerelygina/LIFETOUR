@@ -47,7 +47,7 @@
     transition: color 0.3s ease;
 
     &.is-opened {
-      svg,
+      img,
       .header__tel > a {
         color: $color-elephant;
 
@@ -82,53 +82,57 @@
     grid-template-columns: min-content 1fr;
     justify-items: end;
   }
+}
 
-  a {
-    z-index: 3;
-    outline: none;
+.header__logo {
+  z-index: 3;
+  outline: none;
+  color: $color-default-white;
+  cursor: pointer;
+
+  @include vp-1199 {
+    order: 1;
+    padding-top: 10px;
+    margin-left: 35%;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    height: 46px;
+    grid-area: 1/2/2/3;
+    width: unset;
+  }
+
+  img {
+    width: 205px;
+    height: 62px;
+    color: $color-default-white;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-navy-blue;
+    }
+
+    &:default {
+      color: $color-navy-blue;
+      opacity: 0.1;
+    }
 
     @include vp-1199 {
-      order: 1;
-      padding-top: 10px;
-      margin-left: 35%;
+      width: 144px;
+      height: 44px;
     }
 
     @include vp-767 {
-      height: 46px;
-      grid-area: 1/2/2/3;
-    }
-
-    svg {
-      width: 205px;
-      height: 62px;
-      color: $color-default-white;
-      cursor: pointer;
-
-      &:hover,
-      &:focus,
-      &:focus-visible {
-        color: $color-resolution-blue;
-        outline: none;
-      }
-
-      &:active {
-        color: $color-navy-blue;
-      }
-
-      &:default {
-        color: $color-navy-blue;
-        opacity: 0.1;
-      }
-
-      @include vp-1199 {
-        width: 144px;
-        height: 44px;
-      }
-
-      @include vp-767 {
-        width: 112px;
-        height: 34px;
-      }
+      width: 112px;
+      height: 34px;
     }
   }
 }
