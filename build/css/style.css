@@ -2183,7 +2183,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .about-us {
-    padding: 41px 0 20px;
+    padding: 56px 0 20px;
   }
   .about-us br {
     display: none;
@@ -2317,7 +2317,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .about-us__title {
-    margin: 43px 0 32px;
+    margin: 47px 0 32px;
   }
 }
 
@@ -3774,7 +3774,7 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 15px;
+    gap: 3px;
   }
 }
 .education__container::after {
@@ -3830,7 +3830,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .education__container > p {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 17px;
+    margin-bottom: 30px;
   }
 }
 .education__container h3 {
@@ -3976,7 +3976,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .education__slider {
-    margin: 10px 0 6px;
+    margin: 21px 0 19px;
   }
 }
 
@@ -4017,7 +4017,7 @@ supported by Chrome, Edge, Opera and Firefox */
             flex-direction: column;
     row-gap: 25px;
     margin: 0;
-    padding: 14px 35px 16px;
+    padding: 25px 35px 16px;
   }
 }
 
@@ -4274,7 +4274,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .education__button {
-    margin-top: -42px;
+    margin-top: -31px;
   }
 }
 
@@ -4421,7 +4421,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 1199px) {
   .feedback__container p {
     padding-right: 0;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     width: 312px;
     font-size: 16px;
     font-weight: 400;
@@ -5496,7 +5496,7 @@ supported by Chrome, Edge, Opera and Firefox */
             transform: translate(50%, 0);
     z-index: 1;
     width: 442px;
-    height: auto;
+    height: 300px;
   }
 }
 @media (max-width: 767px) {
@@ -6321,7 +6321,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 1199px) {
   .reviews__cover h2 {
     width: 394px;
-    margin: 16px 0 27px;
+    margin: 18px 0 27px;
   }
 }
 @media (max-width: 767px) {
@@ -6988,13 +6988,13 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .tours__title {
-    margin: 29px 0 40px;
+    margin: 29px 0 42px;
   }
 }
 @media (max-width: 767px) {
   .tours__title {
     max-width: 156px;
-    margin: 29px 0;
+    margin: 29px 0 28px;
   }
 }
 
