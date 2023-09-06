@@ -181,28 +181,10 @@
     height: 259px;
     width: 159px;
   }
-
-  // .photogallery__slide-wrapper {
-  //   img {
-  //     @include vp-767 {
-  //       height: 259px;
-  //       width: 159px;
-  //     }
-  //   }
-  // }
 }
 
 .photogallery__slide:nth-child(even) {
   @include vp-767 {
     width: 172px;
   }
-
-  // .photogallery__slide-wrapper1,
-  // .photogallery__slide-wrapper2 {
-  //   img {
-  //     @include vp-767 {
-  //       width: 172px;
-  //     }
-  //   }
-  // }
 }

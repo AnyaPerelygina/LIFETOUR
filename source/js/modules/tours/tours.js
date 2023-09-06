@@ -1,8 +1,7 @@
 import Swiper from '../../vendor/swiper';
 
 const createTourSlider = () => {
-  // eslint-disable-next-line no-new
-  new Swiper('.swiper-tours', {
+  let swiper = new Swiper('.swiper-tours', {
     navigation: {
       nextEl: '.tours__swiper-next',
       prevEl: '.tours__swiper-prev',
@@ -21,6 +20,8 @@ const createTourSlider = () => {
       },
     },
   });
+
+  return swiper;
 };
 
 export {createTourSlider};

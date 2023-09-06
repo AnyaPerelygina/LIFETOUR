@@ -1,8 +1,7 @@
 import Swiper from '../../vendor/swiper';
 
 const createReviewsSlider = () => {
-  // eslint-disable-next-line no-new
-  new Swiper('.swiper-reviews', {
+  let swiper = new Swiper('.swiper-reviews', {
     slidesPerView: 1,
     allowTouchMove: true,
     navigation: {
@@ -26,6 +25,8 @@ const createReviewsSlider = () => {
       },
     },
   });
+
+  return swiper;
 };
 
 export {createReviewsSlider};

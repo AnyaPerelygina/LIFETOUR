@@ -1,4 +1,5 @@
-/* eslint-disable no-undef */
+import L from '../../vendor/leaflet';
+
 let initLeaflet = () => {
   const map = L.map('map', {scrollWheelZoom: false, dragging: false}).setView([55.774906445034176, 37.632641498705205], 14);
   L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {

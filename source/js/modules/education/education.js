@@ -1,8 +1,7 @@
 import Swiper from '../../vendor/swiper';
 
 const createEducationSlider = () => {
-  // eslint-disable-next-line no-new
-  new Swiper('.swiper-education', {
+  let swiper = new Swiper('.swiper-education', {
     navigation: {
       nextEl: '.education__swiper-next',
       prevEl: '.education__swiper-prev',
@@ -24,6 +23,8 @@ const createEducationSlider = () => {
       },
     },
   });
+
+  return swiper;
 };
 
 export {createEducationSlider};

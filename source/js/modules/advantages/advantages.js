@@ -1,3 +1,5 @@
+import Swiper from '../../vendor/swiper';
+
 const sliderAdvantages = document.querySelector('.advantages__swiper');
 const buttonNext = document.querySelector('.advantages__swiper-next');
 const buttonPrev = document.querySelector('.advantages__swiper-prev');
@@ -5,7 +7,6 @@ let mySwiper;
 
 const createAdvantagesSlider = () => {
   if (sliderAdvantages && innerWidth > 1199) {
-    // eslint-disable-next-line
     mySwiper = new Swiper(sliderAdvantages, {
       loop: true,
       slidesPerView: 3,

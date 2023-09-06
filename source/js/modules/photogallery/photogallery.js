@@ -1,8 +1,7 @@
 import Swiper from '../../vendor/swiper';
 
 const createPhotogallerySlider = () => {
-  // eslint-disable-next-line no-new
-  new Swiper('.swiper-photogallery', {
+  let swiper = new Swiper('.swiper-photogallery', {
     slidesPerView: 'auto',
     navigation: {
       nextEl: '.photogallery__swiper-next',
@@ -23,6 +22,8 @@ const createPhotogallerySlider = () => {
       },
     },
   });
+
+  return swiper;
 };
 
 export {createPhotogallerySlider};
