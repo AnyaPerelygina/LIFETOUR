@@ -63,16 +63,14 @@
     max-height: 100%;
     margin: 0;
     padding: 10px 0 12px 2px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    max-height: 90vh;
+    overflow: auto;
     order: 0;
   }
 
   @include vp-767 {
     gap: 12px 0;
     padding-bottom: 10px;
-    max-height: 90vh;
-    overflow: auto;
   }
 }
 
