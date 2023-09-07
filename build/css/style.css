@@ -5998,7 +5998,6 @@ supported by Chrome, Edge, Opera and Firefox */
     max-height: 256px;
     margin: 0;
     padding: 10px 0 12px 2px;
-    overflow: auto;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
