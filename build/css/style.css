@@ -2198,7 +2198,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .about-us::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 60%;
   height: 85%;
   background-image: url("../img/about/background-desktop@2x.png");
   background-repeat: no-repeat;
@@ -2225,6 +2225,7 @@ supported by Chrome, Edge, Opera and Firefox */
     background-size: contain;
     height: 74%;
     top: 11%;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -5977,13 +5978,6 @@ supported by Chrome, Edge, Opera and Firefox */
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-}
-@media (min-width: 1200px) {
-  .nav__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 @media (max-width: 1199px) {
   .nav__list {

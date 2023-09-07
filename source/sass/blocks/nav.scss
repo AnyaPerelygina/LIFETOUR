@@ -53,10 +53,6 @@
   flex-wrap: wrap;
   justify-content: start;
 
-  @media (min-width: 1200px) {
-    justify-content: center;
-  }
-
   @include vp-1199 {
     flex-direction: column;
     flex-wrap: nowrap;
