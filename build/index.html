@@ -68,7 +68,7 @@
             <h1 class="visually-hidden">LifeTour - организация походов в горы</h1>
             <div class="hero__slider swiper-hero swiper">
               <ul class="hero__list swiper-wrapper">
-                <li class="hero__item swiper-slide" tabindex="0">
+                <li class="hero__item swiper-slide" tabindex="0" aria-label="1 / 3">
                   <div class="hero__content">
                     <div class="hero__text">
                       <h2>Захватывающие вершины Кавказа</h2>
@@ -138,9 +138,9 @@
                     </ul>
                     <div class="hero__polaroid">
                       <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/cards-tablet@1x.webp 1x, img/hero/cards-tablet@2x.webp 2x">
                         <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero/cards-desktop@1x.webp 1x, img/hero/cards-desktop@2x.webp 2x">
                         <source type="image/png" srcset="img/hero/cards-desktop@1x.png 1x, img/hero/cards-desktop@2x.png 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/cards-tablet@1x.webp 1x, img/hero/cards-tablet@2x.webp 2x">
                         <img type="image/png" src="img/hero/cards-tablet@1x.png" srcset="img/hero/cards-tablet@2x.png 2x" width="442" height="365" alt="Полароидные снимки гор." loading="lazy">
                       </picture>
                     </div>
@@ -152,7 +152,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/kamchatka-tablet@1x.webp, img/hero/kamchatka-tablet@2x.webp 2x">
                     <source type="image/jpg" media="(min-width: 768px)" srcset="img/hero/kamchatka-tablet1x.jpg, img/hero/kamchatka-tablet@2x.jpg 2x">
                     <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/kamchatka-mobile@1x.webp, img/hero/kamchatka-mobile@2x.webp 2x">
-                    <img src="img/hero/kamchatka-mobile@1x.jpg" srcset="img/hero/kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: гора с облаками в небе.">
+                    <img src="img/hero/kamchatka-mobile@1x.jpg" srcset="img/hero/kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: гора с облаками в небе." loading="lazy">
                   </picture>
                 </li>
                 <li class="hero__item swiper-slide">
@@ -179,7 +179,7 @@
                     <div class="hero__audio">
                       <picture>
                         <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/backroung-audioplayer.webp">
-                        <img type="image/png" src="img/hero/backroung-audioplayer.png" srcset="img/hero/backroung-audioplayer.png" width="340" height="220" alt="Обложка аудиоплеера.">
+                        <img type="image/png" src="img/hero/backroung-audioplayer.png" srcset="img/hero/backroung-audioplayer.png" width="340" height="220" alt="Обложка аудиоплеера." loading="lazy">
                       </picture>
                       <button class="hero__audio-button" aria-label="Запустить аудиоплеер.">
                         <svg width="12" height="22" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -195,7 +195,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/altai-tablet@1x.webp, img/hero/altai-tablet@2x.webp 2x">
                     <source type="image/jpg" media="(min-width: 768px)" srcset="img/hero/altai-tablet1x.jpg, img/hero/altai-tablet@2x.jpg 2x">
                     <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/altai-mobile@1x.webp, img/hero/altai-mobile@2x.webp 2x">
-                    <img src="img/hero/altai-mobile@1x.jpg" srcset="img/hero/altai-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: гора с облаками в небе.">
+                    <img src="img/hero/altai-mobile@1x.jpg" srcset="img/hero/altai-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: гора с облаками в небе." loading="lazy">
                   </picture>
                 </li>
               </ul>
@@ -499,7 +499,7 @@
                       <source type="image/webp" media="(min-width: 320px)"
                         srcset="img/coaches/coach1-mobile.webp, img/coaches/coach1-mobile@2x.webp 2x">
                       <img type="image/jpg" src="img/coaches/coach1-mobile.jpg" srcset="img/coaches/coach1-mobile@2x.jpg 2x" width="250"
-                        height="212" loading="lazy" alt="Инструктор Александр Прокофьев.">
+                        height="212" loading="lazy" alt="Инструктор Александр Прокофьев." loading="lazy">
                     </picture>
                   </div>
                   <div class="coach-card__information">
@@ -529,7 +529,7 @@
                       <source type="image/webp" media="(min-width: 320px)"
                         srcset="img/coaches/coach2-mobile.webp, img/coaches/coach2-mobile@2x.webp 2x">
                       <img type="image/jpg" src="img/coaches/coach2-mobile.jpg" srcset="img/coaches/coach2-mobile@2x.jpg 2x" width="250"
-                        height="212" loading="lazy" alt="Инструктор Светлана Афигогеновна.">
+                        height="212" loading="lazy" alt="Инструктор Светлана Афигогеновна." loading="lazy">
                     </picture>
                   </div>
                   <div class="coach-card__information">
@@ -560,7 +560,7 @@
                       <source type="image/webp" media="(min-width: 320px)"
                         srcset="img/coaches/coach3-mobile.webp, img/coaches/coach3-mobile@2x.webp 2x">
                       <img type="image/jpg" src="img/coaches/coach3-mobile.jpg" srcset="img/coaches/coach3-mobile@2x.jpg 2x" width="250"
-                        height="212" loading="lazy" alt="Инструктор Надежда Колесниченко.">
+                        height="212" loading="lazy" alt="Инструктор Надежда Колесниченко." loading="lazy">
                     </picture>
                   </div>
                   <div class="coach-card__information">
@@ -591,7 +591,7 @@
                       <source type="image/webp" media="(min-width: 320px)"
                         srcset="img/coaches/coach4-mobile.webp, img/coaches/coach4-mobile@2x.webp 2x">
                       <img type="image/jpg" src="img/coaches/coach4-mobile.jpg" srcset="img/coaches/coach4-mobile@2x.jpg 2x" width="250"
-                        height="212" loading="lazy" alt="Инструктор Федор Кайгородов.">
+                        height="212" loading="lazy" alt="Инструктор Федор Кайгородов." loading="lazy">
                     </picture>
                   </div>
                   <div class="coach-card__information">
@@ -622,7 +622,7 @@
                       <source type="image/webp" media="(min-width: 320px)"
                         srcset="img/coaches/coach1-mobile.webp, img/coaches/coach1-mobile@2x.webp 2x">
                       <img type="image/jpg" src="img/coaches/coach1-mobile.jpg" srcset="img/coaches/coach1-mobile@2x.jpg 2x" width="250"
-                        height="212" loading="lazy" alt="Инструктор Александр Прокофьев.">
+                        height="212" loading="lazy" alt="Инструктор Александр Прокофьев." loading="lazy">
                     </picture>
                   </div>
                   <div class="coach-card__information">
@@ -652,7 +652,7 @@
                       <source type="image/webp" media="(min-width: 320px)"
                         srcset="img/coaches/coach2-mobile.webp, img/coaches/coach2-mobile@2x.webp 2x">
                       <img type="image/jpg" src="img/coaches/coach2-mobile.jpg" srcset="img/coaches/coach2-mobile@2x.jpg 2x" width="250"
-                        height="212" loading="lazy" alt="Инструктор Светлана Афигогеновна.">
+                        height="212" loading="lazy" alt="Инструктор Светлана Афигогеновна." loading="lazy">
                     </picture>
                   </div>
                   <div class="coach-card__information">
@@ -683,7 +683,7 @@
                       <source type="image/webp" media="(min-width: 320px)"
                         srcset="img/coaches/coach3-mobile.webp, img/coaches/coach3-mobile@2x.webp 2x">
                       <img type="image/jpg" src="img/coaches/coach3-mobile.jpg" srcset="img/coaches/coach3-mobile@2x.jpg 2x" width="250"
-                        height="212" loading="lazy" alt="Инструктор Надежда Колесниченко.">
+                        height="212" loading="lazy" alt="Инструктор Надежда Колесниченко." loading="lazy">
                     </picture>
                   </div>
                   <div class="coach-card__information">
@@ -714,7 +714,7 @@
                       <source type="image/webp" media="(min-width: 320px)"
                         srcset="img/coaches/coach4-mobile.webp, img/coaches/coach4-mobile@2x.webp 2x">
                       <img type="image/jpg" src="img/coaches/coach4-mobile.jpg" srcset="img/coaches/coach4-mobile@2x.jpg 2x" width="250"
-                        height="212" loading="lazy" alt="Инструктор Федор Кайгородов.">
+                        height="212" loading="lazy" alt="Инструктор Федор Кайгородов." loading="lazy">
                     </picture>
                   </div>
                   <div class="coach-card__information">
@@ -1109,7 +1109,7 @@
             <source type="image/webp" media="(min-width: 768px)" srcset="img/feedback/bg-tablet@1x.webp 1x, img/feedback/bg-tablet@2x.webp 2x">
             <source type="image/jpg" media="(min-width: 768px)" srcset="img/feedback/bg-tablet@1x.jpg, img/feedback/bg-tablet@2x.jpg 2x">
             <source type="image/webp" media="(min-width: 320px)" srcset="img/feedback/bg-mobile@1x.webp, img/feedback/bg-mobile@2x.webp 2x">
-            <img src="img/feedback/bg-mobile@1x.jpg" srcset="img/feedback/bg-mobile@2x.jpg 2x" width="320" height="621" loading="lazy" alt="Фотография леса в тумане.">
+            <img src="img/feedback/bg-mobile@1x.jpg" srcset="img/feedback/bg-mobile@2x.jpg 2x" width="320" height="621" loading="lazy" alt="Фотография леса в тумане." loading="lazy">
           </picture>
           <div class="feedback__container container" data-form-validate data-callback="base">
             <h2 class="feedback__title title" data-content="Остались вопросы?">Остались вопросы?</h2>
@@ -1180,7 +1180,7 @@
                       srcset="img/contacts/map-tablet@1x.jpg 1x, img/contacts/map-tablet@2x.jpg 2x">
                     <source type="image/webp" media="(min-width:320px)"
                       srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
-                    <img src="img/contacts/map-mobile@1x.jpg" srcset="img/contacts/map-mobile@2x.jpg" width="290" height="320" loading="lazy" alt="LifeTour на карте города.">
+                    <img src="img/contacts/map-mobile@1x.jpg" srcset="img/contacts/map-mobile@2x.jpg" width="290" height="320" loading="lazy" alt="LifeTour на карте города." loading="lazy">
                   </picture>
                 </div>
               </div>

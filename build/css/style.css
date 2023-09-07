@@ -5272,7 +5272,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .hero__item {
     min-height: 568px;
-    padding: 139px 16px 0;
+    padding: 139px 16px 39px;
   }
 }
 
@@ -5295,11 +5295,6 @@ supported by Chrome, Edge, Opera and Firefox */
     padding: 0;
     max-width: 100%;
     margin: 0;
-  }
-}
-@media (max-width: 767px) {
-  .hero__content {
-    padding: 0 0 113px;
   }
 }
 
@@ -5686,6 +5681,7 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    top: 381px;
     bottom: 0;
     right: 0;
   }
@@ -5697,6 +5693,10 @@ supported by Chrome, Edge, Opera and Firefox */
   background-color: transparent;
   border: 1px solid #ffffff;
   opacity: 1;
+}
+.swiper-pagination-bullet:focus-visible {
+  opacity: 0.5;
+  outline: none;
 }
 @media (max-width: 767px) {
   .swiper-pagination-bullet {

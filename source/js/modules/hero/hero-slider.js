@@ -6,6 +6,8 @@ const initSwiperHero = () => {
     pagination: {
       el: '.hero__pagination',
       type: 'bullets',
+      centeredSlides: true,
+      slidesPerView: 1,
       clickable: true,
     },
     breakpoints: {
