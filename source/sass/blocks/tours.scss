@@ -6,7 +6,7 @@
     position: absolute;
     width: 839px;
     height: 279px;
-    background-image: url("../img/tours/tours-clouds@2x.png");
+    background-image: url("../img/tours/tours-clouds@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: 65%;
@@ -72,11 +72,6 @@
   opacity: 0.03;
   top: 104px;
   left: 120px;
-
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    top: 58px;
-    left: 15px;
-  }
 
   @include vp-1199 {
     font-size: 40px;

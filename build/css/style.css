@@ -2292,7 +2292,7 @@ supported by Chrome, Edge, Opera and Firefox */
   .about-us__text [data-content]::before {
     font-size: 40px;
     line-height: 40px;
-    top: 28px;
+    top: 43px;
     left: 400px;
   }
 }
@@ -4392,12 +4392,14 @@ supported by Chrome, Edge, Opera and Firefox */
 .feedback__container h2 {
   width: 402px;
   padding-right: 17px;
-  margin-bottom: 4px;
+  margin-top: 31px;
+  margin-bottom: 0;
   text-align: center;
 }
 @media (max-width: 1199px) {
   .feedback__container h2 {
     padding-right: 0;
+    margin-top: unset;
     margin-bottom: 3px;
     width: 292px;
   }
@@ -4411,7 +4413,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .feedback__container p {
   width: 603px;
   padding-right: 17px;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -6865,7 +6867,7 @@ supported by Chrome, Edge, Opera and Firefox */
   position: absolute;
   width: 839px;
   height: 279px;
-  background-image: url("../img/tours/tours-clouds@2x.png");
+  background-image: url("../img/tours/tours-clouds@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
   top: 65%;
@@ -6934,12 +6936,6 @@ supported by Chrome, Edge, Opera and Firefox */
   opacity: 0.03;
   top: 104px;
   left: 120px;
-}
-@media (min-width: 1200px) and (max-width: 1439px) {
-  .tours__container [data-content]::before {
-    top: 58px;
-    left: 15px;
-  }
 }
 @media (max-width: 1199px) {
   .tours__container [data-content]::before {
