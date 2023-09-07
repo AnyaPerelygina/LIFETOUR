@@ -2266,6 +2266,7 @@ supported by Chrome, Edge, Opera and Firefox */
   margin: 0 81px 69px 735px;
   padding: 35px 20px 0 0;
   max-width: 950px;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .about-us__text {
@@ -2287,20 +2288,22 @@ supported by Chrome, Edge, Opera and Firefox */
   font-weight: 800;
   line-height: 55px;
   opacity: 0.03;
-  top: 85px;
-  left: 734px;
+  top: 19px;
+  left: 0;
 }
 @media (max-width: 1199px) {
   .about-us__text [data-content]::before {
     font-size: 40px;
     line-height: 40px;
-    top: 43px;
-    left: 400px;
+    top: -12px;
+    left: 0;
   }
 }
 @media (max-width: 767px) {
   .about-us__text [data-content]::before {
-    top: 444px;
+    display: block;
+    position: relative;
+    top: 24px;
     left: 15px;
     width: 100%;
     max-width: 190px;
@@ -2319,7 +2322,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .about-us__title {
-    margin: 47px 0 32px;
+    margin: 20px 0 32px;
   }
 }
 
@@ -4383,12 +4386,12 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .feedback__container {
-    padding-top: 174px;
+    padding-top: 195px;
   }
 }
 @media (max-width: 767px) {
   .feedback__container {
-    padding: 162px 15px 65px 15px;
+    padding: 181px 15px 65px 15px;
   }
 }
 .feedback__container h2 {
