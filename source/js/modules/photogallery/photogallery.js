@@ -10,12 +10,12 @@ const createPhotogallerySlider = () => {
     breakpoints: {
       320: {
         slidesPerView: 'auto',
-        spaceBetween: 5.19,
+        spaceBetween: 3,
         allowTouchMove: true,
       },
       768: {
         slidesPerView: 'auto',
-        spaceBetween: 5.19,
+        spaceBetween: 6,
         allowTouchMove: true,
       },
       1200: {
