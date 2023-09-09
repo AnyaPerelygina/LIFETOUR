@@ -4062,6 +4062,9 @@ supported by Chrome, Edge, Opera and Firefox */
           flex-direction: row;
   max-width: 278px;
   padding: 28px 0;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .education__process-item {
@@ -4083,13 +4086,14 @@ supported by Chrome, Edge, Opera and Firefox */
   }
 }
 .education__process-item svg {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   min-width: 25px;
   width: 25px;
   height: 25px;
   margin-right: 4.9%;
+  margin-bottom: 10px;
 }
 @media (max-width: 1199px) {
   .education__process-item svg {

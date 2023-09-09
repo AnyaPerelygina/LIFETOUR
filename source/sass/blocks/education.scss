@@ -251,6 +251,7 @@
   flex-direction: row;
   max-width: 278px;
   padding: 28px 0;
+  align-self: end;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     max-width: 21%;
@@ -269,11 +270,12 @@
   }
 
   svg {
-    align-self: center;
+    align-self: end;
     min-width: 25px;
     width: 25px;
     height: 25px;
     margin-right: 4.9%;
+    margin-bottom: 10px;
 
     @include vp-1199 {
       width: 25px;
