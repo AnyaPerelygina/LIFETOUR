@@ -1,3 +1,5 @@
+import {ScrollLock} from '../utils/scroll-lock';
+
 const addToggleMenu = () => {
   const OPENED_CLASS = 'is-opened';
   const LINK_CLASS = '.nav__link';
@@ -25,7 +27,9 @@ const addToggleMenu = () => {
     document.addEventListener('keydown', onDocumentKeydown);
     nav.addEventListener('click', onLinkClick);
     document.addEventListener('click', isMenu);
-    window.scrollLock.disableScrolling();
+    ScrollLock.disableScrolling();
+    document.addEventListener('click', onDocumentOutside);
+
   };
 
   const closeMenu = () => {
@@ -35,7 +39,16 @@ const addToggleMenu = () => {
     document.removeEventListener('keydown', onDocumentKeydown);
     nav.removeEventListener('click', onLinkClick);
     document.removeEventListener('click', isMenu);
-    window.scrollLock.enableScrolling();
+    ScrollLock.enableScrolling();
+    document.removeEventListener('click', onDocumentOutside);
+  };
+
+  const onDocumentOutside = (evt) => {
+    if (evt.target === root || root.contains(evt.target)) {
+      return;
+    } else {
+      closeMenu();
+    }
   };
 
   toggle.addEventListener('click', () => {

@@ -6,7 +6,7 @@
     left: 0;
     padding: 110px 38px 54px;
     background-color: $color-default-white;
-    transition: top $trans-default;
+    transition: all 0.3s linear;
 
     &.is-opened {
       top: 0;
