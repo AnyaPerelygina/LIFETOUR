@@ -5352,6 +5352,7 @@ supported by Chrome, Edge, Opera and Firefox */
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 0 10px 0 0;
 }
 @media (max-width: 1199px) {
   .hero__text {
@@ -5361,6 +5362,7 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: unset;
   }
 }
 @media (max-width: 767px) {
