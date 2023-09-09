@@ -41,11 +41,15 @@
 
 .advantages__container {
   position: relative;
-  padding: 114px 120px 216px;
+  padding: 114px 120px 85px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   @include vp-1199 {
-    padding: 28px 44px 87px;
+    padding: 28px 44px 0;
+    display: unset;
+    flex-direction: unset;
   }
 
   @include vp-767 {
@@ -60,14 +64,14 @@
     padding-left: 2px;
 
     @include vp-1199 {
-      margin: 0 auto 46px auto;
+      margin: 4px auto 46px auto;
       text-align: center;
     }
 
     @include vp-767 {
       width: 185px;
       padding: 0;
-      margin: 0 auto 30px;
+      margin: -12px auto 30px;
     }
   }
 }
@@ -86,7 +90,7 @@
     font-size: 40px;
     line-height: 40px;
     top: -12px;
-    left: 0;
+    left: -19px;
   }
 
   @include vp-767 {
@@ -101,7 +105,12 @@
 
 .advantages__swiper {
   @include vp-1199 {
+    padding: 0 45px;
     width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
   }
 }
 
@@ -123,7 +132,7 @@
 
 .advantages__button {
   position: absolute;
-  top: 77.4%;
+  bottom: 0;
   left: 47.3%;
   display: flex;
   flex-direction: row;
