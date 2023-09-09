@@ -4750,7 +4750,7 @@ supported by Chrome, Edge, Opera and Firefox */
   height: 100%;
   padding: 22px 30px;
   border: none;
-  cursor: pointer;
+  cursor: auto;
 }
 @media (max-width: 1199px) {
   .form__name input,
