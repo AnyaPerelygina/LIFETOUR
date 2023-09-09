@@ -5450,15 +5450,15 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .hero__button {
-    display: block;
     width: 206px;
     margin: 0 auto 478px;
   }
 }
 @media (max-width: 767px) {
   .hero__button {
-    width: 180px;
-    margin-bottom: 0;
+    width: 63%;
+    min-width: 180px;
+    margin: 0 auto;
     padding: 18px;
   }
 }
