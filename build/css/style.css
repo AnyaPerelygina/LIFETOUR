@@ -3163,6 +3163,27 @@ supported by Chrome, Edge, Opera and Firefox */
     width: auto;
   }
 }
+.contacts__text span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (max-width: 1199px) {
+  .contacts__text span {
+    font-size: 14px;
+    line-height: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__text span {
+    line-height: 20px;
+  }
+}
 .contacts__text a {
   display: block;
   font-size: 16px;
@@ -5799,6 +5820,10 @@ supported by Chrome, Edge, Opera and Firefox */
 .menu__item a:focus, .menu__item a:focus-visible {
   outline: 1px #2d383f solid;
 }
+.menu__item a:active {
+  outline: none;
+  border-bottom: none;
+}
 .menu__item a:disabled {
   opacity: 0.5;
 }
@@ -5954,6 +5979,11 @@ supported by Chrome, Edge, Opera and Firefox */
     padding: 0 5px;
   }
 }
+@media (max-width: 1199px) {
+  .nav.is-opened a:active {
+    outline: none;
+  }
+}
 @media (max-width: 1199px) and (max-width: 1199px) {
   .nav.is-opened a:disabled {
     color: #2d383f;
@@ -6037,6 +6067,9 @@ supported by Chrome, Edge, Opera and Firefox */
   outline: 1px solid #ffffff;
   color: #ffffff;
   border-bottom: none;
+}
+.nav__item a:active {
+  outline: none;
 }
 .nav__item a:disabled {
   color: #ffffff;

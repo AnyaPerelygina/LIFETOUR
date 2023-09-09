@@ -28,6 +28,10 @@
           }
         }
 
+        &:active {
+          outline: none;
+        }
+
         &:disabled {
           @include vp-1199 {
             color: $color-elephant;
@@ -99,6 +103,10 @@
       outline: 1px solid $color-default-white;
       color: $color-default-white;
       border-bottom: none;
+    }
+
+    &:active {
+      outline: none;
     }
 
     &:disabled {
