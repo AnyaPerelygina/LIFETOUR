@@ -17,7 +17,7 @@
 
 .header__wrapper {
   display: grid;
-  grid-template-columns: 205px 608px 142px;
+  grid-template-columns: 205px auto 142px;
   column-gap: 11%;
   max-width: 1440px;
   margin: 0 auto;
