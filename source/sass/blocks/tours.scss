@@ -421,7 +421,7 @@
   gap: 4px;
   justify-content: end;
   position: absolute;
-  top: 122px;
+  top: 123px;
   right: 120px;
 
   @include vp-1199 {
@@ -439,13 +439,14 @@
 .tours__swiper-next,
 .tours__swiper-prev {
   width: 37px;
-  height: 36px;
+  height: 35px;
   background-color: $color-navy-blue;
   cursor: pointer;
+  border: none;
 
   svg {
     display: block;
-    margin: 14px auto;
+    margin: 13px auto;
   }
 }
 

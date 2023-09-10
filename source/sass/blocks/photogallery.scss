@@ -102,12 +102,12 @@
 .photogallery__button {
   position: absolute;
   content: "";
-  top: 63px;
+  top: 63.3px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 4px;
-  right: 8.4%;
+  right: 8.3%;
 
   @include vp-1199 {
     top: 61px;
@@ -116,21 +116,22 @@
 
   @include vp-767 {
     justify-content: end;
-    top: 77%;
-    right: 4%;
+    top: 79%;
+    right: 4.6%;
   }
 }
 
 .photogallery__swiper-next,
 .photogallery__swiper-prev {
   width: 37px;
-  height: 37px;
+  height: 35px;
   background-color: $color-navy-blue;
   cursor: pointer;
+  border: none;
 
   svg {
     display: block;
-    margin: 14px auto;
+    margin: 13px auto;
   }
 }
 

@@ -493,13 +493,14 @@
 .education__swiper-prev {
   position: absolute;
   content: "";
-  top: 25.7%;
+  top: 26%;
   right: 122.5px;
   width: 37px;
-  height: 37px;
+  height: 35px;
   background-color: $color-navy-blue;
   z-index: 55;
   cursor: pointer;
+  border: none;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     top: 23.2%;
@@ -519,7 +520,7 @@
 
   svg {
     display: block;
-    margin: 14px auto;
+    margin: 13px auto;
   }
 }
 

@@ -1,5 +1,5 @@
 .reviews {
-  padding: 19px 0 0;
+  padding: 14px 0 0;
 
   @include vp-1199 {
     padding: 22px 0 20px;
@@ -43,7 +43,7 @@
     position: relative;
     width: 542px;
     text-align: start;
-    margin: 14px 0 25px 9px;
+    margin: 19px 0 25px 9px;
 
     @include vp-1199 {
       width: 394px;
@@ -86,13 +86,14 @@
 .reviews__swiper-prev {
   position: absolute;
   content: "";
-  top: 0;
+  top: 5px;
   right: 161px;
   width: 37px;
-  height: 37px;
+  height: 35px;
   background-color: $color-navy-blue;
   z-index: 55;
   cursor: pointer;
+  border: none;
 
   @media (min-width: 1200px) and (max-width: 1380px) {
     right: 17.8%;
@@ -112,20 +113,21 @@
 
   svg {
     display: block;
-    margin: 14px auto;
+    margin: 13px auto;
   }
 }
 
 .reviews__swiper-next {
   position: absolute;
   content: "";
-  top: 0;
-  right: 119px;
+  top: 5px;
+  right: 120px;
   width: 37px;
-  height: 37px;
+  height: 35px;
   background-color: $color-navy-blue;
   z-index: 55;
   cursor: pointer;
+  border: none;
 
   @media (min-width: 1200px) and (max-width: 1380px) {
     right: 14.1%;
@@ -134,18 +136,18 @@
   @include vp-1199 {
     width: 36px;
     height: 36px;
-    right: 0;
+    right: 1px;
   }
 
   @include vp-767 {
     top: 12px;
-    right: 0;
+    right: 1px;
     height: 35px;
   }
 
   svg {
     display: block;
-    margin: 14px auto;
+    margin: 13px auto;
   }
 }
 

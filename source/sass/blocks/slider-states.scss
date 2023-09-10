@@ -1,24 +1,22 @@
-.slider-states:hover,
-.slider-states:focus-visible {
-  background-color: $color-default-white;
-  border: 1px solid  $color-resolution-blue;
+.slider-states {
+  fill: $color-default-white;
 }
 
-.slider-states:hover svg,
-.slider-states:focus-visible svg {
-  stroke: $color-resolution-blue;
+.slider-states:hover,
+.slider-states:focus,
+.slider-states:focus-visible {
+  background-color: $color-default-white;
+  outline: 1px solid $color-resolution-blue;
   fill: $color-resolution-blue;
 }
 
 .slider-states:active {
   background-color: $color-resolution-blue;
-}
-
-.slider-states:active svg {
-  stroke: $color-default-white;
+  fill: $color-default-white;
 }
 
 .slider-states:disabled {
-  background-color: $color-disabled-button;
-  stroke: $color-default-white;
+  background-color: $color-navy-blue;
+  fill: $color-default-white;
+  border: none;
 }
