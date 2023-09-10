@@ -15,6 +15,7 @@
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     grid-template-columns: 205px auto 141px;
+    justify-content: space-between;
   }
 
   @include vp-1199 {
@@ -89,10 +90,7 @@
 
 .footer__menu {
   justify-self: center;
-
-  @media (min-width: 1366px) {
-    margin-right: 141px;
-  }
+  margin-right: 141px;
 
   @include vp-1199 {
     grid-column-start: 2;

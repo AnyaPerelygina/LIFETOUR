@@ -4518,6 +4518,9 @@ supported by Chrome, Edge, Opera and Firefox */
   .footer__wrapper {
     -ms-grid-columns: 205px auto 141px;
     grid-template-columns: 205px auto 141px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-width: 1199px) {
@@ -4605,11 +4608,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .footer__menu {
   -ms-grid-column-align: center;
       justify-self: center;
-}
-@media (min-width: 1366px) {
-  .footer__menu {
-    margin-right: 141px;
-  }
+  margin-right: 141px;
 }
 @media (max-width: 1199px) {
   .footer__menu {
@@ -5042,8 +5041,8 @@ supported by Chrome, Edge, Opera and Firefox */
 .header__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 205px auto 142px;
-  grid-template-columns: 205px auto 142px;
+  -ms-grid-columns: 205px 608px 142px;
+  grid-template-columns: 205px 608px 142px;
   -webkit-column-gap: 11%;
      -moz-column-gap: 11%;
           column-gap: 11%;
@@ -5070,6 +5069,9 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-column-gap: 2%;
        -moz-column-gap: 2%;
             column-gap: 2%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-width: 1199px) {
@@ -5801,7 +5803,7 @@ supported by Chrome, Edge, Opera and Firefox */
       -ms-flex-pack: start;
           justify-content: start;
   gap: 22px;
-  max-width: 590px;
+  max-width: 600px;
 }
 @media (max-width: 1199px) {
   .menu__list {
