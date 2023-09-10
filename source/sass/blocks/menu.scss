@@ -20,6 +20,10 @@
   gap: 22px;
   max-width: 600px;
 
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    gap: 18px;
+  }
+
   @include vp-1199 {
     max-width: 100%;
     gap: 11px;

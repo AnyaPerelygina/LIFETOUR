@@ -5804,6 +5804,11 @@ supported by Chrome, Edge, Opera and Firefox */
   gap: 22px;
   max-width: 600px;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .menu__list {
+    gap: 18px;
+  }
+}
 @media (max-width: 1199px) {
   .menu__list {
     max-width: 100%;
