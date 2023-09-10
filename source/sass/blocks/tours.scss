@@ -149,19 +149,17 @@
   text-align: start;
   object-fit: cover;
   background-size: cover;
-  aspect-ratio: 380/412;
+  aspect-ratio: auto;
 
   @include vp-1199 {
     object-fit: contain;
     background-position: center 0;
-    aspect-ratio: 324/412;
   }
 
   @include vp-767 {
     padding: 26px 17px 26px 20px;
     background-position: 0 center;
     background-size: 100% 100%;
-    aspect-ratio: 290/370;
   }
 
   &::before {
