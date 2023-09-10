@@ -58,6 +58,10 @@
   justify-content: start;
   width: 600px;
 
+  // @media (min-width: 1200px) and (max-width: 1430px) {
+  //   gap: 2%;
+  // }
+
   @include vp-1199 {
     flex-direction: column;
     flex-wrap: nowrap;

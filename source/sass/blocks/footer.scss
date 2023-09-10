@@ -6,17 +6,12 @@
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: 285px auto 142px;
+  grid-template-columns: 205px auto 141px;
   justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
   padding: 19px 81px 29px 80px;
   gap: 20px;
-
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    grid-template-columns: 205px auto 141px;
-    justify-content: space-between;
-  }
 
   @include vp-1199 {
     column-count: 2;
@@ -90,7 +85,7 @@
 
 .footer__menu {
   justify-self: center;
-  margin-right: 141px;
+  margin-right: 63px;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     margin-right: unset;

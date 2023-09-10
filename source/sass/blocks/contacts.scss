@@ -76,11 +76,12 @@
 .contacts__wrapper {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 11%;
-  justify-content: start;
+  column-gap: 10%;
+  justify-content: space-between;
 
   @include vp-1199 {
     flex-direction: column;
+    justify-content: start;
   }
 }
 
