@@ -240,6 +240,7 @@
 
   @include vp-767 {
     flex-direction: column;
+    align-content: start;
     row-gap: 25px;
     margin: 0;
     padding: 26px 46px 16px 32px;
