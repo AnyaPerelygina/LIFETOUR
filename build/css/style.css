@@ -2261,6 +2261,11 @@ supported by Chrome, Edge, Opera and Firefox */
   max-width: 1440px;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .about-us__container .container {
+    padding: 0;
+  }
+}
 
 .about-us__text {
   text-align: start;
@@ -7002,6 +7007,11 @@ supported by Chrome, Edge, Opera and Firefox */
     padding: 37px 15px 0;
   }
 }
+@media (max-width: 1199px) {
+  .tours__container .container {
+    padding: 59px 46px 0;
+  }
+}
 
 .tours__container [data-content]::before {
   position: absolute;
@@ -7068,7 +7078,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .tours__title {
-    margin: 29px 0 40px;
+    margin: 29px 0 41px;
   }
 }
 @media (max-width: 767px) {
