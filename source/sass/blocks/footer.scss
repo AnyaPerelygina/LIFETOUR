@@ -92,6 +92,10 @@
   justify-self: center;
   margin-right: 141px;
 
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    margin-right: unset;
+  }
+
   @include vp-1199 {
     grid-column-start: 2;
     grid-column-end: 4;

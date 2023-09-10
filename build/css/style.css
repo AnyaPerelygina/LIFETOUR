@@ -4610,6 +4610,11 @@ supported by Chrome, Edge, Opera and Firefox */
       justify-self: center;
   margin-right: 141px;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .footer__menu {
+    margin-right: unset;
+  }
+}
 @media (max-width: 1199px) {
   .footer__menu {
     -ms-grid-column: 2;
