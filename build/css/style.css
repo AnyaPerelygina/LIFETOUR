@@ -5158,6 +5158,10 @@ supported by Chrome, Edge, Opera and Firefox */
     width: unset;
   }
 }
+.header__logo:focus-visible {
+  color: #1c3374;
+  outline: none;
+}
 .header__logo svg {
   width: 205px;
   height: 62px;

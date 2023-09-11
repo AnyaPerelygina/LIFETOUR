@@ -104,6 +104,11 @@
     width: unset;
   }
 
+  &:focus-visible {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
   svg {
     width: 205px;
     height: 62px;
