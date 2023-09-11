@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {addToggleMenu} from './modules/header/toggle';
-import {initVideoPlayer} from './modules/hero/videoplayer';
+import {initVideoPlayer, setupVideo} from './modules/hero/videoplayer';
 import {initAudioPlayer} from './modules/hero/audioplayer';
 import {initSwiperHero} from './modules/hero/hero-slider';
 import {createTourSlider} from './modules/tours/tours';
