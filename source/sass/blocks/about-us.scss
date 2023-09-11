@@ -3,7 +3,7 @@
   position: relative;
 
   @include vp-1199 {
-    padding: 56px 0 20px;
+    padding: 54px 0 20px;
 
     br {
       display: none;
@@ -128,7 +128,7 @@
   margin: 0 0 57px;
 
   @include vp-1199 {
-    margin: 0 0 32px;
+    margin: 0 0 33px;
   }
 
   @include vp-767 {

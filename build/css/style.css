@@ -2185,7 +2185,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .about-us {
-    padding: 56px 0 20px;
+    padding: 54px 0 20px;
   }
   .about-us br {
     display: none;
@@ -2318,7 +2318,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .about-us__title {
-    margin: 0 0 32px;
+    margin: 0 0 33px;
   }
 }
 @media (max-width: 767px) {
@@ -2769,7 +2769,7 @@ supported by Chrome, Edge, Opera and Firefox */
 @media (max-width: 767px) {
   .coach-card__photo {
     padding: 0 20px;
-    margin: 20px auto 15px auto;
+    margin: 22px auto 15px auto;
     height: auto;
   }
 }
@@ -3951,7 +3951,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .education__title {
-    margin: 29px 0 18px;
+    margin: 29px 0 21px;
   }
 }
 @media (max-width: 767px) {
@@ -4073,7 +4073,7 @@ supported by Chrome, Edge, Opera and Firefox */
         align-content: start;
     row-gap: 25px;
     margin: 0;
-    padding: 26px 46px 16px 32px;
+    padding: 28px 46px 16px 34px;
   }
 }
 
@@ -4447,7 +4447,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 767px) {
   .feedback__container {
-    padding: 181px 15px 65px 15px;
+    padding: 180px 15px 65px 15px;
   }
 }
 .feedback__container h2 {
@@ -4620,6 +4620,7 @@ supported by Chrome, Edge, Opera and Firefox */
     grid-column-end: 4;
     -ms-grid-column-align: unset;
         justify-self: unset;
+    margin-right: unset;
   }
 }
 @media (max-width: 767px) {
@@ -6283,7 +6284,7 @@ supported by Chrome, Edge, Opera and Firefox */
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    top: 79%;
+    top: 78%;
     right: 4.6%;
   }
 }
@@ -6380,7 +6381,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding: 22px 0 20px;
+    padding: 21px 0 20px;
   }
 }
 @media (max-width: 767px) {
@@ -6471,7 +6472,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .reviews__swiper-prev {
   position: absolute;
   content: "";
-  top: 5px;
+  top: 2px;
   right: 161px;
   width: 37px;
   height: 35px;
@@ -6507,7 +6508,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .reviews__swiper-next {
   position: absolute;
   content: "";
-  top: 5px;
+  top: 2px;
   right: 120px;
   width: 37px;
   height: 35px;
