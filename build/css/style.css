@@ -2682,7 +2682,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 .advantages__swiper-next svg {
   display: block;
-  margin: 13px auto;
+  margin: auto;
 }
 
 .advantages__swiper-prev {
@@ -2699,7 +2699,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 .advantages__swiper-prev svg {
   display: block;
-  margin: 13px auto;
+  margin: auto;
 }
 
 .btn {
@@ -4362,7 +4362,6 @@ supported by Chrome, Edge, Opera and Firefox */
 .education__swiper-prev {
     top: 209px;
     right: 45.5px;
-    width: 37.5px;
   }
 }
 @media (max-width: 767px) {
@@ -4376,7 +4375,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .education__swiper-next svg,
 .education__swiper-prev svg {
   display: block;
-  margin: 13px auto;
+  margin: auto;
 }
 
 .education__swiper-prev {
@@ -6305,7 +6304,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .photogallery__swiper-next svg,
 .photogallery__swiper-prev svg {
   display: block;
-  margin: 13px auto;
+  margin: auto;
 }
 
 .photogallery__swiper {
@@ -6477,7 +6476,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .reviews__swiper-prev {
   position: absolute;
   content: "";
-  top: 2px;
+  top: 5px;
   right: 161px;
   width: 37px;
   height: 35px;
@@ -6493,27 +6492,25 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .reviews__swiper-prev {
-    width: 36px;
-    height: 36px;
     right: 42px;
+    top: 2px;
   }
 }
 @media (max-width: 767px) {
   .reviews__swiper-prev {
     top: 12px;
     right: 42px;
-    height: 35px;
   }
 }
 .reviews__swiper-prev svg {
   display: block;
-  margin: 13px auto;
+  margin: auto;
 }
 
 .reviews__swiper-next {
   position: absolute;
   content: "";
-  top: 2px;
+  top: 5px;
   right: 120px;
   width: 37px;
   height: 35px;
@@ -6529,8 +6526,7 @@ supported by Chrome, Edge, Opera and Firefox */
 }
 @media (max-width: 1199px) {
   .reviews__swiper-next {
-    width: 36px;
-    height: 36px;
+    top: 2px;
     right: 1px;
   }
 }
@@ -6538,12 +6534,11 @@ supported by Chrome, Edge, Opera and Firefox */
   .reviews__swiper-next {
     top: 12px;
     right: 1px;
-    height: 35px;
   }
 }
 .reviews__swiper-next svg {
   display: block;
-  margin: 13px auto;
+  margin: auto;
 }
 
 .reviews__wrapper blockquote {
@@ -6734,8 +6729,9 @@ supported by Chrome, Edge, Opera and Firefox */
 .slider-states:focus,
 .slider-states:focus-visible {
   background-color: #ffffff;
-  outline: 1px solid #1c3374;
+  border: 1px solid #1c3374;
   fill: #1c3374;
+  outline: none;
 }
 
 .slider-states:active {
@@ -7503,7 +7499,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .tours__swiper-next svg,
 .tours__swiper-prev svg {
   display: block;
-  margin: 13px auto;
+  margin: auto;
 }
 
 .tours__more {

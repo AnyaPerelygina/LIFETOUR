@@ -6,8 +6,9 @@
 .slider-states:focus,
 .slider-states:focus-visible {
   background-color: $color-default-white;
-  outline: 1px solid $color-resolution-blue;
+  border: 1px solid $color-resolution-blue;
   fill: $color-resolution-blue;
+  outline: none;
 }
 
 .slider-states:active {
