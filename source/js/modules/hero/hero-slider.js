@@ -3,7 +3,8 @@ import {createVideo, showButton} from './videoplayer';
 
 const initSwiperHero = () => {
   let swiper = new Swiper('.swiper-hero', {
-    loop: true,
+    speed: 500,
+    loop: false,
     pagination: {
       el: '.hero__pagination',
       type: 'bullets',
