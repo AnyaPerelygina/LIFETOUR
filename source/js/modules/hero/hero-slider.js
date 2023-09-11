@@ -1,5 +1,5 @@
 import Swiper from '../../vendor/swiper';
-import {createVideo, showButton} from './videoplayer';
+import {showButton, showCover} from './videoplayer';
 
 const initSwiperHero = () => {
   let swiper = new Swiper('.swiper-hero', {
@@ -27,8 +27,8 @@ const initSwiperHero = () => {
       slideChange() {
         if (document.querySelector('.video__wrapper iframe')) {
           document.querySelector('.video__wrapper iframe').remove();
-          createVideo(document.querySelector('.video__wrapper'));
           showButton();
+          showCover();
         }
       },
     },

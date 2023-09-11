@@ -3,7 +3,7 @@ const cover = document.querySelector('.hero__audio').querySelector('picture');
 const button = document.querySelector('.hero__audio').querySelector('.hero__audio-button');
 
 
-const createVideo = () => {
+const createAudio = () => {
   const audio = document.createElement('iframe');
 
   audio.setAttribute('src', 'https://music.yandex.ru/iframe/#track/112912322/25474374');
@@ -21,9 +21,9 @@ const initAudioPlayer = () => {
       event.preventDefault();
       cover.style.display = 'none';
       button.style.display = 'none';
-      createVideo();
+      createAudio();
     });
   }
 };
 
-export {initAudioPlayer};
+export {initAudioPlayer, createAudio};

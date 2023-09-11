@@ -7,6 +7,10 @@ const showButton = () => {
   button.style.display = 'block';
 };
 
+const showCover = () => {
+  cover.style.display = 'block';
+};
+
 const createVideo = (element) => {
   if (document.querySelector('.video__wrapper iframe')) {
     document.querySelector('.video__wrapper iframe').remove();
@@ -34,4 +38,4 @@ const initVideoPlayer = () => {
   }
 };
 
-export {initVideoPlayer, showButton, createVideo};
+export {initVideoPlayer, showButton, showCover, createVideo};
