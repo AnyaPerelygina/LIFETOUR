@@ -1,5 +1,6 @@
 import Swiper from '../../vendor/swiper';
 import {showButton, showCover} from './videoplayer';
+import {showAudioButton, showAudioCover} from './audioplayer';
 
 const initSwiperHero = () => {
   let swiper = new Swiper('.swiper-hero', {
@@ -29,6 +30,11 @@ const initSwiperHero = () => {
           document.querySelector('.video__wrapper iframe').remove();
           showButton();
           showCover();
+        }
+        if (document.querySelector('.hero__audio-wrapper iframe')) {
+          document.querySelector('.hero__audio-wrapper iframe').remove();
+          showAudioButton();
+          showAudioCover();
         }
       },
     },
