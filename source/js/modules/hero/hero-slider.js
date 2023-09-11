@@ -1,4 +1,5 @@
 import Swiper from '../../vendor/swiper';
+import {createVideo, showButton} from './videoplayer';
 
 const initSwiperHero = () => {
   let swiper = new Swiper('.swiper-hero', {
@@ -19,6 +20,15 @@ const initSwiperHero = () => {
       },
       1200: {
         allowTouchMove: false,
+      },
+    },
+    on: {
+      slideChange() {
+        if (document.querySelector('.video__wrapper iframe')) {
+          document.querySelector('.video__wrapper iframe').remove();
+          createVideo(document.querySelector('.video__wrapper'));
+          showButton();
+        }
       },
     },
   });

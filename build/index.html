@@ -90,12 +90,15 @@
                       </li>
                     </ul>
                     <div class="hero__video video">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero/cover-desktop@1x.webp 1x, img/hero/cover-desktop@2x.webp 2x">
-                        <source type="image/jpg" srcset="img/hero/cover-desktop@1x.jpg 1x, img/hero/cover-desktop@2x.jpg 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/cover-tablet@1x.webp 1x, img/hero/cover-tablet@2x.webp 2x">
-                        <img src="img/hero/cover-tablet@1x.jpg" srcset="img/hero/cover-tablet@2x.jpg 2x" width="442" height="300" alt="Обложка видео." loading="lazy">
-                      </picture>
+                      <div class="video__wrapper"></div>
+                      <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw"></a>
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero/cover-desktop@1x.webp 1x, img/hero/cover-desktop@2x.webp 2x">
+                          <source type="image/jpg" srcset="img/hero/cover-desktop@1x.jpg 1x, img/hero/cover-desktop@2x.jpg 2x">
+                          <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/cover-tablet@1x.webp 1x, img/hero/cover-tablet@2x.webp 2x">
+                          <img src="img/hero/cover-tablet@1x.jpg" srcset="img/hero/cover-tablet@2x.jpg 2x" width="442" height="300" alt="Обложка видео." loading="lazy">
+                        </picture>
+                      </a>
                       <button class="video__button" aria-label="Запустить видео.">
                         <svg width="12" height="22" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                           <use href="img/sprite.svg#play"></use>

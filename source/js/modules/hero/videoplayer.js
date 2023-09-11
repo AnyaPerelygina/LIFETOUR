@@ -1,28 +1,37 @@
-const container = document.querySelector('.hero__video');
+const video = document.querySelector('.video__wrapper');
+const link = document.querySelector('.video__link');
+const button = document.querySelector('.video__button');
 const cover = document.querySelector('.hero__video').querySelector('picture');
-const button = document.querySelector('.hero__video').querySelector('.video__button');
 
-const createVideo = () => {
-  const video = document.createElement('iframe');
+const showButton = () => {
+  button.style.display = 'block';
+};
 
-  video.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
-  video.setAttribute('title', 'YouTube video player');
-  video.setAttribute('frameborder', '0');
-  video.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-  video.setAttribute('allowfullscreen', '');
-  video.classList.add('about__videoplayer');
-  container.append(video);
+const createVideo = (element) => {
+  if (document.querySelector('.video__wrapper iframe')) {
+    document.querySelector('.video__wrapper iframe').remove();
+  }
+  const iframe = document.createElement('iframe');
+  iframe.title = 'YouTube video player';
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  iframe.width = '100%';
+  iframe.height = '100%';
+  iframe.loading = 'lazy';
+  iframe.style = 'border: 0;';
+  (element).appendChild(iframe);
 };
 
 const initVideoPlayer = () => {
-  if (container && cover && button) {
-    button.addEventListener('click', (event) => {
-      event.preventDefault();
+  if (video && cover && button) {
+    button.addEventListener('click', () => {
       cover.style.display = 'none';
       button.style.display = 'none';
-      createVideo();
+      createVideo(document.querySelector('.video__wrapper'));
+      document.querySelector('.video__wrapper iframe').src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
     });
+    link.removeAttribute('href');
+    video.classList.add('video--enabled');
   }
 };
 
-export {initVideoPlayer};
+export {initVideoPlayer, showButton, createVideo};
