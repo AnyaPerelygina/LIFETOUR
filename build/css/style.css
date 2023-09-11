@@ -5441,6 +5441,11 @@ supported by Chrome, Edge, Opera and Firefox */
   padding: 0;
   max-width: 464px;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero__text p {
+    padding: 0 20px 0 0;
+  }
+}
 @media (max-width: 1199px) {
   .hero__text p {
     max-width: 462px;

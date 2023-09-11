@@ -129,6 +129,10 @@
     margin: 0 0 37px;
     padding: 0;
     max-width: 464px;
+    
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      padding: 0 20px 0 0;
+    }
 
     @include vp-1199 {
       max-width: 462px;
